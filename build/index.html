@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <title>lucky media</title>
+</head>
+<body class="">
+
+<header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 bg-black md:bg-white items-center">
+
+  <!-- Logo -->
+  <div class="flex items-center gap-2 bg-black max-[425px]:bg-black  
+              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              justify-center lg:justify-center">
+    <img class="w-[120px]" src="./assets/img/logo-svg.png" alt="">
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
+              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              bg-black  sm:bg-black justify-center flex">
+    <ul class="flex  gap-3 lg:gap-6 text-sm md:text-base text-center lg:text-left">
+      <li><a href="#" class="text-green-400 hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
+      <li><a href="#" class="text-[14px] text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+      <li>
+        <a href="javascript:void(0)" onclick="openContactPopup()" 
+           class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- CTA Button -->
+  <a href="tel:+123456789" class="bg-[#00FF9C] w-full lg:w-1/3 text-base lg:text-[20px] text-[20px] text-black font-bold px-[40px] lg:px-[60px] py-[15px] rounded-[10px] text-center">
+    Contact us today! <i class="fa-solid fa-phone"></i>
+  </a>
+
+</header>
+
+
+
+
+
+
+
+  
+
+<section>
+  <div class="w-full text-center">
+    <!-- Heading -->
+    <div class="px-4 sm:px-10 md:px-20 lg:px-[350px] pt-10 sm:pt-20 lg:pt-[150px]">
+  <h1 class="text-center justify-center 
+             text-[28px] sm:text-[30px] lg:text-[62px] font-[600] 
+             leading-[35px] sm:leading-[38px] lg:leading-[65px]">
+    Looking for a remote
+    <span class="text-[#00ff9c]">marketing team<br></span>
+    to fully support your business?
+  </h1>
+</div>
+
+
+    <!-- Subheading -->
+   <div class="px-4 sm:px-10 md:px-20 lg:px-[270px] pt-10 sm:pt-16 lg:pt-20">
+  <h2 class="text-center items-center justify-center rounded-md p-2 
+             text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[42px] 
+             font-[700] leading-tight 
+             bg-[#00FF9C]">
+    We'll bring luck to your company
+  </h2>
+</div>
+
+
+<style>
+  /* Left cube animation */
+  @keyframes leftSlideRotate {
+    0%   { transform: translateX(-200px) rotate(-180deg); opacity: 0; }
+    100% { transform: translateX(80px) rotate(0deg); opacity: 1; }
+  }
+  /* Right cube animation */
+  @keyframes rightSlideRotate {
+    0%   { transform: translateX(200px) rotate(180deg); opacity: 0; }
+    100% { transform: translateX(-80px) rotate(0deg); opacity: 1; }
+  }
+  /* Sparkle animation */
+  @keyframes sparkle {
+    0%   { transform: scale(0.3) translateY(0); opacity: 0; }
+    40%  { transform: scale(1) translateY(-10px); opacity: 1; }
+    100% { transform: scale(0.8) translateY(-20px); opacity: 0; }
+  }
+
+  @layer utilities {
+    .animate-in-left  { animation: leftSlideRotate 1.2s ease-out forwards; }
+    .animate-in-right { animation: rightSlideRotate 1.2s ease-out forwards; }
+    .sparkle          { animation: sparkle 0.8s ease-out forwards; }
+  }
+</style>
+<div class=" bg-white flex items-center justify-center ">
+    <div class="relative w-[520px] max-w-full aspect-[3/1] flex items-center justify-center">
+
+  <!-- Sparkles (hidden initially) -->
+  <div class="sparkles hidden">
+    <div class="absolute -top-2 left-24 w-3 h-3 rotate-45 bg-emerald-300 rounded-[2px]"></div>
+    <div class="absolute top-3 right-24 w-2.5 h-2.5 rotate-45 bg-emerald-300 rounded-[2px]"></div>
+    <div class="absolute bottom-2 left-[46%] w-2 h-2 rotate-45 bg-emerald-300 rounded-[2px]"></div>
+  </div>
+
+  <!-- SVG container -->
+  <div class="absolute inset-0 flex items-center justify-center gap-6">
+
+    <!-- LEFT cube -->
+    <svg class="left-cube drop-shadow-xl opacity-0"
+         width="160" height="160" viewBox="0 0 160 160" fill="none"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="10" y="16" width="120" height="120" rx="20" fill="#34d399"/>
+      <path d="M130 30 L150 46 L150 126 L130 140 Z" fill="#10b981"/>
+      <path d="M10 16 L30 4 L150 46 L130 58 Z" fill="#6ee7b7"/>
+      <path d="M73 64c-5-10-20-8-20 5 0 12 20 22 20 22s20-10 20-22c0-13-15-15-20-5z"
+            fill="white" opacity="0.95"/>
+      <rect x="26" y="76" width="38" height="28" rx="6" fill="white" opacity="0.95"/>
+      <path d="M50 104 L46 96 L64 96 Z" fill="white" opacity="0.95"/>
+      <g transform="translate(86,98) scale(0.6)">
+        <circle cx="0" cy="-6" r="6" fill="white"/>
+        <circle cx="6" cy="0" r="6" fill="white"/>
+        <circle cx="0" cy="6" r="6" fill="white"/>
+        <circle cx="-6" cy="0" r="6" fill="white"/>
+        <path d="M0 6 L0 18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </svg>
+
+    <!-- RIGHT cube -->
+    <svg class="right-cube drop-shadow-xl opacity-0"
+         width="180" height="160" viewBox="0 0 180 160" fill="none"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="46" y="40" width="96" height="96" rx="14" fill="#34d399"/>
+      <rect x="142" y="52" width="28" height="72" rx="10" fill="#10b981"/>
+      <rect x="64" y="16" width="60" height="28" rx="10" fill="#6ee7b7"/>
+      <circle cx="74" cy="68" r="6" fill="white"/>
+      <circle cx="120" cy="116" r="6" fill="white" />
+      <circle cx="120" cy="68" r="6" fill="white" opacity="0.65"/>
+      <circle cx="74" cy="116" r="6" fill="white" opacity="0.65"/>
+      <circle cx="97" cy="92" r="6" fill="white" opacity="0.85"/>
+    </svg>
+
+  </div>
+</div>
+</div>
+<script>
+  function startAnimation() {
+    const left = document.querySelector('.left-cube');
+    const right = document.querySelector('.right-cube');
+    const sparkles = document.querySelector('.sparkles').children;
+
+    left.classList.add('animate-in-left');
+    right.classList.add('animate-in-right');
+
+    // Show sparkles after cubes meet
+    setTimeout(() => {
+      document.querySelector('.sparkles').classList.remove('hidden');
+      [...sparkles].forEach((star, i) => {
+        setTimeout(() => {
+          star.classList.add('sparkle');
+        }, i * 100); // delay between stars
+      });
+    }, 1200); // after cubes finish
+  }
+
+  // Start animation immediately (you can change to scroll trigger)
+  startAnimation();
+</script>
+    <!-- Button -->
+    <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+      <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+
+        <!-- Normal text -->
+        <span class="transition-all text-[16px] sm:text-[20px] md:text-[26px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+          Get a service quote within 24 hours!
+        </span>
+
+        <!-- Hover text -->
+        <span class="absolute opacity-0 font-semibold text-[16px] sm:text-[20px] md:text-[26px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+          Fill out the brief
+        </span>
+
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-black text-white px-4 sm:px-6 md:px-8 py-10 sm:py-14 md:py-16 mt-20 sm:mt-[150px] md:mt-[300px]">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+
+    <!-- Left side -->
+    <div class=" md:text-left">
+      <span class="bg-[#00FF9C] text-black 
+                   text-[28px] sm:text-[14px] md:text-[50px] lg:text-[51px] 
+                   font-bold px-3 py-1 rounded-md inline-block">
+        Lucky Media
+      </span>
+
+      <h2 class="font-bold mt-4 leading-snug 
+                 text-[24px] sm:text-[14px] md:text-[42px] lg:text-[48px]">
+        You may not believe in luck,<br> 
+        but this isn’t just a chance meeting.
+        Welcome to a world where art meets digital precision.
+      </h2>
+
+      <button class="mt-6 border-[5px] border-black bg-white text-black 
+                     px-4 sm:px-5 py-3 sm:py-4 rounded-lg 
+                     transition duration-500 
+                     hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] 
+                     text-[17px] sm:text-[14px] md:text-[20px]">
+        Schedule an online meeting
+      </button>
+    </div>
+
+    <!-- Right side -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-[#1a1a1a] rounded-lg p-4 sm:p-6 text-center">
+        <div class="justify-center flex">
+          <img src="./img/iconlucky.png" alt="" class="w-[35px] sm:w-[45px]">
+        </div>
+        <h3 class="font-bold text-[22px] sm:text-[28px] md:text-[32px] lg:text-[34px] mt-4">Why is it worth it?</h3>
+        <p class="text-gray-400 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[23px] mt-2 leading-relaxed sm:leading-8 md:leading-9 lg:leading-10">
+          In our monthly subscription, we provide your company with the services of a marketing specialist, web developer, graphic designer, and copywriter at affordable price. Remember, marketing is one of the key pillars of every successful business.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#1a1a1a] rounded-lg p-4 sm:p-6 text-center">
+        <!-- SVG heart -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 sm:w-10 sm:h-10 mx-auto text-green-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                   4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 
+                   3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 
+                   8.5c0 3.78-3.4 6.86-8.55 
+                   11.54L12 21.35z"/>
+        </svg>
+        <h3 class="font-bold mt-4 text-[22px] sm:text-[28px] md:text-[32px] lg:text-[34px]">Our work ethic</h3>
+        <p class="text-gray-400 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[23px] mt-2 leading-relaxed sm:leading-8 md:leading-9 lg:leading-10">
+          You’re the expert in your product, and we’re here for marketing. You don’t need to keep up with the latest trends or speak marketing jargon. We stay ahead of the game, so you can rely on us. We’ll explain everything, so you know what you’re paying for.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="p-4 sm:p-8 md:p-16 mt-16 sm:mt-32">
+  <!-- Top section -->
+  <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-[80px] text-center lg:text-left mb-28">
+    <div>
+      <span class="bg-[#00FF9C] text-black text-[32px] sm:text-[40px] md:text-[50px] lg:text-[51px] font-serif px-3 py-1 rounded-lg inline-block">
+        Services
+      </span>
+    </div>
+    <div class="max-w-lg">
+      <p class="text-black font-bold text-[18px] sm:text-[18px] w-[350px]">
+        Our possibilities are not confined to a framework. Let’s talk and find the perfect fit for your needs.
+      </p>
+    </div>
+    <div>
+      <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-white transition-all duration-500 group overflow-hidden bg-black hover:bg-white group-hover:bg-transparent">
+        <!-- Normal text -->
+        <span class="transition-all text-[14px] sm:text-[20px] md:text-[26px] lg:text-[23px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+          Get a service quote within<br> 24 hours!
+        </span>
+        <!-- Hover text -->
+        <span class="absolute opacity-0 font-semibold text-[14px] sm:text-[20px] md:text-[26px] lg:text-[23px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-black group-hover:bg-transparent text-black rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+          Fill out the brief
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Flipping cards row 1 -->
+  <div class="flex flex-wrap justify-center gap-16 mt-10">
+    <!-- Card 1 -->
+    <div class="w-full sm:w-[400px] lg:w-[500px] h-[450px] [perspective:1000px]">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        <!-- Front -->
+        <div class="absolute w-full h-full bg-white rounded-[40px] shadow-[0_15px_0px_-5px_rgba(0,0,0,1)] flex flex-col items-center justify-center gap-6 [backface-visibility:hidden] border border-black">
+          <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Detailed strategy</h2>
+        </div>
+        <!-- Back -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <p>
+            Marketing should be based on a strategy that is understood and supported by the entire team. We’ll develop a plan that helps meet your business goals. Our prepared strategy not only includes milestones but also precisely defined tools. As industry specialists, we advise against investing in random and short-term actions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-full sm:w-[400px] lg:w-[500px] h-[450px] [perspective:1000px]">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        <!-- Front -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] shadow-[0_15px_0px_-5px_rgba(0,0,0,1)] flex flex-col items-center justify-center gap-6 [backface-visibility:hidden] border border-black">
+          <div class="w-16 h-16 bg-[#00FF9C] rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Corporate branding</h2>
+        </div>
+        <!-- Back -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px]leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <p>
+            The primary goal of marketing is brand recognition. A consistent visual style is necessary. Is it possible that customers, upon seeing a specific color, think of your product? Yes! This is precisely what visual identity is responsible for. We’ll create for you a unique logo and brand style that you can use for everything you create.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flipping cards row 2 -->
+  <div class="flex flex-wrap justify-center gap-16 mt-10">
+    <!-- Card 3 -->
+    <div class="w-full sm:w-[400px] lg:w-[500px] h-[450px] [perspective:1000px]">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        <!-- Front -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] shadow-[0_15px_0px_-5px_rgba(0,0,0,1)] flex flex-col items-center justify-center gap-6 [backface-visibility:hidden] border border-black">
+          <div class="w-16 h-16 bg-[#00FF9C] rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Website solutions</h2>
+        </div>
+        <!-- Back -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <p>
+            The website is the face of the company. Whether you need a simple page, complex website or a mobile app you can rely on us. We’ll take care of optimizing your site’s presence on Google and all necessary integrations. We’ll ensure that the content on your site aligns with artificial intelligence and search engine algorithms.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="w-full sm:w-[400px] lg:w-[500px] h-[450px] [perspective:1000px]">
+      <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+        <!-- Front -->
+        <div class="absolute w-full h-full bg-white rounded-[40px] shadow-[0_15px_0px_-5px_rgba(0,0,0,1)] flex flex-col items-center justify-center gap-6 [backface-visibility:hidden] border border-black">
+          <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7m10 0v10" />
+            </svg>
+          </div>
+          <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Online advertising</h2>
+        </div>
+        <!-- Back -->
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <p>
+            For some companies, social media is a matter of image, while for others, it’s the main sales channel. We’ll tailor a plan to you so that the cost of managing social media aligns with its objectives. We’ll create a balanced plan for paid ads and organic posts. We’ll ensure that your company’s social media looks consistent and appealing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="mt-48">
+  <!-- animation -->
+  <div class="flex flex-col md:flex-row justify-between w-full">
+    
+    <!-- Left side -->
+    <div class="w-full md:w-1/2">
+      <h2>
+        Animation
+      </h2>
+    </div>
+
+    <!-- Right side -->
+    <div class="w-full md:w-1/2">
+      <div>
+        <span class="bg-[#00FF9C] text-black text-[28px] sm:text-[40px] md:text-[51px] lg:text-[51px] font-bold px-3 py-1 rounded-[20px] inline-block mb-6">
+          Portfolio
+        </span>
+        <h1 class="font-bold mt-4 leading-[70px] text-[24px] sm:text-[34px] md:text-[47px] mb-16">
+          At Lucky Media, we have no boundaries. Our pool of talent and tools allows us to tackle the biggest challenges.
+        </h1>
+        <button class="mt-6 border-[5px] border-black bg-[#171717] text-white px-4 sm:px-5 py-3 sm:py-4 rounded-lg 
+          transition duration-500 
+          hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-[18px] md:text-[20px]">
+          Discover our portfolio
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<section class="py-10 px-5 md:py-14 lg:py-16 ">
+  <!-- Heading -->
+  <div class="text-center mb-8 sm:mb-10 md:mb-12">
+    <h2 class="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[55px] font-bold">Steps</h2>
+    <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] font-semibold">
+      We believe in keeping things straightforward! A solid plan is the foundation of everything we do.
+    </p>
+    <p class="text-[16px] sm:text-[17px] md:text-[18px] font-semibold">
+      While some say they prefer practice over theory, we know one cannot exist without the other.
+    </p>
+    <p class="font-semibold text-[16px] sm:text-[17px] md:text-[18px]">
+      Together, they create the perfect synergy for success.
+    </p>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="flex flex-col lg:flex-row gap-16 lg:gap-10 justify-center items-center lg:items-stretch">
+    <!-- Step 1 -->
+    <div class="bg-black text-gray-300 p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] relative overflow-hidden">
+      <p class="leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px] text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px]">
+        Together, we<br>
+        prepare a solid<br>
+        brief so we don’t<br>
+        overlook<br>
+        important matters.
+      </p>
+      <span class="absolute  bottom-0  right-4 sm:right-6 lg:right-0 text-[120px] sm:text-[140px] md:text-[160px] lg:text-[150px] font-[400] leading-none text-white">
+        01
+      </span>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="bg-[#00ff99] text-black p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] relative overflow-hidden">
+      <p class="leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px] text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px]">
+        We outline a<br>
+        detailed action<br>
+        plan for you, so<br>
+        you’re always up<br>
+        to date.
+      </p>
+      <span class="absolute  bottom-0  right-4 sm:right-6 lg:right-0 text-[120px] sm:text-[140px] md:text-[160px] lg:text-[150px] font-[400] leading-none text-black">
+        02
+      </span>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="flex flex-col lg:flex-row gap-16 lg:gap-10 justify-center items-center lg:items-stretch mt-6 lg:mt-8">
+    <!-- Step 3 -->
+    <div class="bg-[#00ff99] text-black p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] h-auto lg:h-[320px] relative overflow-hidden flex flex-col justify-between">
+      <p class="text-right text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px] leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px]">
+        We’ll present<br>
+        initial designs and<br>
+        ideas for your<br>
+        review.
+      </p>
+      <span class="absolute   bottom-0  left-4 sm:left-6 text-[120px] sm:text-[140px] md:text-[160px] lg:text-[150px] font-[400] leading-none text-black">
+        03
+      </span>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="bg-black text-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] h-auto lg:h-[320px] relative overflow-hidden flex flex-col justify-between">
+      <p class="text-right text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px] leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px]">
+        We bring ideas to<br> life and never let<br> the competition<br> rest! 🙂
+      </p>
+      <span class="absolute bottom-0 left-4 sm:left-6 text-[120px] sm:text-[140px] md:text-[160px] lg:text-[150px] font-[400] leading-none text-white">
+        04
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<section class="px-4 sm:px-8 md:px-16 lg:px-40 py-10 lg:py-20">
+  <div class="border-[5px] border-black flex flex-col lg:flex-row w-full rounded-lg p-6 sm:p-10 lg:p-12 gap-10">
+    
+    <!-- Left Text -->
+    <div class="w-full lg:w-1/2">
+      <h1 class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[59px] font-[800] leading-tight">
+        It might be your <span class="text-[#00ff99]">lucky draw!</span> Contact us today.
+      </h1>
+
+
+      <h3 class="text-[16px] sm:text-[18px] md:text-[22px] lg:text-[27px] leading-[28px] sm:leading-[36px] md:leading-[44px] lg:leading-[48px]  font-[400]">
+        Your business seems to be stuck at some level? Maybe you are about to finalize your dream ideas and kick off with a new venture? Let us know what’s on your mind, and we’ll see how we can assist you.
+      </h3>
+    </div>
+
+    <!-- Form -->
+    <div class="w-full lg:w-1/2">
+  <form class="space-y-5 bg-[#e8e8e8] border border-black/10 rounded-2xl p-4 sm:p-5 md:p-16 shadow-sm">
+    <p class="text-[14px] mb-6 text-gray-500">Book a video meeting <span class="text-black">here.</span></p>
+
+    <div>
+      <label for="name" class="block font-semibold mb-2">Your name</label>
+      <input id="name" type="text" class="w-full rounded-lg border px-4 py-3" />
+    </div>
+
+    <div>
+      <label for="email" class="block font-semibold mb-2">Your email</label>
+      <input id="email" type="email" class="w-full rounded-lg border px-4 py-3" />
+    </div>
+
+    <div>
+      <label for="subject" class="block font-semibold mb-2">Subject</label>
+      <input id="subject" type="text" class="w-full rounded-lg border px-4 py-3" />
+    </div>
+
+    <div>
+      <label for="message" class="block font-semibold mb-2">Your message (optional)</label>
+      <textarea id="message" rows="6" class="w-full rounded-lg border px-4 py-3"></textarea>
+    </div>
+    
+    <div>
+      <p class="font-bold">Permission to store your information</p>
+    </div>
+
+    <div>
+      <label class="flex items-start gap-3">
+        I agree to the processing of my personal data in accordance with the Privacy Policy
+      </label>
+    </div>
+
+    <div>
+      <label class="flex items-start gap-3 font-bold">
+        <input type="checkbox" class="mt-1" /> To be contacted regarding my inquiry.
+      </label>
+    </div>
+
+    <div>
+      <label class="flex items-start gap-3 font-bold">
+        <input type="checkbox" class="mt-1" /> To receive marketing and promotional information.
+      </label>
+    </div>
+
+    <div>
+      <button class="w-full mt-6 border-[5px] border-black bg-black text-white hover:text-[#00ff99] 
+        rounded-lg transition duration-500 
+        hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] 
+        text-[17px] sm:text-[20px] md:text-[28px] lg:text-[35px] py-3 sm:py-4 md:py-0">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- Contact Popup -->
+<div id="contactPopup" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+  <!-- Overlay -->
+ <div id="popupOverlay" class="absolute inset-0 bg-[#00ff99]/20 backdrop-blur-lg opacity-0 transition-opacity duration-300"></div>
+
+  
+  <!-- Popup Content -->
+ <div id="popupContent" 
+     class="relative bg-white/60 backdrop-blur-lg border border-white/20 rounded-lg shadow-lg 
+            w-[95%] lg:w-[80%] xl:w-[70%] max-h-[90vh] overflow-y-auto 
+            transform scale-90 opacity-0 transition-all duration-300">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactPopup()" class="absolute top-4 right-4 text-3xl font-bold text-gray-500 hover:text-black z-10">&times;</button>
+
+    <!-- Contact Section -->
+    <section class="px-4 sm:px-8 md:px-16 lg:px-20 py-10">
+      <div class="border-[5px] border-black flex flex-col lg:flex-row w-full rounded-lg p-6 sm:p-10 lg:p-12 gap-10">
+        
+        <!-- Left Text -->
+        <div class="w-full lg:w-1/2">
+          <h1 class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[59px] font-bold leading-tight">
+            It might be your <span class="text-[#00ff99]">lucky draw!</span> Contact us today.
+          </h1>
+          
+          <h3 class="text-[16px] sm:text-[18px] md:text-[22px] lg:text-[27px] leading-[28px] sm:leading-[36px] md:leading-[44px] lg:leading-[50px] mt-8 lg:mt-[240px]">
+            Your business seems to be stuck at some level? Maybe you are about to finalize your dream ideas and kick off with a new venture? Let us know what’s on your mind, and we’ll see how we can assist you.
+          </h3>
+        </div>
+
+        <!-- Form -->
+        <div class="w-full lg:w-[70%]">
+          <form class="space-y-5 bg-[#e8e8e8] border border-black/10 rounded-2xl sm:p-10 md:p-16 shadow-sm">
+            <p class="text-[14px] mb-6 text-gray-500">Book a video meeting <span class="text-black">here.</span></p>
+
+            <div>
+              <label class="block font-semibold mb-2">Your name</label>
+              <input type="text" class="w-full rounded-lg border px-4 py-3" />
+            </div>
+
+            <div>
+              <label class="block font-semibold mb-2">Your email</label>
+              <input type="email" class="w-full rounded-lg border px-4 py-3" />
+            </div>
+
+            <div>
+              <label class="block font-semibold mb-2">Subject</label>
+              <input type="text" class="w-full rounded-lg border px-4 py-3" />
+            </div>
+
+            <div>
+              <label class="block font-semibold mb-2">Your message (optional)</label>
+              <textarea rows="6" class="w-full rounded-lg border px-4 py-3"></textarea>
+            </div>
+
+            <p class="font-bold">Permission to store your information</p>
+            <label class="flex items-start gap-3">
+              I agree to the processing of my personal data in accordance with the Privacy Policy
+            </label>
+            <label class="flex items-start gap-3 font-bold">
+              <input type="checkbox" class="mt-1" /> To be contacted regarding my inquiry.
+            </label>
+            <label class="flex items-start gap-3 font-bold">
+              <input type="checkbox" class="mt-1" /> To receive marketing and promotional information.
+            </label>
+
+            <button class="w-full mt-6 border-[5px] border-black bg-black text-white hover:text-[#00ff99] rounded-lg transition duration-500 hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-[20px] md:text-[28px] lg:text-[35px]  ">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<style>
+@keyframes fadeUp {
+  0% {opacity: 0; transform: translateY(20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+.delay-\[0ms\] { animation-delay: 0ms; }
+.delay-\[100ms\] { animation-delay: 100ms; }
+.delay-\[200ms\] { animation-delay: 200ms; }
+.delay-\[300ms\] { animation-delay: 300ms; }
+.delay-\[400ms\] { animation-delay: 400ms; }
+.delay-\[500ms\] { animation-delay: 500ms; }
+.delay-\[600ms\] { animation-delay: 600ms; }
+.delay-\[700ms\] { animation-delay: 700ms; }
+.delay-\[800ms\] { animation-delay: 800ms; }
+</style>
+
+
+
+
+
+
+
+<footer class="bg-[#00ff99] text-black pt-20 pb-8 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- Logo + Social -->
+    <div class="flex flex-col items-center sm:items-start">
+      <div class="bg-black p-4 rounded-lg mb-4">
+        <img class="w-[130px]" src="./assets/img/kwadrat-na-strone-01.png" alt="">
+      </div>
+      <div class="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+        <a href="#" class="text-black hover:text-gray-700">
+          <i class="fa-brands fa-facebook text-[28px]"></i>
+        </a>
+        <a href="#" class="text-black hover:text-gray-700">
+          <i class="fa-brands fa-square-instagram text-[28px]"></i>
+        </a>
+        <span class="text-lg">Follow us!</span>
+      </div>
+    </div>
+
+    <!-- Timings -->
+    <div class="text-center sm:text-left">
+      <h3 class="font-bold text-[26px]">We are open!</h3>
+      <div class="flex gap-4 justify-center sm:justify-start mt-6">
+        <p class="font-bold">Monday -</p>
+        <p>08:00 -</p>
+      </div>
+      <div class="flex gap-8 justify-center sm:justify-start">
+        <p class="font-bold">Friday</p>
+        <p>16:00</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="text-center sm:text-left">
+      <p class="font-bold flex justify-center sm:justify-start items-center gap-2">
+        <i class="fa-regular fa-envelope-open"></i> E-mail us here:
+      </p>
+      <p class="break-all">hi@luckymedia.marketing</p>
+
+      <p class="font-bold flex justify-center sm:justify-start items-center gap-2 mt-4">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp/call here:
+      </p>
+      <p>+48 533 630 356</p>
+    </div>
+
+    <!-- Links -->
+    <div class="flex flex-col gap-8  text-center sm:text-left">
+      <a href="#" class="font-bold">Site map</a>
+      <a href="#" class="font-bold">Privacy policy</a>
+      <a href="#" class="font-bold">Cookies policy</a>
+    </div>
+
+  </div>
+
+  <!-- Bottom Text -->
+  <div class="text-center text-sm mt-8 px-4">
+    All rights reserved: Lucky Media www.luckymedia.marketing ©
+  </div>
+</footer>
+
+
+
+<script>
+function openContactPopup() {
+  const popup = document.getElementById("contactPopup");
+  const overlay = document.getElementById("popupOverlay");
+  const content = document.getElementById("popupContent");
+
+  popup.classList.remove("hidden");
+
+  setTimeout(() => {
+    overlay.classList.add("opacity-100");
+    content.classList.add("scale-100", "opacity-100");
+    content.classList.remove("scale-90", "opacity-0");
+  }, 10);
+
+  document.body.style.overflow = "hidden"; // Stop scroll
+}
+
+function closeContactPopup() {
+  const popup = document.getElementById("contactPopup");
+  const overlay = document.getElementById("popupOverlay");
+  const content = document.getElementById("popupContent");
+
+  overlay.classList.remove("opacity-100");
+  content.classList.remove("scale-100", "opacity-100");
+  content.classList.add("scale-90", "opacity-0");
+
+  setTimeout(() => {
+    popup.classList.add("hidden");
+  }, 300);
+
+  document.body.style.overflow = "auto"; // Enable scroll
+}
+
+// Close popup if click outside content
+document.getElementById("popupOverlay").addEventListener("click", closeContactPopup);
+</script>
+
+
+
+</body>
+</html>
