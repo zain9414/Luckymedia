@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+  <title>lucky media</title>
+</head>
+<body class="">
+<header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 bg-black md:bg-white items-center">
+
+  <!-- Logo -->
+  <div class="flex items-center gap-2 bg-black max-[425px]:bg-black  
+              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              justify-center lg:justify-center">
+    <img class="w-[120px]" src="./assets/img/logo-svg.png" alt="">
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
+              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              bg-black  sm:bg-black justify-center flex">
+    <ul class="flex  gap-3 lg:gap-6 text-sm md:text-base text-center lg:text-left">
+      <li><a href="./index.html" class="text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
+      <li><a href="./Portfolio.html" class="text-green-400 text-[14px]  max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+      <li>
+        <a href="javascript:void(0)" onclick="openContactPopup()" 
+           class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- CTA Button -->
+  <a href="tel:+123456789" class="bg-[#00FF9C] w-full lg:w-1/3 text-base lg:text-[20px] text-[20px] text-black font-bold px-[40px] lg:px-[60px] py-[15px] rounded-[10px] text-center">
+    Contact us today! <i class="fa-solid fa-phone"></i>
+  </a>
+
+</header>
+
+
+<!-- 🔹 Section: Work Showcase -->
+<section>
+  <div>
+    <!-- 🔸 Main Heading -->
+    <div class="px-4 sm:px-10 md:px-20 lg:px-[350px] pt-10 sm:pt-20 lg:pt-[150px]">
+      <h1 class="text-center justify-center 
+      text-[22px] sm:text-[32px] md:text-[42px] lg:text-[74px] 
+      font-[700] 
+      leading-[28px] sm:leading-[42px] md:leading-[55px] lg:leading-[65px]">
+        See our work
+      </h1>
+    </div>
+
+    <!-- 🔸 Subheading -->
+    <div class="px-4 sm:px-10 md:px-20 lg:px-[130px] pt-10 text-center">
+      <h2 class="inline-block rounded-md p-2 
+      text-[16px] sm:text-[24px] md:text-[32px] lg:text-[48px] 
+      font-[700] 
+      leading-[22px] sm:leading-[35px] md:leading-[45px] lg:leading-[65px] 
+      bg-[#00FF9C]">
+        We are fortunate to have wonderful clients!
+      </h2>
+    </div>
+
+    <!-- 🔸 Call-to-Action Button -->
+    <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+      <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-3 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+
+        <!-- Normal text -->
+        <span class="transition-all 
+        text-[12px] sm:text-[18px] md:text-[24px] lg:text-[31px] 
+        duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+          Get your marketing package today
+        </span>
+
+        <!-- Hover text -->
+        <span class="absolute opacity-0 font-semibold 
+        text-[12px] sm:text-[18px] md:text-[24px] lg:text-[31px] 
+        transition-all duration-500 group-hover:opacity-100 
+        group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg 
+        px-3 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+          Fill out the brief
+        </span>
+
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- 🔹 Section: Online Advertising & Marketing -->
+<section class="w-full flex flex-col md:flex-row mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+  
+  <!-- 🔸 Left Side: Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-4 sm:p-8 md:p-10">
+    <img src="./assets/img/reklama-01.png" alt="" class="max-w-full h-auto">
+  </div>
+
+  <!-- 🔸 Right Side: Text Content -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center items-center">
+    
+    <!-- Subheading -->
+    <h2 class="inline-block rounded-md px-3 sm:px-4
+    text-[14px] sm:text-[20px] md:text-[26px] lg:text-[24px] 
+    font-[800] 
+    leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[50px] 
+    text-black bg-[#00FF9C] text-center">
+      Online advertising & marketing
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] text-center leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[50px] px-0 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+      Whether it’s driving traffic, generating leads, or <span class="text-green-400">closing sales,</span>  
+      we make sure every step is optimized for success.
+      We go beyond just running ads on platforms like Google, Facebook, and more. 
+      Our expertise in <span class="text-green-400">marketing</span> automation allows us to integrate these campaigns into a unified system. 
+      This means your sales team can effortlessly manage leads and clients from one central hub, streamlining the entire process and maximizing efficiency.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- 🔹 Section: Our Experience -->
+<section>
+  <div>
+    <!-- 🔸 Heading -->
+    <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+      <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
+      text-[22px] sm:text-[32px] md:text-[40px] lg:text-[50px] 
+      py-2 px-4 rounded-lg mb-4 w-auto sm:w-[350px] md:w-[400px] lg:w-[450px]">
+        Our experience
+      </h2>
+    </div>
+
+    <!-- 🔸 Description -->
+    <p class="text-center 
+    text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] 
+    px-4 sm:px-10 md:px-20 lg:px-[120px] 
+    leading-[24px] sm:leading-[32px] md:leading-[36px] lg:leading-[43px] 
+    mt-6 sm:mt-8 md:mt-10">
+      We’ve successfully executed numerous online campaigns across various industries, specializing in comprehensive marketing strategies that engage your target audience and deliver measurable results. Our approach focuses on selecting the best tools to meet your business needs, ensuring your marketing funnel flows seamlessly from start to finish. While our clients’ advertising strategies, results and budgets are confidential, we’re excited to discuss how we can create tailored solutions for your business.
+    </p>
+  </div>
+
+  <!-- 🔸 Image Grid -->
+  <div class="flex flex-col items-center gap-6 sm:gap-8 mt-10 sm:mt-16 md:mt-20 lg:mt-28" id="imageContainer">
+    <div class="w-full max-w-6xl space-y-6">
+
+      <!-- First Row -->
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <!-- Large image -->
+        <img src="./assets/img/Screenshot 2025-08-13 153825.png" alt=""
+             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+
+        <!-- Small image -->
+        <img src="./assets/img/2022-03-31_19h56_38.png" alt=""
+             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+      </div>    
+
+      <!-- Second Row -->
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <!-- Small image -->
+        <img src="./assets/img/Screenshot-2024-08-20-201306.png" alt=""
+             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+
+        <!-- Large image -->
+        <img src="./assets/img/2022-03-31_18h06_03.png" alt=""
+             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+      </div>    
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 🔹 Section: Permanent Cooperation -->
+<section class="w-full flex flex-col md:flex-row mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+  
+  <!-- 🔸 Left Side: Logo/Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-4 sm:p-6 md:p-8 lg:p-10">
+    <img src="./assets/img/logo_blue_Obszar-roboczy-1-1.png" alt="" class="max-w-full h-auto">
+  </div>
+
+  <!-- 🔸 Right Side: Text Content -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 px-4 sm:px-6 md:px-10 py-8 sm:py-12 md:py-16 lg:py-24 flex flex-col justify-center items-center">
+    
+    <!-- Subheading -->
+    <h2 class="bg-[#00FF9C] text-black font-[700] 
+    text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] 
+    py-2 px-4 rounded-md mb-4 
+    inline-block text-center">
+      Permanent cooperation
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+    text-center 
+    leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[50px] 
+    px-6 mt-12 ">
+      We are glad to have the chance to collaborate for the past few years with FlexToday, one of the finest recruitment agencies. 
+      Their meticulous and thorough approach to business growth is truly impressive.
+      No detail is overlooked at FlexToday. 
+      We are grateful for the valuable insights we gain from them while providing <span class="text-green-400">marketing services.</span> 
+    </p>
+  </div>
+</section>
+
+
+
+<!-- 🔹 Section: Brand Consistency -->
+<section>
+  <div>
+    <!-- 🔸 Heading -->
+    <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+      <h2 class="text-center bg-[#00FF9C] text-black font-[700] 
+      text-[20px] sm:text-[28px] md:text-[38px] lg:text-[51px] 
+      py-2 px-4 rounded-lg mb-4 
+      w-auto sm:w-[400px] md:w-[550px] lg:w-[750px]">
+        Brand consistency is a key!
+      </h2>
+    </div>
+
+    <!-- 🔸 Description -->
+    <p class="text-center 
+    text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] 
+    px-4 sm:px-10 md:px-20 lg:px-[350px] 
+    leading-[26px] sm:leading-[32px] md:leading-[38px] lg:leading-[45px] 
+    mt-6 sm:mt-8 md:mt-10">
+      All design elements work harmoniously to present a consistent and professional brand image.
+    </p>
+  </div>
+
+  <!-- 🔸 Image -->
+  <div class="mt-10 sm:mt-14 md:mt-16 lg:mt-20">
+    <img src="./assets/img/Rectangle-340.png" alt="" class="max-w-full h-auto">
+  </div>
+</section>
+
+
+
+<!-- 🔹 Section: Pictorial Mark -->
+<section>
+  <div class="flex flex-col lg:flex-row items-center gap-8 sm:gap-10 md:gap-12 mt-10 sm:mt-16 md:mt-24 lg:mt-32">
+    
+    <!-- 🔸 Left Side Content -->
+    <div class="lg:w-1/2 w-full text-center lg:text-left p-4 sm:p-6 md:p-[30px]">
+      
+      <!-- 🔹 Heading -->
+      <div class="flex justify-center lg:justify-center">
+        <h2 class="inline-block 
+          text-[20px] sm:text-[28px] md:text-[36px] lg:text-[50px] 
+          font-bold text-black bg-[#00FF99] 
+          px-3 sm:px-5 py-2 sm:py-3 
+          rounded-lg text-center">
+          Pictorial mark
+        </h2>
+      </div>
+      
+      <!-- 🔹 Logo Image -->
+      <div class="my-6">
+        <img src="./assets/img/logo_x_1080x1080_Obszar-roboczy-1-150x150.png" 
+             alt="Logo" 
+             class="mx-auto w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full">
+      </div>
+      
+      <!-- 🔹 Description -->
+      <p class="text-[#171717] leading-[36px] 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        text-center lg:text-center px-16">
+        It’s a simplified logo that identify the company. We decided for “X” before Elon Musk did it. The letter “X” is a powerful symbol. It is universally recognized for marking choices in voting or decision-making. On maps, “X” signifies key locations or hidden treasures, evoking discovery and adventure. By incorporating “X,” we create a meaningful and memorable visual identity, guiding our customers to their goals. Also, we connected it with arrows that signify action.
+      </p>
+      
+      <!-- 🔹 Sub Heading -->
+      <h2 class="text-center lg:text-left 
+        text-[22px] sm:text-[32px] md:text-[40px] lg:text-[51px] 
+        font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+        Watch it happen! 
+        <span class="text-[#00FF9C] font-[300]">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span> 
+      </h2>
+    </div>
+
+    <!-- 🔸 Right Side Video Box -->
+    <div class="flex justify-center lg:justify-start 
+        mt-10 sm:mt-16 md:mt-20 lg:mt-44 w-full lg:w-1/2">
+      
+      <!-- 🔹 Video Container -->
+      <div class="bg-[#00FF9C] 
+          rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[50px] 
+          rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[50px] 
+          p-4 sm:p-6 w-full max-w-[700px] 
+          relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] mx-auto">
+        
+        <!-- 🔹 Inner Video Box -->
+        <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
+            absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+            right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
+            h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+            top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- 🔹 Section: Social Media -->
+<section>
+  <div class="bg-black flex flex-col lg:flex-row gap-[0px] items-center py-20 mt-32">
+
+    <!-- 🔸 Left Content -->
+    <div class="w-full lg:w-1/2">
+      
+      <!-- 🔹 Heading -->
+      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
+        <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+          Social media
+        </h2>
+      </div>
+
+      <!-- 🔹 Mobile Video (Phone Mockup Style) -->
+      <div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
+        <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
+                    rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
+                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[500px] 
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px]">
+          
+          <!-- 🔹 Rotated Phone Frame -->
+          <div class="absolute transform rotate-[-10deg] shadow-2xl 
+                      top-[-30px] sm:top-[-40px] md:top-[-50px] lg:top-[-60px] 
+                      right-[10px] sm:right-[30px] md:right-[50px] lg:right-[80px]">
+            
+            <!-- 🔹 Phone Shape with Video -->
+            <div class="w-[140px] sm:w-[180px] md:w-[240px] lg:w-[300px] 
+                        h-[260px] sm:h-[320px] md:h-[360px] lg:h-[400px] 
+                        rounded-[18px] sm:rounded-[20px] md:rounded-[22px] lg:rounded-[25px] 
+                        border border-gray-300 overflow-hidden bg-black">
+              
+              <!-- 🔹 Video inside phone -->
+              <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                <source src="./assets/videos/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔸 Right Side Content -->
+    <div class="w-full lg:w-1/2 mt-16 lg:mt-0 px-4">
+
+      <!-- 🔹 Swiper Slider -->
+      <div class="swiper mySwiper max-w-full sm:max-w-[500px] md:max-w-[600px] mx-auto">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide rounded-2xl overflow-hidden">
+            <img src="img1.jpg" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden">
+            <img src="img2.jpg" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden">
+            <img src="img3.jpg" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden">
+            <img src="img4.jpg" class="w-full h-full object-cover" />
+          </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden">
+            <img src="img5.jpg" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- 🔹 Navigation Arrows -->
+        <div class="swiper-button-next custom-nav"></div>
+        <div class="swiper-button-prev custom-nav"></div>
+      </div>
+
+      <!-- 🔹 Description -->
+      <div>
+        <p class="text-[white] text-[20px] sm:text-[18px] md:text-[20px] leading-[36px] sm:leading-[28px] md:leading-[30px] text-center mt-24 px-4">
+          We create engaging, professional, and impactful posts that resonate with the FlexToday audience. Our goal is to capture the user’s attention, whether they are scrolling through their feed or searching for their next career move. Here are some of our social media posts, made for targeted paid advertisements, job offer announcements, Google Ads and usual content designed to uphold our polished and professional online presence.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 🔹 Section: Video Grid with GSAP -->
+<section class="boddy">
+
+  <!-- 🔸 Video Row -->
+  <div class="video-row">
+    <!-- 🔹 Video Box 1 -->
+    <div class="video-box">
+      <video src="video1.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <!-- 🔹 Video Box 2 -->
+    <div class="video-box">
+      <video src="video2.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <!-- 🔹 Video Box 3 -->
+    <div class="video-box">
+      <video src="video3.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <!-- 🔹 Video Box 4 -->
+    <div class="video-box">
+      <video src="video4.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <!-- 🔹 Video Box 5 -->
+    <div class="video-box">
+      <video src="video5.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <!-- 🔹 CSS Styles -->
+  <style>
+    /* ✅ Section background */
+    .boddy {
+      background: #00ff99;
+    }
+
+    /* ✅ Row layout */
+    .video-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 100px 50px;
+      flex-wrap: wrap; /* wrap for responsiveness */
+    }
+
+    /* ✅ Video container */
+    .video-box {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      background: #000;
+      border-radius: 12px;
+    }
+
+    /* ✅ Video style */
+    .video-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ✅ Tablet screens */
+    @media (max-width: 1024px) {
+      .video-box {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    /* ✅ Small tablets */
+    @media (max-width: 768px) {
+      .video-box {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
+    /* ✅ Mobile */
+    @media (max-width: 480px) {
+      .video-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-box {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+
+  <!-- 🔹 GSAP Animation -->
+  <script>
+    // Animate videos (floating effect)
+    gsap.to(".video-box video", {
+      y: -40,           // move up
+      duration: 3,      // animation speed
+      ease: "power1.inOut",
+      yoyo: true,       // back and forth
+      repeat: -1,       // infinite loop
+      stagger: 0.3      // delay between videos
+    });
+  </script>
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= SECTION : Paid Ads ================= -->
+<section> 
+  <div class="flex flex-col md:flex-row items-center gap-12 mt-32"> 
+    
+    <!-- ================= Left Side Content ================= -->
+    <div class="md:w-1/2 text-center md:text-left w-[50%] md:w-full">
+      
+      <!-- Section Title -->
+      <div class="flex justify-center md:justify-center">
+        <h2
+          class="inline-block text-[28px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+          Paid ads
+        </h2>
+      </div>
+
+      <!-- Paragraph Content -->
+      <div>
+        <p class="text-[#171717] leading-[34px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] text-center md:text-center mt-16 px-10 ">
+          Paid advertising is a highly effective method for reaching and engaging with diverse professional groups
+          through strategically targeted digital<br> campaigns.<br>
+          Our objective was to develop captivating advertisements that fostered engagement, meaningful discussions
+          and attracted high-quality followers.<br>
+          To achieve this, we meticulously crafted ads designed to resonate with our target audiences. By leveraging
+          advanced targeting techniques, we ensured our messages reached the right people at the right time. Each ad
+          was carefully designed to be visually appealing, informative, and relevant, sparking interest and prompting
+          interaction.<br>
+          <span class="text-black font-bold">Understand the importance of online presence and paid ads.
+          Contact us today!</span> 
+        </p>
+      </div>
+      
+      <!-- Call to Action Button -->
+      <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+        <button
+          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+
+          <!-- Normal text -->
+          <span
+            class="transition-all text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+            Let's talk about it!
+          </span>
+
+          <!-- Hover text -->
+          <span
+            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+            Book the meeting
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= Right Side Video Box ================= -->
+    <div class="flex justify-start mt-44"> 
+      <div class="bg-[#00FF9C] rounded-tl-[50px] rounded-bl-[50px] p-6 w-[700px] relative h-[450px]"> 
+        <div class="absolute top-[-200px] right-6"> 
+          <img src="./assets/img/posty-flex.png" alt=""> 
+        </div> 
+      </div> 
+    </div> 
+
+  </div> 
+</section>
+<!-- ================= END SECTION : Paid Ads ================= -->
+
+
+<!-- ✅ Responsive CSS -->
+<style>
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 36px !important;
+    }
+    p {
+      font-size: 18px !important;
+      line-height: 30px !important;
+      padding: 0 60px;
+    }
+    .bg-\[\#00FF9C\] {
+      width: 500px !important;
+      height: 350px !important;
+    }
+    .bg-\[\#00FF9C\] img {
+      width: 180px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 28px !important;
+    }
+    p {
+      font-size: 16px !important;
+      line-height: 26px !important;
+      padding: 0 30px;
+    }
+    .bg-\[\#00FF9C\] {
+      width: 350px !important;
+      height: 250px !important;
+    }
+    .bg-\[\#00FF9C\] img {
+      width: 140px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 22px !important;
+    }
+    p {
+      font-size: 14px !important;
+      line-height: 22px !important;
+      padding: 0 15px;
+    }
+    .bg-\[\#00FF9C\] {
+      width: 280px !important;
+      height: 200px !important;
+    }
+    .bg-\[\#00FF9C\] img {
+      width: 100px;
+    }
+  }
+</style>
+
+
+
+
+<!-- ================= SECTION : Branding Excellence ================= -->
+<section>
+  <div class="bg-[#171717] mt-28">
+
+    <!-- ================= Branding Text Content ================= -->
+    <p
+      class="text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] px-4 sm:px-10 md:px-16 lg:px-20 py-8 sm:py-12 md:py-16 lg:py-20 text-white leading-[43px] sm:leading-[34px] md:leading-[42px] lg:leading-[50px]">
+      Branding excellence at every touchpoint. At FlexToday, branding isn’t just a priority; it’s a passion.
+      From the office space to the meticulous details in documents and folders, every aspect of the company’s
+      presentation is crafted in a unified style. Even WhatsApp communication reflects the commitment to a cohesive
+      brand experience. We are proud to play our little role in creating this exceptional brand!
+    </p>
+    <!-- ================= End Branding Text Content ================= -->
+
+  </div>
+</section>
+<!-- ================= END SECTION : Branding Excellence ================= -->
+
+<!-- ================= SECTION : Swiper Slider ================= -->
+<section>
+
+  <!-- ================= Container ================= -->
+  <div class="w-[95%] sm:w-[90%] mx-auto mt-10 mb-10 sm:mt-20 sm:mb-20">
+
+    <!-- ================= Swiper Main ================= -->
+    <div class="swiper mySwiper">
+
+      <!-- ================= Swiper Wrapper (Slides Container) ================= -->
+      <div class="swiper-wrapper">
+
+        <!-- ================= Swiper Slides ================= -->
+        <div class="swiper-slide"><img src="img1.jpg" /></div>
+        <div class="swiper-slide"><img src="img2.jpg" /></div>
+        <div class="swiper-slide"><img src="img3.jpg" /></div>
+        <div class="swiper-slide"><img src="img4.jpg" /></div>
+        <div class="swiper-slide"><img src="img5.jpg" /></div>
+        <div class="swiper-slide"><img src="img6.jpg" /></div>
+        <div class="swiper-slide"><img src="img7.jpg" /></div>
+        <!-- ================= End Swiper Slides ================= -->
+
+      </div>
+      <!-- ================= End Swiper Wrapper ================= -->
+
+      <!-- ================= Navigation Buttons ================= -->
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+      <!-- ================= End Navigation Buttons ================= -->
+
+    </div>
+    <!-- ================= End Swiper Main ================= -->
+
+  </div>
+  <!-- ================= End Container ================= -->
+
+  <!-- ================= Swiper JS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 0, // no tilt
+        stretch: 0,
+        depth: 250,
+        modifier: 1,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- ================= End Swiper JS ================= -->
+
+  <!-- ================= CSS Styling ================= -->
+  <style>
+    .swiper-slide {
+      background: #fff;
+      width: 220px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .custom-nav {
+      background: rgba(0, 255, 153, 0.2);
+      border: 2px solid #00ff99;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .custom-nav::after {
+      font-size: 16px;
+      color: #00ff99;
+    }
+
+    /* ✅ Responsive */
+    @media (min-width: 640px) {
+      .swiper-slide {
+        width: 260px;
+        height: 200px;
+      }
+      .custom-nav {
+        width: 45px;
+        height: 45px;
+      }
+      .custom-nav::after {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .swiper-slide {
+        width: 300px;
+        height: 250px;
+      }
+      .custom-nav {
+        width: 50px;
+        height: 50px;
+      }
+      .custom-nav::after {
+        font-size: 20px;
+      }
+    }
+  </style>
+  <!-- ================= End CSS Styling ================= -->
+
+</section>
+<!-- ================= END SECTION : Swiper Slider ================= -->
+
+
+
+
+
+
+<!-- ================ SECTION : Quick Brand Booster ================ -->
+<section class="w-full flex flex-col md:flex-row mt-28">
+
+  <!-- ========== Left Side (Image Area) ========== -->
+  <div class="bg-green-400 flex justify-center items-center w-full md:w-1/2 p-6 sm:p-8 md:p-10">
+    <img src="./assets/img/fitdieta.png" alt="FitDieta Branding" 
+         class="max-w-[250px] sm:max-w-[300px] md:max-w-full">
+  </div>
+  <!-- ========== End Left Side ========== -->
+
+  <!-- ========== Right Side (Content Area) ========== -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 
+              px-4 sm:px-8 md:px-10 
+              py-10 sm:py-16 md:py-24 
+              flex flex-col justify-center items-center">
+
+    <!-- Heading -->
+    <h2 class="bg-[#00FF9C] text-black font-[700] 
+               text-[20px] sm:text-[24px] md:text-[28px] 
+               py-2 px-3 sm:px-4 rounded-md mb-4 
+               w-full sm:w-[300px] md:w-[380px] text-center">
+      Quick brand booster
+    </h2>
+
+    <!-- Description -->
+    <p class="text-[16px] sm:text-[18px] md:text-[23px] 
+              text-center leading-[28px] sm:leading-[36px] md:leading-[50px] 
+              px-4 sm:px-8 md:px-16">
+      FitDieta has been a trusted provider of diet catering services for many years. 
+      Our client needed a quick boost in engagement and online presence before selling 
+      their “ready-made” business to a new owner. While their Google Ads and Meta Ads 
+      campaigns were in place, we focused on crafting visually appealing, “tasty” layouts 
+      that captured attention and enhanced the overall online experience, along with a 
+      user-friendly website, where customers could place orders.
+    </p>
+
+  </div>
+  <!-- ========== End Right Side ========== -->
+
+</section>
+<!-- ================ END SECTION : Quick Brand Booster ================ -->
+
+
+
+
+
+<section>
+  <div class="flex flex-col md:flex-row items-center gap-12 mt-32">
+  <!-- Left Side Content -->
+  <div class="md:w-1/2 text-center md:text-left w-[50%] p-[30px]">
+    <div class="flex justify-center">
+       <h2 class="inline-block text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg mb-20">
+New website
+
+
+</h2>
+ 
+    </div>
+   
+    <p class="text-black leading-relaxed text-[23px] text-center">
+    A clean, bright design that leads customers directly to ordering their diet plan. We focused on clear, concise information, making it easy for users to find key details about diets, prices, and delivery options. Developed with Elementor and custom code, the website allows the company owner to easily update essential content. Our aim is to make our clients more self-sufficient, reducing their reliance on us—unless, of course, they prefer to rely on us.
+
+
+    </p>
+   
+    <h1>
+
+    </h1>
+</div>
+  <!-- Right Side Video Box -->
+  <div class="justify-start ">
+  
+   <div class=" top-[] right-[-7]">
+    <img src="./img/fit8-01.png" alt="">
+   </div>
+
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- <style>
+    .carousel {
+        position: relative;
+        width: 60%;
+        height: 400px;
+        perspective: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-track {
+        display: flex;
+        align-items: center;
+        transition: transform 0.6s ease;
+        position: relative;
+    }
+
+    .slide {
+        position: absolute;
+        width: 280px;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.6s ease;
+    }
+
+    /* Center */
+    .active {
+        transform: translateX(0) scale(1) rotateY(0deg);
+        z-index: 5;
+        opacity: 1;
+    }
+
+    /* Left + Right */
+    .left {
+        transform: translateX(-210px) scale(0.85) rotateY(40deg);
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    .right {
+        transform: translateX(210px) scale(0.85) rotateY(-40deg);
+        z-index: 4;
+        opacity: 0.9;
+    }
+
+    /* Far Left + Far Right (half visible) */
+    .far-left {
+        transform: translateX(-350px) scale(0.7) rotateY(74deg);
+        z-index: 3;
+        opacity: 0.6;
+    }
+
+    .far-right {
+        transform: translateX(350px) scale(0.7) rotateY(-74deg);
+        z-index: 3;
+        opacity: 0.6;
+    }
+
+    /* Arrows */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.7);
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    .arrow.left {
+        left: -60px;
+    }
+
+    .arrow.right {
+        right: -60px;
+    }
+</style> -->
+
+<body style="font-family: sans-serif;">
+    <!-- logo aniamtion section  -->
+
+    <section class="mt-10">
+        <div class="lg:flex">
+            <!-- left side  -->
+            <div class=" lg:w-1/2">
+
+
+                <div class="flex justify-center ">
+                    <div
+                        class="px-2 w-[66%] xl:w-[350px] md:w-[260px] py-4 md:text-[29px] md:py-3 text-[22px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[39px]">
+                        logo animation
+                    </div>
+                </div>
+                <div class="px-[33px] md:px-[77px] xl:text-[20px] text-center pt-6 xl:px-[130px]">
+                    <p class="text-[#1b1b1b]">In today’s digital landscape, social media is dominated by video content.
+                        To stand out, your brand needs to be dynamic, memorable, and visually compelling. That’s why
+                        investing in logo animation is a game-changer. Social media thrives on videos, and a logo
+                        animation transforms any content into something visually striking and memorable. Whether it’s a
+                        video or a picture animation, you can easily edit it in a simple mobile app or social media’s
+                        built-in editor and finish it with your animated logo. This ensures your brand is always
+                        represented consistently and professionally across all platforms.</p>
+
+                    <p class="font-bold pt-4 ">FitDieta’s house brand is all about healthy food, friendly vibes, and
+                        designs that look good enough try the food. To capture this essence, we created a logo animation
+                        that extends the playful, tasty appeal of apples and carrots, making them look irresistibly
+                        bite-worthy!</p>
+                </div>
+
+            </div>
+            <!-- right side  -->
+            <div class=" lg:w-1/2 lg:px-[44px] xl:px-0 flex justify-evenly ">
+
+                <div class="pt-[22px]  xl:w-[85%]  xl:pr-[10px]">
+                    <video controls
+                        src="https://luckymedia.marketing/wp-content/uploads/2024/07/Final-animacja-dzwiek.mp4"></video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="grid mt-[77px] md:grid-cols-2 lg:grid-cols-3 lg:px-3 xl:px-[44px] xl:py-[44px]">
+            <div class="px-5 lg:px-4">
+                <video autoplay
+                    src="https://luckymedia.marketing/wp-content/uploads/2024/07/filmik-fitdieta-2.mp4"></video>
+            </div>
+            <div class="px-5 lg:px-4 mt-6 md:mt-0">
+                <img src="https://luckymedia.marketing/wp-content/uploads/2024/07/grafika-kod-dieta-01.png" alt="">
+            </div>
+            <div class="px-5 lg:px-4 mt-6 lg:mt-0">
+                <video autoplay
+                    src="https://luckymedia.marketing/wp-content/uploads/2024/07/animacja-strona.mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- self lab section  -->
+
+    <section class="mt-[99px]">
+        <div class="lg:flex">
+            <!-- left side  -->
+            <div class="bg-[#00ff9c] lg:w-1/2 flex justify-center px-8 py-12 md:px-[px] md:py-[55px] ">
+                <img class="md:w-[80%]" src="https://luckymedia.marketing/wp-content/uploads/2024/07/selflab.png"
+                    alt="">
+            </div>
+            <!-- right side  -->
+            <div class="bg-[#171717] pt-9 lg:w-1/2 lg:py-[88px]">
+                <div class="flex justify-center">
+                    <div
+                        class=" px-4   py-4 md:text-[29px] md:py-3 text-[22px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[24px]">
+                        Socail media look
+                    </div>
+                </div>
+                <div class="text-center text-[19px] xl:text-[25px] lg:leading-[36px] px-7 mt-7 md:px-[70px]">
+                    <p class="text-white">A company specializing in medical and veterinary equipment, we’ve collaborated
+                        on multiple brands with them. For their latest venture—an online shop selling tests for
+                        animals—we were thrilled to support their online sales efforts with our custom videos and
+                        graphics. We really embraced the animal vibe, making this project both fun and rewarding!
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- zrob batanoi secton  -->
+    <section class="mt-[99px]">
+        <div class="lg:flex">
+            <!-- left side  -->
+            <div class="grid lg:w-1/2 grid-cols-2 lg:bg-white bg-[#00ff9c] lg:pt-0 pt-[66px] px-[22px] md:grid-cols-2">
+                <div class=" mr-1 md:mr-3"><img src="https://luckymedia.marketing/wp-content/uploads/2024/08/2-4.png"
+                        alt="">
+                </div>
+
+                <div class="mt-0 ml-1 md:ml-3 md:mt-0 "><img
+                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/9-3.png" alt="">
+                </div>
+
+                <div class="mt-3  mr-1 md:mr-3 "><img
+                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/6-7.png" alt="">
+                </div>
+
+
+                <div class="mt-3  lg:mt- ml-1 md:ml-3"><img
+                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/3-4.png" alt="">
+                </div>
+
+            </div>
+
+            <!-- right side  -->
+            <div class="pt-[22px]   lg:pt-0 lg:w-1/2  lg:bg-white bg-[#00ff9c]">
+                <div
+                    class="flex justify-center w-full lg:bg-white bg-[#00ff9c]  px-[22px] md:px-[21px] pt-3 pb-0 lg:pt-0">
+                    <div class="">
+                        <video
+                            style="background-image: url(&quot;https://luckymedia.marketing/wp-content/uploads/2024/08/Screenshot-2024-08-06-134122.png&quot;);"
+                            class="h-[260px]  md:h-full lg:px-[12px] px-[9px] w-[100%]" controls
+                            src="https://luckymedia.marketing/wp-content/uploads/2024/07/animacja-koty-2.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- image  -->
+        <div class="flex justify-center pt-[22px] px-5 py-3 lg:px-[66px] md:pt-[66px]">
+            <img src="https://luckymedia.marketing/wp-content/uploads/2024/08/poprawny-banner-01.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- public relation section  -->
+
+    <section class="mt-[55px]">
+        <div class="lg:flex bg-black">
+            <!-- left side  -->
+            <div class="bg-[#00ff9c] lg:w-1/2 flex justify-center items-center px-8 py-12 md:px-[px] md:py-[55px] ">
+                <img class="lg:w-[290px] h-[70px]"
+                    src="https://luckymedia.marketing/wp-content/uploads/2024/08/konfederacja.png" alt="">
+            </div>
+            <!-- right side  -->
+            <div class="bg-[#171717] pt-9 lg:w-1/2 lg:py-[88px] py-[44px]">
+                <div class="flex justify-center">
+                    <div
+                        class=" px-4   py-4 md:text-[29px] md:py-3 text-[22px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[24px]">
+                        Socail media look
+                    </div>
+                </div>
+                <div class="text-center text-[19px]  lg:text-[23px] lg:leading-[39px] px-7 mt-7 md:px-[70px]">
+                    <p class="text-white">A company specializing in medical and veterinary equipment, we’ve collaborated
+                        on multiple brands with them. For their latest venture—an online shop selling tests for
+                        animals—we were thrilled to support their online sales efforts with our custom videos and
+                        graphics. We really embraced the animal vibe, making this project both fun and rewarding!
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- 
+    <section class="bg-black">
+        
+        <div class="carousel">
+            <button class="arrow left">&#10094;</button>
+            <div class="carousel-track">
+                <div class="slide" style="background-image: url('https://luckymedia.marketing/wp-content/uploads/2024/08/387840565_820679410063786_2555523670797554470_n.jpg');"></div>
+                <div class="slide translate-x-[]"
+                    style="background-image: url('https://luckymedia.marketing/wp-content/uploads/2024/08/393401885_825317932933267_6659103142344976841_n.jpg');"></div>
+                <div class="slide" style="background-image: url('https://luckymedia.marketing/wp-content/uploads/2024/08/387850327_822256586572735_3191911232618290865_n.jpg');"></div>
+                <div class="slide" style="background-image: url('https://luckymedia.marketing/wp-content/uploads/2024/08/387766262_818741420257585_3730003180846717554_n.jpg');"></div>
+                <div class="slide" style="background-image: url('https://luckymedia.marketing/wp-content/uploads/2024/08/393401885_825317932933267_6659103142344976841_n.jpg');"></div>
+            </div>
+            <button class="arrow right">&#10095;</button>
+        </div>
+
+    </section> -->
+
+
+
+    
+
+
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let currentIndex = 2; // center image
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                slide.className = "slide"; // reset
+                if (index === currentIndex) {
+                    slide.classList.add("active");
+                } else if (index === (currentIndex - 1 + slides.length) % slides.length) {
+                    slide.classList.add("left");
+                } else if (index === (currentIndex + 1) % slides.length) {
+                    slide.classList.add("right");
+                } else if (index === (currentIndex - 2 + slides.length) % slides.length) {
+                    slide.classList.add("far-left");
+                } else if (index === (currentIndex + 2) % slides.length) {
+                    slide.classList.add("far-right");
+                }
+            });
+        }
+
+        document.querySelector(".arrow.left").addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlides();
+        });
+
+        document.querySelector(".arrow.right").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlides();
+        });
+
+        updateSlides();
+    </script>
+
+
+</body>
+
+</html>
+
+
+<section>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-12 w-full max-w-full bg-[#00FF9C]">
+    
+    <!-- Video Box 1 -->
+    <div class="bg-yellow-400 rounded-xl overflow-hidden shadow-lg">
+      <video src="./assets/video1.mp4" autoplay loop muted playsinline class="w-full h-[250px] object-cover"></video>
+    </div>
+
+    <!-- Video Box 2 -->
+    <div class="bg-yellow-400 rounded-xl overflow-hidden shadow-lg">
+      <video src="./assets/video2.mp4" autoplay loop muted playsinline class="w-full h-[250px] object-cover"></video>
+    </div>
+
+    <!-- Video Box 3 -->
+    <div class="bg-yellow-400 rounded-xl overflow-hidden shadow-lg">
+      <video src="./assets/video3.mp4" autoplay loop muted playsinline class="w-full h-[250px] object-cover"></video>
+    </div>
+
+    <!-- Video Box 4 -->
+    <div class="bg-yellow-400 rounded-xl overflow-hidden shadow-lg">
+      <video src="./assets/video4.mp4" autoplay loop muted playsinline class="w-full h-[250px] object-cover"></video>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="w-full flex flex-col md:flex-row mt-28">
+  <!-- Left side -->
+  <div class="bg-green-400 flex justify-center items-center w-full md:w-1/2 p-6 sm:p-8 md:p-10">
+    <img src="./assets/img/black1.png" alt="" class="max-w-[250px] sm:max-w-[300px] md:max-w-full">
+  </div>
+
+  <!-- Right side -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 px-4 sm:px-8 md:px-10 py-10 sm:py-16 md:py-24 flex flex-col justify-center items-center">
+    <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[24px] py-2 px-3 sm:px-4 rounded-md mb-4 w-full sm:w-[300px] md:w-[380px] text-center">
+      Permament cooperation
+
+    </h2>
+
+    <p class="text-[16px] sm:text-[18px] md:text-[23px] text-center leading-[28px] sm:leading-[36px] md:leading-[50px] px-4 sm:px-8 md:px-16">
+      We led the complete process of refining the company’s image and workflow. Our expertise covered graphic design, website development, marketing automation, SEO activities and lead generation. We enhanced social media engagement through buzz marketing, meta ads and google ads. We also focused on optimizing their recruitment processes by utilizing a robust database of candidates and implementing effective mailing&SMS campaigns.
+    </p>
+  </div>
+  
+</section>
+
+
+
+
+<section>
+  <div class="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 mt-10 sm:mt-16 md:mt-24 lg:mt-32">
+    
+    <!-- Left Side Content -->
+    <div class="lg:w-1/2 w-full text-center lg:text-left p-4 sm:p-6 md:p-[30px]">
+      <div class="flex justify-center lg:justify-center">
+        <h2 class="inline-block 
+          text-[20px] sm:text-[28px] md:text-[36px] lg:text-[25px] 
+          font-[800] text-black bg-[#00FF99] 
+          px-3 sm:px-5 py-2 sm:py-3 
+          rounded-lg text-center mb-20">
+         Defining the audience
+        </h2>
+      </div>
+      
+     
+      
+      <p class="text-[#171717] leading-[36px] 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        text-center lg:text-center px-0 mb-6">
+        The company’s target audience consisted of young individuals eager to work abroad. To effectively engage this demographic, we designed the company’s appearance to resonate with their aspirations and interests. Our approach involved creating dynamic and visually striking content that captures attention and aligns with the vibrant, adventurous spirit of young potential workers.
+      </p>
+      
+     <div><img src="./assets/img/linkedin-background_Obszar-roboczy-1.png" alt=""></div>
+    </div>
+
+    <!-- Right Side Video Box -->
+  <!-- Right Side Video Box -->
+<div class="flex justify-center lg:justify-start 
+     mt-10 sm:mt-16 md:mt-20 lg:mt-44 w-full lg:w-1/2">
+  <div class="bg-[#00FF9C] 
+      rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[50px] 
+      rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[50px] 
+      p-4 sm:p-6 w-full max-w-[700px] 
+      relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] mx-auto">
+    
+    <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
+        absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+        right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
+        h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+        top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div>
+    <div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="mt-11">
+  <div class="flex w-[100%] px-10 gap-28">
+    <div class="w-[50%] ">
+      <div class="text-center items-center flex justify-center mb-10 ">
+<h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] py-2 px-3 sm:px-4 rounded-md mb-4 w-full sm:w-[300px] md:w-[380px] text-center">
+     Website & apply form
+
+    </h2>
+      </div>
+        
+    <div >
+      <img class="rounded-[30px]" src="./assets/img/screeny-1280x853.png" alt="">
+    </div>
+
+    </div>
+
+<div class="w-[50%]">
+<p class="text-[#171717] leading-[36px] 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        text-center lg:text-center px-0 mb-6">
+        We designed a light and user-friendly website for a recruitment agency, emphasizing readability and a transparent hiring process. The site features a custom application form that integrates seamlessly with lead management tools, streamlining the recruitment workflow. This tailored solution not only enhances the user experience but also ensures efficient data handling, making it easier for the agency to manage and process applications with ease.
+      </p>
+       <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
+         w-[90%]  sm:w-[85%] md:w-[80%] lg:w-[500px] 
+        right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
+        h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+        top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
+    </div>
+</div>
+     
+  </div>
+</section>
+
+
+
+
+
+
+<section>
+<div class="bg-black flex flex-col lg:flex-row gap-[0px]  py-20 mt-32">
+
+  <!-- Left Content -->
+  <div class="w-full lg:w-1/2 ">
+    <!-- Heading -->
+    <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
+      <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+        Social media
+      </h2>
+    </div>
+
+    <!-- Mobile Video -->
+
+<div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
+  <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
+              rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
+              p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[500px] 
+              relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px]">
+    
+    <div class="absolute transform rotate-[-10deg] shadow-2xl 
+                top-[-30px] sm:top-[-40px] md:top-[-50px] lg:top-[-60px] 
+                right-[10px] sm:right-[30px] md:right-[50px] lg:right-[80px]">
+      <div class="w-[140px] sm:w-[180px] md:w-[240px] lg:w-[300px] 
+                  h-[260px] sm:h-[320px] md:h-[360px] lg:h-[400px] 
+                  rounded-[18px] sm:rounded-[20px] md:rounded-[22px] lg:rounded-[25px] 
+                  border border-gray-300 overflow-hidden bg-black">
+        
+        <!-- Video inside mobile -->
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+          <source src="./assets/videos/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Right Side Swiper -->
+  <div class="w-full lg:w-1/2 mt-16 lg:mt-0 px-4">
+    <div class="swiper mySwiper max-w-full sm:max-w-[500px] md:max-w-[600px] mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide rounded-2xl overflow-hidden">
+          <img src="img1.jpg" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide rounded-2xl overflow-hidden">
+          <img src="img2.jpg" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide rounded-2xl overflow-hidden">
+          <img src="img3.jpg" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide rounded-2xl overflow-hidden">
+          <img src="img4.jpg" class="w-full h-full object-cover" />
+        </div>
+        <div class="swiper-slide rounded-2xl overflow-hidden">
+          <img src="img5.jpg" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next custom-nav"></div>
+      <div class="swiper-button-prev custom-nav"></div>
+    </div>
+    <div>
+      <p class="text-[white] text-[20px] sm:text-[18px] md:text-[20px] leading-[36px]  sm:leading-[28px] md:leading-[30px] text-center mt-24 px-4">
+        We create engaging, professional, and impactful posts that resonate with the FlexToday audience. Our goal is to capture the user’s attention, whether they are scrolling through their feed or searching for their next career move. Here are some of our social media posts, made for targeted paid advertisements, job offer announcements, Google Ads and usual content designed to uphold our polished and professional online presence.
+      </p>
+    </div>
+    <style>
+    .image-box {
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    }
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+    .image-box img.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-box">
+    <img src="img1.png" class="active" alt="Image 1">
+    <img src="img2.png" alt="Image 2">
+    <img src="img3.png" alt="Image 3">
+    <img src="img4.png" alt="Image 4">
+    <img src="img5.png" alt="Image 5">
+    <img src="img6.png" alt="Image 6">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll(".image-box img");
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove("active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("active");
+    }, 3000); // 3 second baad change hoga
+  </script>
+  </div>
+
+</div>
+</section>
+
+
+
+<section class="boddy">
+  <div class="video-row ">
+    <div class="video-box">
+      <video src="video1.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="video-box">
+      <video src="video2.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="video-box">
+      <video src="video3.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="video-box">
+      <video src="video4.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="video-box">
+      <video src="video5.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+
+  <style>
+    .boddy {
+      background: #00ff99; /* green background */
+    }
+    .video-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px; /* gap between videos */
+      padding: 50px 50px;
+    }
+    .video-box {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-box video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ✅ responsive sizes */
+    @media (max-width: 1024px) {
+      .video-box {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .video-box {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
+    /* ✅ small screen per neeche neeche (column) */
+    @media (max-width: 480px) {
+      .video-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-box {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</section>
+
+
+<script>
+  gsap.to("#imageContainer img", {
+    y: -50,          // how much it moves upward
+    duration: 3,     // how long one up or down takes
+    ease: "power1.inOut",
+    yoyo: true,      // reverse animation
+    repeat: -1,      // infinite loop
+    stagger: 0.3     // small delay between each image
+  });
+</script>
+
+<!-- end off section -->
+<section class="w-full py-16 bg-white text-center">
+  <!-- Text -->
+  <p class="text-xl sm:text-2xl md:text-[47px] font-[600] max-w-3xl mx-auto leading-[61px] px-4">
+    We hope you enjoyed reviewing our portfolio. If you need to see something more specific to your
+    fields, please don’t hesitate to ask.
+  </p>
+
+  <!-- Thank you heading -->
+  <h2 class="inline-block mt-10 bg-[#00FF9C] text-black font-[700] 
+             text-[28px] sm:text-xl md:text-[28px] py-3 px-6 
+             rounded-md text-center">
+    Thank you for your time!
+  </h2>
+
+  <!-- Contact Button -->
+  <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+        <button
+          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+
+          <!-- Normal text -->
+          <span
+            class="transition-all text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+            Contact us
+          </span>
+
+          <!-- Hover text -->
+          <span
+            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[24px] lg:text-[26px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+            Fill out the brief
+          </span>
+        </button>
+      </div>
+</section>
+
+
+
+</body>
+</html>
