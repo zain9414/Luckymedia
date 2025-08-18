@@ -14,18 +14,23 @@
 
 <header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 bg-black md:bg-white items-center">
 
-  <!-- Logo -->
-  <div class="flex items-center gap-2 bg-black max-[425px]:bg-black  
-              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
-              justify-center lg:justify-center">
-    <img class="w-[120px]" src="./assets/img/logo-svg.png" alt="">
-  </div>
+
+<!-- Logo -->
+<div class="flex items-center gap-2 bg-black 
+            w-full lg:w-1/3 
+            px-4 lg:px-[60px] py-[15px] 
+            rounded-[10px] justify-center">
+  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px]" src="./assets/img/logo-svg.png" alt="Logo">
+</div>
+
+
+
 
   <!-- Navigation Links -->
   <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
-              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              w-full lg:w-1/3 px-[30px] lg:px-[60px] py-[15px] rounded-[10px] 
               bg-black  sm:bg-black justify-center flex">
-    <ul class="flex  gap-3 lg:gap-6 text-sm md:text-base text-center lg:text-left">
+    <ul class="flex  gap-5 lg:gap-6 text-sm md:text-base text-center lg:text-left">
       <li><a href="./index.html" class="text-green-400 hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
       <li><a href="./Portfolio.html" class="text-[14px] text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
@@ -69,13 +74,14 @@
 
 
     <!-- Subheading -->
-   <div class="px-4 sm:px-10 md:px-20 lg:px-[270px] pt-10 sm:pt-16 lg:pt-20">
-  <h2 class="text-center items-center justify-center rounded-md p-2 
-             text-[5vw] sm:text-[4vw] md:text-[3vw] lg:text-[42px] 
-             font-[700] leading-tight 
-             bg-[#00FF9C]">
-    We'll bring luck to your company
-  </h2>
+
+   <div class="px-4 sm:px-10 md:px-20 lg:px-[300px]  pt-10 sm:pt-16 lg:pt-20 mb-16">
+<h2 class="text-center items-center justify-center rounded-md px-0 py-4 
+           text-[15px] sm:text-[4vw] md:text-[3vw] lg:text-[42px] 
+           font-[700] leading-tight bg-[#00FF9C]">
+  We'll bring luck to your company
+</h2>
+
 </div>
 
 
@@ -178,19 +184,20 @@
 </script>
     <!-- Button -->
     <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
-      <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+     <button class="relative flex items-center justify-center rounded-[16px] border-[3px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
 
-        <!-- Normal text -->
-        <span class="transition-all text-[16px] sm:text-[20px] md:text-[26px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
-          Get a service quote within 24 hours!
-        </span>
+  <!-- Normal text -->
+  <span class="transition-all text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+    Get a service quote within 24 hours!
+  </span>
 
-        <!-- Hover text -->
-        <span class="absolute opacity-0 font-semibold text-[16px] sm:text-[20px] md:text-[26px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
-          Fill out the brief
-        </span>
+  <!-- Hover text -->
+  <span class="absolute opacity-0 font-semibold text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+    Fill out the brief
+  </span>
 
-      </button>
+</button>
+
     </div>
   </div>
 </section>
@@ -207,20 +214,25 @@
         Lucky Media
       </span>
 
-      <h2 class="font-bold mt-4 leading-[72px] 
-                 text-[24px] sm:text-[14px] md:text-[42px] lg:text-[48px]">
-        You may not believe in luck,<br> 
-        but this isn’t just a chance meeting.
-        Welcome to a world where art meets digital precision.
-      </h2>
+     <h2 class="font-bold mt-4 
+           text-[19px] leading-[34px]   <!-- mobile -->
+           sm:text-[24px] sm:leading-[34px]  <!-- small screen -->
+           md:text-[42px] md:leading-[72px]  <!-- medium screen -->
+           lg:text-[48px] lg:leading-[72px]">
+  You may not believe in luck,<br> 
+  but this isn’t just a chance meeting.
+  Welcome to a world where art meets digital precision.
+</h2>
 
-      <button class="mt-6 border-[5px] border-black bg-white text-black 
-                     px-4 sm:px-5 py-3 sm:py-4 rounded-lg 
-                     transition duration-500 
-                     hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] 
-                     text-[17px] sm:text-[14px] md:text-[20px]">
-        Schedule an online meeting
-      </button>
+
+   <button class="mt-6 border-[5px] border-black bg-white text-black 
+               px-4 sm:px-5 py-3 sm:py-4 rounded-lg 
+               transition duration-500 
+               hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] 
+               text-[14px] sm:text-[16px] md:text-[20px]">
+  Schedule an online meeting
+</button>
+
     </div>
 
     <!-- Right side -->
@@ -228,9 +240,13 @@
 
       <!-- Card 1 -->
       <div class="bg-[#1a1a1a] rounded-lg p-4 sm:p-6 text-center">
-        <div class="justify-center flex">
-          <img src="./img/iconlucky.png" alt="" class="w-[35px] sm:w-[45px]">
-        </div>
+    <div class="justify-center flex">
+  <img src="./assets/img/iconlucky.svg" 
+       alt="" 
+       class="w-[55px] sm:w-[35px] lg:w-[47px]">
+</div>
+
+
         <h3 class="font-bold text-[22px] sm:text-[28px] md:text-[32px] lg:text-[34px] mt-4">Why is it worth it?</h3>
         <p class="text-gray-400 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[23px] mt-2 leading-relaxed sm:leading-8 md:leading-9 lg:leading-[41px]">
           In our monthly subscription, we provide your company with the services of a marketing specialist, web developer, graphic designer, and copywriter at affordable price. Remember, marketing is one of the key pillars of every successful business.
@@ -240,13 +256,9 @@
       <!-- Card 2 -->
       <div class="bg-[#1a1a1a] rounded-lg p-4 sm:p-6 text-center">
         <!-- SVG heart -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 sm:w-10 sm:h-10 mx-auto text-green-400" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
-                   4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 
-                   3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 
-                   8.5c0 3.78-3.4 6.86-8.55 
-                   11.54L12 21.35z"/>
-        </svg>
+        <div class="justify-center flex">
+  <img src="./assets/img/icon-3.svg" alt="" class="w-[55px] sm:w-[35px] lg:w-[47px]">
+</div>
         <h3 class="font-bold mt-4 text-[22px] sm:text-[28px] md:text-[32px] lg:text-[34px]">Our work ethic</h3>
         <p class="text-gray-400 text-[16px] sm:text-[20px] md:text-[24px] lg:text-[23px] mt-2 leading-relaxed sm:leading-8 md:leading-9 lg:leading-[41px]">
           You’re the expert in your product, and we’re here for marketing. You don’t need to keep up with the latest trends or speak marketing jargon. We stay ahead of the game, so you can rely on us. We’ll explain everything, so you know what you’re paying for.
@@ -267,27 +279,42 @@
   <!-- Top section -->
   <div class="flex flex-col lg:flex-row flex-wrap items-center lg:items-start justify-between gap-6 lg:gap-[80px] text-center lg:text-left mb-28">
     <div>
-      <span class="bg-[#00FF9C] text-black text-[32px] sm:text-[40px] md:text-[50px] lg:text-[51px] font-serif px-3 py-1 rounded-lg inline-block">
-        Services
-      </span>
-    </div>
-    <div class="max-w-lg">
-      <p class="text-black font-[600] text-[18px] sm:text-[18px] w-[350px] leading-[34px]">
-        Our possibilities are not confined to a framework. Let’s talk and find the perfect fit for your needs.
-      </p>
-    </div>
-    <div>
-      <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-white transition-all duration-500 group overflow-hidden bg-black hover:bg-white group-hover:bg-transparent">
-        <!-- Normal text -->
-        <span class="transition-all text-[14px] sm:text-[20px] md:text-[26px] lg:text-[23px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
-          Get a service quote within<br> 24 hours!
-        </span>
-        <!-- Hover text -->
-        <span class="absolute opacity-0 font-semibold text-[14px] sm:text-[20px] md:text-[26px] lg:text-[23px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-black group-hover:bg-transparent text-black rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
-          Fill out the brief
-        </span>
-      </button>
-    </div>
+  <span class="bg-[#00FF9C] text-black 
+               text-[48px] sm:text-[40px] md:text-[50px] lg:text-[51px] 
+                px-3 py-1 rounded-lg inline-block">
+    Services
+  </span>
+</div>
+
+ <div class="max-w-lg">
+  <p class="text-black font-[600] 
+            text-[14px] sm:text-[18px] 
+            leading-[28px] sm:leading-[34px] 
+            w-[280px] sm:w-[350px]">
+    Our possibilities are not confined to a framework. 
+    Let’s talk and find the perfect fit for your needs.
+  </p>
+</div>
+
+
+   <div>
+  <button class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-white transition-all duration-500 group overflow-hidden bg-black hover:bg-white group-hover:bg-transparent">
+    
+    <!-- Normal text -->
+    <span class="transition-all text-[12px] sm:text-[20px] md:text-[26px] lg:text-[23px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+      Get a service quote within
+      <br class="hidden sm:block"> <!-- mobile par hidden, sm+ par show -->
+      24 hours!
+    </span>
+    
+    <!-- Hover text -->
+    <span class="absolute opacity-0 font-semibold text-[12px] sm:text-[20px] md:text-[26px] lg:text-[23px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-black group-hover:bg-transparent text-black rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+      Fill out the brief
+    </span>
+  
+  </button>
+</div>
+
   </div>
 
   <!-- Flipping cards row 1 -->
@@ -305,11 +332,16 @@
           <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Detailed strategy</h2>
         </div>
         <!-- Back -->
-        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
-          <p>
-            Marketing should be based on a strategy that is understood and supported by the entire team. We’ll develop a plan that helps meet your business goals. Our prepared strategy not only includes milestones but also precisely defined tools. As industry specialists, we advise against investing in random and short-term actions.
-          </p>
-        </div>
+       <div class="absolute w-full h-full bg-black rounded-[40px] text-white 
+            p-6 sm:p-8 flex items-center justify-center text-center 
+            text-[16px] sm:text-[20px] md:text-[24px] 
+            leading-[34px] sm:leading-[34px] md:leading-[38px] 
+            [backface-visibility:hidden] [transform:rotateY(180deg)]">
+  <p>
+    Marketing should be based on a strategy that is understood and supported by the entire team. We’ll develop a plan that helps meet your business goals. Our prepared strategy not only includes milestones but also precisely defined tools. As industry specialists, we advise against investing in random and short-term actions.
+  </p>
+</div>
+
       </div>
     </div>
 
@@ -326,7 +358,7 @@
           <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Corporate branding</h2>
         </div>
         <!-- Back -->
-        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px]leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px]   leading-[34px] sm:leading-[34px] md:leading-[38px]  [backface-visibility:hidden] [transform:rotateY(180deg)] ">
           <p>
             The primary goal of marketing is brand recognition. A consistent visual style is necessary. Is it possible that customers, upon seeing a specific color, think of your product? Yes! This is precisely what visual identity is responsible for. We’ll create for you a unique logo and brand style that you can use for everything you create.
           </p>
@@ -350,7 +382,7 @@
           <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Website solutions</h2>
         </div>
         <!-- Back -->
-        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px]  leading-[34px] sm:leading-[34px] md:leading-[38px]  [backface-visibility:hidden] [transform:rotateY(180deg)]">
           <p>
             The website is the face of the company. Whether you need a simple page, complex website or a mobile app you can rely on us. We’ll take care of optimizing your site’s presence on Google and all necessary integrations. We’ll ensure that the content on your site aligns with artificial intelligence and search engine algorithms.
           </p>
@@ -371,7 +403,7 @@
           <h2 class="text-[32px] sm:text-[48px] md:text-[64px] font-bold text-green-400 text-center">Online advertising</h2>
         </div>
         <!-- Back -->
-        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px] leading-relaxed [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <div class="absolute w-full h-full bg-black rounded-[40px] text-white p-6 sm:p-8 flex items-center justify-center text-center text-[16px] sm:text-[20px] md:text-[24px]  leading-[34px] sm:leading-[34px] md:leading-[38px]  [backface-visibility:hidden] [transform:rotateY(180deg)]">
           <p>
             For some companies, social media is a matter of image, while for others, it’s the main sales channel. We’ll tailor a plan to you so that the cost of managing social media aligns with its objectives. We’ll create a balanced plan for paid ads and organic posts. We’ll ensure that your company’s social media looks consistent and appealing.
           </p>
@@ -396,12 +428,20 @@
     <!-- Right side -->
     <div class="w-full md:w-1/2 text-center md:text-left">
       <div>
-        <span class="bg-[#00FF9C] text-black text-[28px] sm:text-[40px] md:text-[51px] lg:text-[51px] font-bold px-3 py-1 rounded-[20px] inline-block mb-6"> 
-          Portfolio 
-        </span> 
-        <h1 class="font-bold mt-4 leading-[70px] text-[24px] sm:text-[34px] md:text-[47px] mb-16"> 
-          At Lucky Media, we have no boundaries. Our pool of talent and tools allows us to tackle the biggest challenges. 
-        </h1> 
+       <span class="bg-[#00FF9C] text-black 
+             text-[51px] sm:text-[40px] md:text-[51px] lg:text-[51px] 
+             font-bold px-3 py-1 rounded-[20px] inline-block mb-6"> 
+  Portfolio 
+</span>
+ 
+       <h1 class="font-[700] mt-4  sm:px-9 px-9
+           text-[20px] leading-[30px] 
+           sm:text-[34px] sm:leading-[44px] 
+           md:text-[47px] md:leading-[56px] 
+           mb-16"> 
+  At Lucky Media, we have no boundaries. Our pool of talent and tools allows us to tackle the biggest challenges. 
+</h1>
+
         <button class="mt-6 border-[5px] border-black bg-[#171717] text-white px-4 sm:px-5 py-3 sm:py-4 rounded-lg transition duration-500 hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-[18px] md:text-[20px]"> 
           Discover our portfolio 
         </button> 
@@ -417,9 +457,10 @@
 <section class="py-10 px-5 md:py-14 lg:py-16 ">
   <!-- Heading -->
  <div class="text-center mb-8 sm:mb-10 md:mb-12">
-  <h2 class="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[55px] font-bold">
-    Steps
-  </h2>
+ <h2 class="text-[55px] sm:text-[55px] md:text-[55px] lg:text-[55px] font-bold">
+  Steps
+</h2>
+
   <p class="mt-4 text-[16px] sm:text-[17px] md:text-[18px] font-semibold leading-[34px] text-center 
             px-4 sm:px-10 md:px-20 lg:px-48">
     We believe in keeping things straightforward! A solid plan is the foundation of everything we do.
@@ -432,18 +473,27 @@
   <!-- Row 1 -->
   <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center lg:items-stretch">
     <!-- Step 1 -->
-    <div class="bg-black text-gray-300 p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] relative overflow-hidden">
-      <p class="leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px] text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px]">
-        Together, we<br>
-        prepare a solid<br>
-        brief so we don’t<br>
-        overlook<br>
-        important matters.
-      </p>
-      <span class="absolute  bottom-0  right-4 sm:right-6 lg:right-0 text-[120px] sm:text-[140px] md:text-[160px] lg:text-[150px] font-[400] leading-none text-white">
-        01
-      </span>
-    </div>
+    <div class="bg-black text-gray-300 p-6 sm:p-8 md:p-10 lg:p-12 
+            rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] 
+            relative overflow-hidden">
+
+  <p class="leading-[36px] sm:leading-[42px] md:leading-[46px] lg:leading-[48px] 
+            text-[20px] sm:text-[22px] md:text-[25px] lg:text-[27px]">
+    Together, we<br>
+    prepare a solid<br>
+    brief so we don’t<br>
+    overlook<br>
+    important matters.
+  </p>
+
+  <!-- Number -->
+  <span class="block text-right sm:absolute sm:bottom-0 sm:right-6 lg:right-0 
+               text-[140px] sm:text-[160px] md:text-[180px] lg:text-[200px] 
+               font-[400] leading-none text-white mt-6 sm:mt-0">
+    01
+  </span>
+</div>
+
 
     <!-- Step 2 -->
     <div class="bg-[#00ff99] text-black p-6 sm:p-8 md:p-10 lg:p-12 rounded-[20px] w-full sm:w-[400px] md:w-[420px] lg:w-[450px] relative overflow-hidden">
@@ -729,6 +779,23 @@
     All rights reserved: Lucky Media www.luckymedia.marketing ©
   </div>
 </footer>
+
+
+
+
+<button 
+  x-data="{ show: false }"
+  x-init="window.addEventListener('scroll', () => show = window.scrollY > 300)"
+  x-show="show"
+  @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="fixed bottom-6 right-6 z-50 bg-white text-black hover:text-white p-3 rounded-full shadow-xl hover:bg-[#5B3A4B] transition-all duration-300"
+  aria-label="Scroll to top"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 
 
