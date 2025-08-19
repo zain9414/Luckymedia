@@ -83,7 +83,7 @@ body{
       height: 250px;
       overflow: hidden;
       background: #000;
-      border-radius: 12px;
+      
     }
 
     /* ✅ Video style */
@@ -216,7 +216,7 @@ body{
       height: 220px;
       overflow: hidden;
       background: #000;
-      border-radius: 10px; /* thoda smooth look */
+       /* thoda smooth look */
     }
     .video-box video {
       width: 100%;
