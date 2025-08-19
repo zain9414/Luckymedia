@@ -480,79 +480,25 @@
     </div>
   </div>
 
-  <!-- 🔹 CSS Styles -->
-  <style>
-    /* ✅ Section background */
-    .boddy {
-      background: #00ff99;
-    }
 
-    /* ✅ Row layout */
-    .video-row {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 100px 50px;
-      flex-wrap: wrap; /* wrap for responsiveness */
-    }
 
-    /* ✅ Video container */
-    .video-box {
-      width: 250px;
-      height: 250px;
-      overflow: hidden;
-      background: #000;
-      border-radius: 12px;
-    }
 
-    /* ✅ Video style */
-    .video-box video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
-    /* ✅ Tablet screens */
-    @media (max-width: 1024px) {
-      .video-box {
-        width: 200px;
-        height: 200px;
-      }
-    }
 
-    /* ✅ Small tablets */
-    @media (max-width: 768px) {
-      .video-box {
-        width: 160px;
-        height: 160px;
-      }
-    }
 
-    /* ✅ Mobile */
-    @media (max-width: 480px) {
-      .video-row {
-        flex-direction: column;
-        align-items: center;
-      }
-      .video-box {
-        width: 200px;
-        height: 200px;
-      }
-    }
-  </style>
 
-  <!-- 🔹 GSAP Animation -->
-  <script>
-    // Animate videos (floating effect)
-    gsap.to(".video-box video", {
-      y: -40,           // move up
-      duration: 3,      // animation speed
-      ease: "power1.inOut",
-      yoyo: true,       // back and forth
-      repeat: -1,       // infinite loop
-      stagger: 0.3      // delay between videos
-    });
-  </script>
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 
@@ -567,10 +513,10 @@
   <div class="flex flex-col md:flex-row items-center gap-12 mt-32"> 
     
     <!-- ================= Left Side Content ================= -->
-    <div class="md:w-1/2 text-center md:text-left w-[50%] md:w-full">
+    <div class="w-full md:w-1/2 text-center ">
       
       <!-- Section Title -->
-      <div class="flex justify-center md:justify-center">
+      <div class="flex justify-center ">
         <h2
           class="inline-block text-[25px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
           Paid ads
@@ -579,7 +525,9 @@
 
       <!-- Paragraph Content -->
       <div>
-        <p class="text-[#171717] leading-[34px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] text-center md:text-center mt-16 px-10 ">
+        <p class="text-[#171717] leading-[28px] sm:leading-[32px] md:leading-[34px] 
+                  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+                  text-center mt-8 sm:mt-12 md:mt-16 px-4 sm:px-8 md:px-10">
           Paid advertising is a highly effective method for reaching and engaging with diverse professional groups
           through strategically targeted digital<br> campaigns.<br>
           Our objective was to develop captivating advertisements that fostered engagement, meaningful discussions
@@ -594,9 +542,9 @@
       </div>
       
       <!-- Call to Action Button -->
-      <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+      <div class="text-center  flex justify-center  pt-6 sm:pt-8 lg:pt-10">
         <button
-          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group ">
 
           <!-- Normal text -->
           <span
@@ -614,16 +562,24 @@
     </div>
 
     <!-- ================= Right Side Video Box ================= -->
-    <div class="flex justify-start mt-44"> 
-      <div class="bg-[#00FF9C] rounded-tl-[50px] rounded-bl-[50px] p-6 w-[700px] relative h-[450px]"> 
-        <div class="absolute top-[-200px] right-6"> 
-          <img src="./assets/img/posty-flex.png" alt=""> 
-        </div> 
-      </div> 
+    <div class="flex justify-center md:justify-start mt-16 md:mt-44 w-full md:w-1/2"> 
+  <div class="bg-[#00FF9C] rounded-tl-[30px] md:rounded-tl-[50px] rounded-bl-[30px] md:rounded-bl-[50px] 
+              p-4 sm:p-6 w-full sm:w-[500px] md:w-[600px] lg:w-[700px] 
+              relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] flex items-center justify-center"> 
+
+    <!-- ✅ Image Centered -->
+    <img src="./assets/img/posty-flex.png" 
+         alt="" 
+         class="w-[360px] sm:w-[200px] md:w-[250px] lg:w-[300px] top-[-100px] absolute"> 
+
+  </div> 
+</div>
+
     </div> 
 
   </div> 
 </section>
+
 <!-- ================= END SECTION : Paid Ads ================= -->
 
 
@@ -684,93 +640,35 @@
   </div>
   <!-- ================= End Container ================= -->
 
-  <!-- ================= Swiper JS ================= -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      loop: true,
-      slidesPerView: "auto",
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      coverflowEffect: {
-        rotate: 0, // no tilt
-        stretch: 0,
-        depth: 250,
-        modifier: 1,
-        slideShadows: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- ================= End Swiper JS ================= -->
 
-  <!-- ================= CSS Styling ================= -->
-  <style>
-    .swiper-slide {
-      background: #fff;
-      width: 220px;
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    .swiper-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .custom-nav {
-      background: rgba(0, 255, 153, 0.2);
-      border: 2px solid #00ff99;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-    .custom-nav::after {
-      font-size: 16px;
-      color: #00ff99;
-    }
 
-    /* ✅ Responsive */
-    @media (min-width: 640px) {
-      .swiper-slide {
-        width: 260px;
-        height: 200px;
-      }
-      .custom-nav {
-        width: 45px;
-        height: 45px;
-      }
-      .custom-nav::after {
-        font-size: 18px;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .swiper-slide {
-        width: 300px;
-        height: 250px;
-      }
-      .custom-nav {
-        width: 50px;
-        height: 50px;
-      }
-      .custom-nav::after {
-        font-size: 20px;
-      }
-    }
-  </style>
   <!-- ================= End CSS Styling ================= -->
 
 </section>
@@ -829,51 +727,56 @@
 
 <section>
   <div class="flex flex-col md:flex-row items-center gap-12 mt-32">
-  <!-- Left Side Content -->
-  <div class="md:w-1/2 text-center md:text-left w-[50%] p-[30px] px-20">
-   <div class="flex justify-center">
-  <h2 class="inline-block 
-     text-[25px] sm:text-[35px] md:text-[45px] lg:text-[50px] 
-     font-[800] text-black bg-[#00ff99] 
-     px-4 py-2 rounded-lg mb-20">
-    New website
-  </h2>
-</div>
 
-   
-    <p class="text-[#171717] leading-[36px] lg:text-[20px] sm:text-[18px] text-[14px] text-center">
-    A clean, bright design that leads customers directly to ordering their diet plan. We focused on clear, concise information, making it easy for users to find key details about diets, prices, and delivery options. Developed with Elementor and custom code, the website allows the company owner to easily update essential content. Our aim is to make our clients more self-sufficient, reducing their reliance on us—unless, of course, they prefer to rely on us.
+    <!-- Left Side Content -->
+    <div class="md:w-1/2 text-center  w-full px-4 sm:px-8 md:px-12">
+      
+      <!-- Title -->
+      <div class="flex justify-center ">
+        <h2 class="inline-block 
+          text-[25px] sm:text-[35px] md:text-[45px] lg:text-[50px] 
+          font-[800] text-black bg-[#00ff99] 
+          px-4 py-2 rounded-lg mb-10">
+          New website
+        </h2>
+      </div>
 
+      <!-- Paragraph -->
+      <div>
+        <p class="text-[#171717] leading-[28px] sm:leading-[32px] md:leading-[36px] 
+          text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+          text-center  max-w-[700px] mx-auto">
+          A clean, bright design that leads customers directly to ordering their diet plan. 
+          We focused on clear, concise information, making it easy for users to find key details 
+          about diets, prices, and delivery options. Developed with Elementor and custom code, 
+          the website allows the company owner to easily update essential content. 
+          Our aim is to make our clients more self-sufficient, reducing their reliance on us—
+          unless, of course, they prefer to rely on us.
+        </p>
+      </div>
 
-    </p>
-   
-   <h2 class="text-center lg:text-center
-        text-[20px] sm:text-[32px] md:text-[40px] lg:text-[50px] 
-        font-[800] mt-10 sm:mt-16 md:mt-20 lg:mt-28 flex gap-4">
-       See the simulation 
+      <!-- Sub Title -->
+      <h2 class="text-center 
+        text-[20px] sm:text-[28px] md:text-[36px] lg:text-[45px] 
+        font-[800] mt-10 sm:mt-16 md:mt-20 lg:mt-28 flex justify-center  gap-4">
+        See the simulation 
         <span class="text-[#00FF9C] font-[200]">
           <i class="fa-solid fa-arrow-down"></i>
         </span> 
       </h2>
-</div>
-  <!-- Right Side Video Box -->
-  <div class="justify-start w-[50%]">
-  
-   <div class=" top-[] right-[-7]">
-    <img src="./assets/img/fit8-01.png" alt="">
-   </div>
+    </div>
 
+    <!-- Right Side Image -->
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+      <img src="./assets/img/fit8-01.png" alt="" 
+           class="max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] h-auto">
+    </div>
 
-</div>
-
-</div>
-
-
+  </div>
 </section>
 
 
 
-<body style="font-family: sans-serif;">
     <!-- logo aniamtion section  -->
 
     <section class="mt-10">
@@ -1039,7 +942,6 @@
 
     
     
-</section>
 
 
 <!-- 🔹 Section: Social Media -->
@@ -1143,59 +1045,25 @@
       </div>
 </section>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 34,
-      stretch: 68,
-      depth: 200,
-      modifier: 1,
-      slideShadows: true,
-    },
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    speed: 600,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    keyboard: {
-      enabled: true,
-    },
-    mousewheel: true,
-  });
-</script>
 
-<!-- Extra Tailwind Styling -->
-<style>
-  .swiper-slide {
-    background: #111;
-    width: 280px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .swiper-slide img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
@@ -1245,52 +1113,65 @@
   </div>
 </section>
 
+
+
+
+
 <section> 
   <div class="flex flex-col md:flex-row items-center gap-12 mt-32"> 
     
     <!-- ================= Left Side Content ================= -->
-    <div class="md:w-1/2 text-center md:text-left w-[50%] md:w-full">
+    <div class="w-full md:w-1/2 text-center md:text-left">
       
       <!-- Section Title -->
       <div class="flex justify-center md:justify-center">
         <h2
           class="inline-block text-[28px] sm:text-[36px] md:text-[42px] lg:text-[25px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
          Content managment
-
         </h2>
       </div>
 
       <!-- Paragraph Content -->
       <div>
-        <p class="text-[#171717] leading-[34px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] text-center md:text-center mt-16 px-10 ">
+        <p class="text-[#171717] leading-[34px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+           text-center md:text-center mt-16 px-4 sm:px-6 md:px-10">
           We manage and distribute content across multiple platforms, including Facebook, Instagram, Twitter, and TikTok, each with its own unique audience and engagement style. Recognizing the distinct characteristics of these platforms, we tailor our posts to resonate with the specific user base of each, ensuring maximum impact and relevance. Our content reaches a broad audience, being shared on profiles that boast over 700,000 followers.
 
-To maintain our presence and effectiveness in these fast-paced social media environments, we stay consistently active by utilizing advanced tools like IMM for media monitoring.
+          To maintain our presence and effectiveness in these fast-paced social media environments, we stay consistently active by utilizing advanced tools like IMM for media monitoring.
         </p>
-          <!-- 🔹 Sub Heading -->
-      <h2 class="text-center lg:text-center 
-        text-[22px] sm:text-[32px] md:text-[40px] lg:text-[51px] 
-        font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
-        Watch it happen! 
-        <span class="text-[#00FF9C] font-[300]">
-          <i class="fa-solid fa-arrow-right"></i>
-        </span> 
-      </h2>
+
+        <!-- 🔹 Sub Heading -->
+        <h2 class="text-center lg:text-center 
+          text-[22px] sm:text-[32px] md:text-[40px] lg:text-[51px] 
+          font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+          Watch it happen! 
+          <span class="text-[#00FF9C] font-[300]">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span> 
+        </h2>
       </div>
       
     </div>
 
     <!-- ================= Right Side Video Box ================= -->
-    <div class="flex justify-start mt-44"> 
-      <div class="bg-[#00FF9C] rounded-tl-[50px] rounded-bl-[50px] p-6 w-[700px] relative h-[450px]"> 
-        <div class="absolute top-[-200px] right-6"> 
-          <img src="./assets/img/konfa-01.png" alt=""> 
+    <div class="flex justify-center md:justify-start mt-20 md:mt-44 w-full md:w-1/2"> 
+      <div class="bg-[#00FF9C] rounded-tl-[30px] md:rounded-tl-[50px] rounded-bl-[30px] md:rounded-bl-[50px] 
+                  p-4 sm:p-6 w-full sm:w-[400px] md:w-[600px] lg:w-[700px] 
+                  relative h-[220px] sm:h-[320px] md:h-[400px] lg:h-[450px]"> 
+                  
+        <div class="absolute -top-16 sm:-top-24 md:-top-32 lg:-top-40 right-1 sm:right-4 md:right-6 flex justify-center w-full"> 
+          <img src="./assets/img/konfa-01.png" 
+               alt="" 
+               class="w-[300px] sm:w-[160px] md:w-[200px] lg:w-auto mx-auto"> 
         </div> 
+
       </div> 
     </div> 
 
   </div> 
 </section>
+
+
 
 
 
@@ -1330,55 +1211,59 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 
 
 
+<section class="mt-20">
+  <div class="w-full flex flex-col md:flex-row">
+    
+    <!-- Left Side (Images Grid) -->
+    <div class="w-full md:w-1/2 p-4 sm:p-6 md:p-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-<section class=" mt-20">
-  <div class="w-full flex">
-    <div class="w-[50%] p-[40px]">
-          <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+        <!-- Image 1 -->
+        <div class="relative group overflow-hidden">
+          <img src="https://picsum.photos/id/1011/400/400" 
+               class="w-full h-48 sm:h-64 object-cover transition duration-500 group-hover:brightness-75" />
+        </div>
 
-    <!-- Image 1 -->
-    <div class="relative group overflow-hidden">
-      <img src="https://picsum.photos/id/1011/400/400" 
-           class="w-full h-64 object-cover  transition duration-500 group-hover:brightness-75" />
+        <!-- Image 2 -->
+        <div class="relative group overflow-hidden">
+          <img src="https://picsum.photos/id/1015/400/400" 
+               class="w-full h-48 sm:h-64 object-cover transition duration-500 group-hover:brightness-75" />
+        </div>
+
+        <!-- Image 3 -->
+        <div class="relative group overflow-hidden">
+          <img src="https://picsum.photos/id/1016/400/400" 
+               class="w-full h-48 sm:h-64 object-cover transition duration-500 group-hover:brightness-75" />
+        </div>
+
+        <!-- Image 4 -->
+        <div class="relative group overflow-hidden">
+          <img src="https://picsum.photos/id/1018/400/400" 
+               class="w-full h-48 sm:h-64 object-cover transition duration-500 group-hover:brightness-75" />
+        </div>
+
+      </div>
     </div>
 
-    <!-- Image 2 -->
-    <div class="relative group overflow-hidden ">
-      <img src="https://picsum.photos/id/1015/400/400" 
-           class="w-full h-64 object-cover transition duration-500 group-hover:brightness-75" />
+    <!-- Right Side (Video Box) -->
+    <div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <div class="bg-[#00FF9C] 
+                  rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[50px] 
+                  rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[50px] 
+                  p-4 sm:p-6 w-full max-w-[700px] 
+                  relative h-[200px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
+        
+        <div class="pt-[22px] xl:w-[85%] xl:pr-[10px] absolute -top-20 sm:-top-28 md:-top-36 lg:-top-40 left-1/2 -translate-x-1/2 w-[90%]">
+          <video controls class="w-full h-auto rounded-md"
+            src="https://luckymedia.marketing/wp-content/uploads/2024/07/Final-animacja-dzwiek.mp4"></video>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Image 3 -->
-    <div class="relative group overflow-hidden ">
-      <img src="https://picsum.photos/id/1016/400/400" 
-           class="w-full h-64 object-cover transition duration-500 group-hover:brightness-75" />
-    </div>
-
-    <!-- Image 4 -->
-    <div class="relative group overflow-hidden ">
-      <img src="https://picsum.photos/id/1018/400/400" 
-           class="w-full h-64 object-cover  transition duration-500 group-hover:brightness-75" />
-    </div>
-
-  </div>
-    </div>
-
-    <div class="w-[50%]">
-          <div class="bg-[#00FF9C] 
-          rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[50px] 
-          rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[50px] 
-          p-4 sm:p-6 w-full max-w-[700px] 
-          relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] mx-auto top-[130px]">
-               <div class="pt-[22px]  xl:w-[85%]  xl:pr-[10px] absolute top-[-150px]">
-                    <video controls
-                        src="https://luckymedia.marketing/wp-content/uploads/2024/07/Final-animacja-dzwiek.mp4"></video>
-                </div>
-
-          </div>
-     
-    </div>
   </div>
 </section>
+
 
 
 
@@ -1526,38 +1411,43 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 
 
 <section class="mt-11">
-  <div class="flex w-[100%] px-10 gap-28">
+  <div class="flex flex-col md:flex-row w-full px-4 sm:px-6 md:px-10 gap-10 md:gap-28">
+    
     <!-- Left Side -->
-    <div class="w-[50%] ">
-      <div class="text-center items-center flex justify-center mb-10 ">
-        <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] py-2 px-3 sm:px-4 rounded-md mb-4 w-full sm:w-[300px] md:w-[380px] text-center">
+    <div class="w-full md:w-1/2">
+      <div class="text-center items-center flex justify-center mb-10">
+        <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] 
+                   py-2 px-3 sm:px-4 rounded-md mb-4 
+                   w-full sm:w-[300px] md:w-[380px] text-center">
           Website & apply form
         </h2>
       </div>
-      <div>
-        <img class="rounded-[30px]" src="./assets/img/screeny-1280x853.png" alt="">
+      <div class="flex justify-center">
+        <img class="rounded-[30px] w-full sm:w-[90%] md:w-full" 
+             src="./assets/img/screeny-1280x853.png" alt="">
       </div>
     </div>
 
     <!-- Right Side -->
-    <div class="w-[50%]">
+    <div class="w-full md:w-1/2 mt-10 md:mt-0">
       <p class="text-[#171717] leading-[36px] 
         text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
-        text-center lg:text-center px-0 mb-6">
+        text-center lg:text-center px-2 sm:px-4 md:px-0 mb-6">
         We designed a light and user-friendly website for a recruitment agency, emphasizing readability and a transparent hiring process. The site features a custom application form that integrates seamlessly with lead management tools, streamlining the recruitment workflow. This tailored solution not only enhances the user experience but also ensures efficient data handling, making it easier for the agency to manage and process applications with ease.
       </p>
-     <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
-   w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
-   mx-auto   <!-- ✅ ye add -->
-   h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
-   -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-40">
-   <!-- yaha video ya content -->
-</div>
 
+      <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
+                  w-full sm:w-[85%] md:w-[80%] lg:w-[500px] 
+                  mx-auto   
+                  h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+                  mt-20 sm:-mt-16 md:-mt-24 lg:mt-32">
+        <!-- yaha video ya content -->
+      </div>
     </div>
-  </div>
 
+  </div>
 </section>
+
 
 
 
@@ -1648,86 +1538,9 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 </div>
 </section>
 
-<!-- ✅ Extra CSS for responsiveness -->
-<style>
-.image-box {
-  width: 600px;
-  height: 400px;
-  margin: 50px auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-}
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: none;
-}
-.image-box img.active {
-  display: block;
-}
 
-/* ✅ Tablet */
-@media (max-width: 1024px) {
-  .swiper.mySwiper {
-    max-width: 90% !important;
-  }
-  .image-box {
-    width: 90% !important;
-    height: auto !important;
-  }
-}
 
-/* ✅ Medium screens */
-@media (max-width: 768px) {
-  .swiper.mySwiper {
-    max-width: 100% !important;
-  }
-  .image-box {
-    width: 100% !important;
-    height: auto !important;
-  }
-  .image-box img {
-    height: auto !important;
-  }
-}
 
-/* ✅ Mobile */
-@media (max-width: 480px) {
-  .bg-black.flex {
-    flex-direction: column !important;
-  }
-  .image-box {
-    width: 95% !important;
-    height: auto !important;
-    margin: 20px auto !important;
-  }
-  .swiper.mySwiper {
-    width: 95% !important;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
-  }
-  p {
-    font-size: 16px !important;
-    line-height: 26px !important;
-  }
-}
-</style>
-
-<!-- ✅ JS for image slider -->
-<script>
-const images = document.querySelectorAll(".image-box img");
-let current = 0;
-
-setInterval(() => {
-  images[current].classList.remove("active");
-  current = (current + 1) % images.length;
-  images[current].classList.add("active");
-}, 3000); // 3 sec baad change
-</script>
 
 
 
@@ -1750,73 +1563,19 @@ setInterval(() => {
     </div>
   </div>
 
-  <style>
-    .boddy {
-      background: #00ff99; /* green background */
-      padding: 20px;
-    }
-    .video-row {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap; /* ✅ wrap enable so overflow nahi hoga */
-      gap: 20px;       /* ✅ gap between videos */
-    }
-    .video-box {
-      width: 200px;
-      height: 220px;
-      overflow: hidden;
-      background: #000;
-      border-radius: 10px; /* thoda smooth look */
-    }
-    .video-box video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
-    /* ✅ Laptop size */
-    @media (max-width: 1024px) {
-      .video-box {
-        width: 180px;
-        height: 200px;
-      }
-    }
-
-    /* ✅ Tablet size */
-    @media (max-width: 768px) {
-      .video-box {
-        width: 160px;
-        height: 180px;
-      }
-    }
-
-    /* ✅ Mobile size (neeche neeche) */
-    @media (max-width: 480px) {
-      .video-row {
-        flex-direction: column;
-        align-items: center;
-      }
-      .video-box {
-        width: 90%;   /* screen ke hisaab se */
-        max-width: 260px;
-        height: 200px;
-      }
-    }
-  </style>
 </section>
 
 
 
-<script>
-  gsap.to("#imageContainer img", {
-    y: -50,          // how much it moves upward
-    duration: 3,     // how long one up or down takes
-    ease: "power1.inOut",
-    yoyo: true,      // reverse animation
-    repeat: -1,      // infinite loop
-    stagger: 0.3     // small delay between each image
-  });
-</script>
+
+
+
+
+
+
+
+
 
 <!-- end off section -->
 <section class="w-full py-16 bg-white text-center">
@@ -1843,7 +1602,7 @@ setInterval(() => {
         <button
           class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent 
                  px-4 sm:px-6 md:px-8 py-2 sm:py-3 font-worksans text-black transition-all duration-500 
-                 group overflow-hidden max-w-full">
+                 group  max-w-full">
 
           <!-- Normal text -->
           <span
@@ -1943,6 +1702,19 @@ setInterval(() => {
 
 
 
+
+<script>
+  gsap.to("#imageContainer img", {
+    y: -50,          // how much it moves upward
+    duration: 3,     // how long one up or down takes
+    ease: "power1.inOut",
+    yoyo: true,      // reverse animation
+    repeat: -1,      // infinite loop
+    stagger: 0.3     // small delay between each image
+  });
+</script>
+
+
  <script>
         const slides = document.querySelectorAll(".slide");
         let currentIndex = 2; // center image
@@ -1976,6 +1748,98 @@ setInterval(() => {
 
         updateSlides();
     </script>
+
+<!-- ✅ JS for image slider -->
+<script>
+const images = document.querySelectorAll(".image-box img");
+let current = 0;
+
+setInterval(() => {
+  images[current].classList.remove("active");
+  current = (current + 1) % images.length;
+  images[current].classList.add("active");
+}, 3000); // 3 sec baad change
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 34,
+      stretch: 68,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    speed: 600,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: true,
+  });
+</script>
+
+
+
+  <!-- ================= Swiper JS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 0, // no tilt
+        stretch: 0,
+        depth: 250,
+        modifier: 1,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+  <!-- 🔹 GSAP Animation -->
+  <script>
+    // Animate videos (floating effect)
+    gsap.to(".video-box video", {
+      y: -40,           // move up
+      duration: 3,      // animation speed
+      ease: "power1.inOut",
+      yoyo: true,       // back and forth
+      repeat: -1,       // infinite loop
+      stagger: 0.3      // delay between videos
+    });
+  </script>
 
 </body>
 </html>
