@@ -21,28 +21,30 @@
  <body class="">
 <header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 bg-black md:bg-white items-center">
 
-  <!-- Logo -->
-  <div class="flex items-center gap-2 bg-black max-[425px]:bg-black  
-              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
-              justify-center lg:justify-center">
-    <img class="w-[120px]" src="./assets/img/logo-svg.png" alt="">
-  </div>
+
+<!-- Logo -->
+<div class="flex items-center gap-2 bg-black 
+            w-full lg:w-1/3 
+            px-4 lg:px-[60px] py-[15px] 
+            rounded-[10px] justify-center">
+  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px]" src="./assets/img/logo-svg.png" alt="Logo">
+</div>
+
+
+
 
   <!-- Navigation Links -->
   <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
-              w-full lg:w-1/3 px-[40px] lg:px-[60px] py-[15px] rounded-[10px] 
+              w-full lg:w-1/3 px-[30px] lg:px-[60px] py-[15px] rounded-[10px] 
               bg-black  sm:bg-black justify-center flex">
-    <ul class="flex  gap-[16px] lg:gap-6 text-sm md:text-base text-center lg:text-left">
-      <li><a href="./index.html" class="text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
-      <li><a href="./Portfolio.html" class="text-green-400 text-[14px]  max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+    <ul class="flex  gap-5 lg:gap-6 text-sm md:text-base text-center lg:text-left">
+      <li><a href="./index.html" class="text-green-400 hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
+      <li><a href="./Portfolio.html" class="text-[14px] text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
-       <a href="javascript:void(0)" onclick="openContactPopup()" 
-   class="inline-block px-4 py-2 rounded-lg text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
-  Contact
-</a>
-
-
-
+        <a href="javascript:void(0)" onclick="openContactPopup()" 
+           class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
+          Contact
+        </a>
       </li>
     </ul>
   </nav>
@@ -60,24 +62,26 @@
   <div>
     <!-- 🔸 Main Heading -->
     <div class="px-4 sm:px-10 md:px-20 lg:px-[350px] pt-10 sm:pt-20 lg:pt-[150px]">
-      <h1 class="text-center justify-center 
-      text-[22px] sm:text-[32px] md:text-[42px] lg:text-[74px] 
+  <h1 class="text-center justify-center 
+      text-[72px] sm:text-[32px] md:text-[42px] lg:text-[72px] 
       font-[700] 
-      leading-[28px] sm:leading-[42px] md:leading-[55px] lg:leading-[65px]">
-        See our work
-      </h1>
-    </div>
+      leading-[75px] sm:leading-[42px] md:leading-[55px] lg:leading-[80px]">
+    See our work
+  </h1>
+</div>
+
 
     <!-- 🔸 Subheading -->
-    <div class="px-4 sm:px-10 md:px-20 lg:px-[130px] pt-10 text-center">
-      <h2 class="inline-block rounded-md p-2 
-      text-[16px] sm:text-[24px] md:text-[32px] lg:text-[48px] 
+   <div class="px-4 sm:px-10 md:px-20 lg:px-[130px] pt-10 text-center">
+  <h2 class="inline-block rounded-md p-2 
+      text-[14px] sm:text-[24px] md:text-[32px] lg:text-[48px] 
       font-[700] 
-      leading-[22px] sm:leading-[35px] md:leading-[45px] lg:leading-[65px] 
+      leading-[20px] sm:leading-[35px] md:leading-[45px] lg:leading-[65px] 
       bg-[#00FF9C]">
-        We are fortunate to have wonderful clients!
-      </h2>
-    </div>
+    We are fortunate to have wonderful clients!
+  </h2>
+</div>
+
 
     <!-- 🔸 Call-to-Action Button -->
     <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
@@ -111,25 +115,33 @@
 <section class="w-full flex flex-col md:flex-row mt-10 sm:mt-16 md:mt-20 lg:mt-28">
   
   <!-- 🔸 Left Side: Image -->
-  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-4 sm:p-8 md:p-10">
-    <img src="./assets/img/reklama-01.png" alt="" class="max-w-full h-auto">
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 
+              p-4 sm:p-8 md:p-10 lg:p-14">
+    <img src="./assets/img/reklama-01.png" alt="" 
+         class="max-w-full h-auto object-contain">
   </div>
 
   <!-- 🔸 Right Side: Text Content -->
-  <div class="bg-black/90 text-white w-full md:w-1/2 p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center items-center">
+  <div class="bg-black/90 text-white w-full md:w-1/2 
+              p-6 sm:p-10 md:p-12 lg:p-16 
+              flex flex-col justify-center items-center text-center">
     
     <!-- Subheading -->
-    <h2 class="inline-block rounded-md px-3 sm:px-4
-    text-[14px] sm:text-[20px] md:text-[26px] lg:text-[24px] 
-    font-[800] 
-    leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[50px] 
-    text-black bg-[#00FF9C] text-center">
+    <h2 class="inline-block rounded-md px-3 sm:px-4 
+        text-[14px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
+        font-[800] 
+        leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
+        text-black bg-[#00FF9C] py-2">
       Online advertising & marketing
     </h2>
 
     <!-- Paragraph -->
-    <p class="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] text-center leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[50px] px-0 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-      Whether it’s driving traffic, generating leads, or <span class="text-green-400">closing sales,</span>  
+    <p class="mt-6 sm:mt-8 md:mt-10 lg:mt-12 
+        px-2 sm:px-4 md:px-6 lg:px-10 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px]">
+      Whether it’s driving traffic, generating leads, or 
+      <span class="text-green-400">closing sales,</span>  
       we make sure every step is optimized for success.
       We go beyond just running ads on platforms like Google, Facebook, and more. 
       Our expertise in <span class="text-green-400">marketing</span> automation allows us to integrate these campaigns into a unified system. 
@@ -140,26 +152,29 @@
 
 
 
+
 <!-- 🔹 Section: Our Experience -->
 <section>
   <div>
     <!-- 🔸 Heading -->
     <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
-      <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
-      text-[22px] sm:text-[32px] md:text-[40px] lg:text-[50px] 
-      py-2 px-4 rounded-lg mb-4 w-auto sm:w-[350px] md:w-[400px] lg:w-[450px]">
-        Our experience
-      </h2>
-    </div>
+  <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
+  text-[25px] sm:text-[32px] md:text-[40px] lg:text-[50px] 
+  py-2 px-4 rounded-lg mb-4 w-auto sm:w-[350px] md:w-[400px] lg:w-[450px]">
+    Our experience
+  </h2>
+</div>
+
 
     <!-- 🔸 Description -->
-    <p class="text-center 
-    text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px] 
-    px-4 sm:px-10 md:px-20 lg:px-[120px] 
-    leading-[24px] sm:leading-[32px] md:leading-[36px] lg:leading-[43px] 
-    mt-6 sm:mt-8 md:mt-10">
-      We’ve successfully executed numerous online campaigns across various industries, specializing in comprehensive marketing strategies that engage your target audience and deliver measurable results. Our approach focuses on selecting the best tools to meet your business needs, ensuring your marketing funnel flows seamlessly from start to finish. While our clients’ advertising strategies, results and budgets are confidential, we’re excited to discuss how we can create tailored solutions for your business.
-    </p>
+   <p class="text-center 
+   text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px]
+   px-4 sm:px-10 md:px-20 lg:px-[120px] 
+   leading-[24px] sm:leading-[32px] md:leading-[36px] lg:leading-[43px] 
+   mt-6 sm:mt-8 md:mt-10">
+    We’ve successfully executed numerous online campaigns across various industries, specializing in comprehensive marketing strategies that engage your target audience and deliver measurable results. Our approach focuses on selecting the best tools to meet your business needs, ensuring your marketing funnel flows seamlessly from start to finish. While our clients’ advertising strategies, results and budgets are confidential, we’re excited to discuss how we can create tailored solutions for your business.
+</p>
+
   </div>
 
   <!-- 🔸 Image Grid -->
@@ -206,8 +221,8 @@
   <div class="bg-black/90 text-white w-full md:w-1/2 px-4 sm:px-6 md:px-10 py-8 sm:py-12 md:py-16 lg:py-24 flex flex-col justify-center items-center">
     
     <!-- Subheading -->
-    <h2 class="bg-[#00FF9C] text-black font-[700] 
-    text-[18px] sm:text-[22px] md:text-[26px] lg:text-[28px] 
+    <h2 class="bg-[#00FF9C] text-black font-[800] 
+    text-[18px] sm:text-[22px] md:text-[26px] lg:text-[25px] 
     py-2 px-4 rounded-md mb-4 
     inline-block text-center">
       Permanent cooperation
@@ -216,7 +231,7 @@
     <!-- Paragraph -->
     <p class="text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
     text-center 
-    leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[50px] 
+    leading-[24px] sm:leading-[32px] md:leading-[40px] lg:leading-[41px] 
     px-6 mt-12 ">
       We are glad to have the chance to collaborate for the past few years with FlexToday, one of the finest recruitment agencies. 
       Their meticulous and thorough approach to business growth is truly impressive.
@@ -233,8 +248,8 @@
   <div>
     <!-- 🔸 Heading -->
     <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
-      <h2 class="text-center bg-[#00FF9C] text-black font-[700] 
-      text-[20px] sm:text-[28px] md:text-[38px] lg:text-[51px] 
+      <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
+      text-[20px] sm:text-[28px] md:text-[38px] lg:text-[50px] 
       py-2 px-4 rounded-lg mb-4 
       w-auto sm:w-[400px] md:w-[550px] lg:w-[750px]">
         Brand consistency is a key!
@@ -242,13 +257,14 @@
     </div>
 
     <!-- 🔸 Description -->
-    <p class="text-center 
-    text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] 
-    px-4 sm:px-10 md:px-20 lg:px-[350px] 
-    leading-[26px] sm:leading-[32px] md:leading-[38px] lg:leading-[45px] 
-    mt-6 sm:mt-8 md:mt-10">
-      All design elements work harmoniously to present a consistent and professional brand image.
-    </p>
+  <p class="text-center 
+   text-[15px] sm:text-[20px] md:text-[24px] lg:text-[28px] 
+   px-4 sm:px-10 md:px-20 lg:px-[350px] 
+   leading-[26px] sm:leading-[32px] md:leading-[38px] lg:leading-[45px] 
+   mt-6 sm:mt-8 md:mt-10">
+    All design elements work harmoniously to present a consistent and professional brand image.
+</p>
+
   </div>
 
   <!-- 🔸 Image -->
@@ -269,8 +285,8 @@
       <!-- 🔹 Heading -->
       <div class="flex justify-center lg:justify-center">
         <h2 class="inline-block 
-          text-[20px] sm:text-[28px] md:text-[36px] lg:text-[50px] 
-          font-bold text-black bg-[#00FF99] 
+          text-[25px] sm:text-[28px] md:text-[36px] lg:text-[50px] 
+          font-[800] text-black bg-[#00FF99] 
           px-3 sm:px-5 py-2 sm:py-3 
           rounded-lg text-center">
           Pictorial mark
@@ -292,11 +308,11 @@
       </p>
       
       <!-- 🔹 Sub Heading -->
-      <h2 class="text-center lg:text-left 
-        text-[22px] sm:text-[32px] md:text-[40px] lg:text-[51px] 
-        font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+      <h2 class="text-center lg:text-center
+        text-[20px] sm:text-[32px] md:text-[40px] lg:text-[53px] 
+        font-[800] mt-10 sm:mt-16 md:mt-20 lg:mt-28">
         Watch it happen! 
-        <span class="text-[#00FF9C] font-[300]">
+        <span class="text-[#00FF9C] font-[200]">
           <i class="fa-solid fa-arrow-right"></i>
         </span> 
       </h2>
@@ -308,18 +324,31 @@
       
       <!-- 🔹 Video Container -->
       <div class="bg-[#00FF9C] 
-          rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[50px] 
-          rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[50px] 
-          p-4 sm:p-6 w-full max-w-[700px] 
-          relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] mx-auto">
+          rounded-tl-[30px] sm:rounded-tl-[40px] md:rounded-tl-[60px] 
+          rounded-bl-[30px] sm:rounded-bl-[40px] md:rounded-bl-[60px] 
+          p-4 sm:p-6 w-full max-w-[650px] 
+          relative h-[250px] sm:h-[350px] md:h-[400px] lg:h-[400px] mx-auto">
         
         <!-- 🔹 Inner Video Box -->
-        <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
-            absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
-            right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
-            h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
-            top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
-        </div>
+      <div class="bg-blue-950 p-4 sm:p-6 md:p-10 flex justify-center 
+        absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+        right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
+        h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+        top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
+
+  <video 
+    class="w-full h-full object-cover rounded-lg shadow-lg"
+    autoplay 
+    muted 
+    loop 
+    playsinline>
+    
+    <source src="https://luckymedia.marketing/wp-content/uploads/2024/06/WhatsApp-Video-2024-06-10-at-11.34.06.mp4" type="video/mp4">
+   
+  </video>
+
+</div>
+
       </div>
     </div>
 
@@ -339,7 +368,7 @@
       
       <!-- 🔹 Heading -->
       <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+        <h2 class="inline-block text-[25px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] text-black bg-[#00ff99] px-4 py-2 rounded-lg">
           Social media
         </h2>
       </div>
@@ -348,8 +377,8 @@
       <div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
         <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
-                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[500px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px]">
+                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
           
           <!-- 🔹 Rotated Phone Frame -->
           <div class="absolute transform rotate-[-10deg] shadow-2xl 
@@ -534,7 +563,7 @@
       <!-- Section Title -->
       <div class="flex justify-center md:justify-center">
         <h2
-          class="inline-block text-[28px] sm:text-[36px] md:text-[42px] lg:text-[25px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+          class="inline-block text-[25px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
           Paid ads
         </h2>
       </div>
@@ -817,16 +846,16 @@
               flex flex-col justify-center items-center">
 
     <!-- Heading -->
-    <h2 class="bg-[#00FF9C] text-black font-[700] 
-               text-[20px] sm:text-[24px] md:text-[28px] 
+    <h2 class="bg-[#00FF9C] text-black font-[800] 
+               text-[20px] sm:text-[24px] md:text-[25px] 
                py-2 px-3 sm:px-4 rounded-md mb-4 
-               w-full sm:w-[300px] md:w-[380px] text-center">
+               w-full sm:w-[300px] md:w-[300px] text-center">
       Quick brand booster
     </h2>
 
     <!-- Description -->
     <p class="text-[16px] sm:text-[18px] md:text-[23px] 
-              text-center leading-[28px] sm:leading-[36px] md:leading-[50px] 
+              text-center leading-[28px] sm:leading-[36px] md:leading-[39px] 
               px-4 sm:px-8 md:px-16">
       FitDieta has been a trusted provider of diet catering services for many years. 
       Our client needed a quick boost in engagement and online presence before selling 
@@ -849,31 +878,37 @@
 <section>
   <div class="flex flex-col md:flex-row items-center gap-12 mt-32">
   <!-- Left Side Content -->
-  <div class="md:w-1/2 text-center md:text-left w-[50%] p-[30px]">
-    <div class="flex justify-center">
-       <h2 class="inline-block text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg mb-20">
-New website
+  <div class="md:w-1/2 text-center md:text-left w-[50%] p-[30px] px-20">
+   <div class="flex justify-center">
+  <h2 class="inline-block 
+     text-[25px] sm:text-[35px] md:text-[45px] lg:text-[50px] 
+     font-[800] text-black bg-[#00ff99] 
+     px-4 py-2 rounded-lg mb-20">
+    New website
+  </h2>
+</div>
 
-
-</h2>
- 
-    </div>
    
-    <p class="text-black leading-relaxed text-[23px] text-center">
+    <p class="text-[#171717] leading-[36px] lg:text-[20px] sm:text-[18px] text-[14px] text-center">
     A clean, bright design that leads customers directly to ordering their diet plan. We focused on clear, concise information, making it easy for users to find key details about diets, prices, and delivery options. Developed with Elementor and custom code, the website allows the company owner to easily update essential content. Our aim is to make our clients more self-sufficient, reducing their reliance on us—unless, of course, they prefer to rely on us.
 
 
     </p>
    
-    <h1>
-
-    </h1>
+   <h2 class="text-center lg:text-center
+        text-[20px] sm:text-[32px] md:text-[40px] lg:text-[53px] 
+        font-[800] mt-10 sm:mt-16 md:mt-20 lg:mt-28">
+       See the simulation 
+        <span class="text-[#00FF9C] font-[200]">
+          <i class="fa-solid fa-arrow-down"></i>
+        </span> 
+      </h2>
 </div>
   <!-- Right Side Video Box -->
-  <div class="justify-start ">
+  <div class="justify-start w-[50%]">
   
    <div class=" top-[] right-[-7]">
-    <img src="./img/fit8-01.png" alt="">
+    <img src="./assets/img/fit8-01.png" alt="">
    </div>
 
 
@@ -1119,7 +1154,7 @@ New website
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-6 h-6 text-green-400"
+        class="w-6 h-6  text-green-400"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -1397,6 +1432,67 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 
 
 
+<section>
+  <div class="bg-black flex flex-col lg:flex-row gap-[0px] items-center py-20 mt-32">
+
+    <!-- 🔸 Left Content -->
+    <div class="w-full lg:w-1/2">
+      
+      <!-- 🔹 Heading -->
+      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
+        <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[25px] font-[800] text-black bg-[#00ff99] px-4  py-[14px] rounded-lg ">
+          Political campaign
+        </h2>
+      </div>
+
+      <!-- 🔹 Mobile Video (Phone Mockup Style) -->
+      <div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
+        <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
+                    rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
+                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
+          
+            
+        <div class="top-[-90px] absolute">
+          <img src="./assets/img/ulotka2-01-980x766.png" alt="">
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔸 Right Side Content -->
+    <div class="w-full lg:w-1/2 mt-16 lg:mt-0 px-4">
+
+  <div>
+    <img src="./assets/img/images.jpeg" alt="">
+  </div>
+
+    <!-- 🔹 Description -->
+      <div>
+        <video controls="">
+					<source type="video/mp4" src="https://luckymedia.marketing/wp-content/uploads/2024/08/animacja_tlo.mp4">
+					
+				</video>
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="w-full flex flex-col md:flex-row mt-28">
   <!-- Left side -->
@@ -1479,35 +1575,61 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 
 <section class="mt-11">
   <div class="flex w-[100%] px-10 gap-28">
+    <!-- Left Side -->
     <div class="w-[50%] ">
       <div class="text-center items-center flex justify-center mb-10 ">
-<h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] py-2 px-3 sm:px-4 rounded-md mb-4 w-full sm:w-[300px] md:w-[380px] text-center">
-     Website & apply form
-
-    </h2>
+        <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] py-2 px-3 sm:px-4 rounded-md mb-4 w-full sm:w-[300px] md:w-[380px] text-center">
+          Website & apply form
+        </h2>
       </div>
-        
-    <div >
-      <img class="rounded-[30px]" src="./assets/img/screeny-1280x853.png" alt="">
+      <div>
+        <img class="rounded-[30px]" src="./assets/img/screeny-1280x853.png" alt="">
+      </div>
     </div>
 
-    </div>
-
-<div class="w-[50%]">
-<p class="text-[#171717] leading-[36px] 
+    <!-- Right Side -->
+    <div class="w-[50%]">
+      <p class="text-[#171717] leading-[36px] 
         text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
         text-center lg:text-center px-0 mb-6">
         We designed a light and user-friendly website for a recruitment agency, emphasizing readability and a transparent hiring process. The site features a custom application form that integrates seamlessly with lead management tools, streamlining the recruitment workflow. This tailored solution not only enhances the user experience but also ensures efficient data handling, making it easier for the agency to manage and process applications with ease.
       </p>
-       <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
-         w-[90%]  sm:w-[85%] md:w-[80%] lg:w-[500px] 
-        right-1/2 translate-x-1/2 lg:translate-x-0 lg:right-[80px] 
-        h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
-        top-[-60px] sm:top-[-100px] md:top-[-130px] lg:top-[-170px]">
-    </div>
+     <div class="bg-[#0b0030] p-4 sm:p-6 md:p-10 flex justify-center 
+   w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+   mx-auto   <!-- ✅ ye add -->
+   h-[200px] sm:h-[300px] md:h-[380px] lg:h-[450px] 
+   -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-40">
+   <!-- yaha video ya content -->
 </div>
-     
+
+    </div>
   </div>
+
+  <!-- ✅ Responsive CSS -->
+  <style>
+    /* Tablet aur neeche flex ko column banao */
+    @media (max-width: 1024px) {
+      .flex {
+        flex-direction: column;
+        gap: 50px; /* thoda gap */
+      }
+      .w-\[50\%\] {
+        width: 100% !important;
+      }
+    }
+
+    /* Mobile ke liye aur adjust */
+    @media (max-width: 640px) {
+      .flex {
+        padding: 0 20px !important;
+        gap: 30px;
+      }
+      p {
+        text-align: center !important;
+        line-height: 28px !important;
+      }
+    }
+  </style>
 </section>
 
 
@@ -1522,38 +1644,36 @@ To maintain our presence and effectiveness in these fast-paced social media envi
   <div class="w-full lg:w-1/2 ">
     <!-- Heading -->
     <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-      <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+      <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[32px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
         Social media
       </h2>
     </div>
 
     <!-- Mobile Video -->
-
-<div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
-  <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
-              rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
-              p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[500px] 
-              relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px]">
-    
-    <div class="absolute transform rotate-[-10deg] shadow-2xl 
-                top-[-30px] sm:top-[-40px] md:top-[-50px] lg:top-[-60px] 
-                right-[10px] sm:right-[30px] md:right-[50px] lg:right-[80px]">
-      <div class="w-[140px] sm:w-[180px] md:w-[240px] lg:w-[300px] 
-                  h-[260px] sm:h-[320px] md:h-[360px] lg:h-[400px] 
-                  rounded-[18px] sm:rounded-[20px] md:rounded-[22px] lg:rounded-[25px] 
-                  border border-gray-300 overflow-hidden bg-black">
+    <div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
+      <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
+                  rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
+                  p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[500px] 
+                  relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[300px]">
         
-        <!-- Video inside mobile -->
-        <video autoplay muted loop playsinline class="w-full h-full object-cover">
-          <source src="./assets/videos/demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
+        <div class="absolute transform rotate-[-10deg] shadow-2xl 
+                    top-[-30px] sm:top-[-40px] md:top-[-50px] lg:top-[-60px] 
+                    right-[10px] sm:right-[30px] md:right-[50px] lg:right-[80px]">
+          <div class="w-[140px] sm:w-[180px] md:w-[240px] lg:w-[300px] 
+                      h-[260px] sm:h-[320px] md:h-[360px] lg:h-[400px] 
+                      rounded-[18px] sm:rounded-[20px] md:rounded-[22px] lg:rounded-[25px] 
+                      border border-gray-300 overflow-hidden bg-black">
+            
+            <!-- Video inside mobile -->
+            <video autoplay muted loop playsinline class="w-full h-full object-cover">
+              <source src="./assets/videos/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
   </div>
 
   <!-- Right Side Swiper -->
@@ -1581,56 +1701,106 @@ To maintain our presence and effectiveness in these fast-paced social media envi
       <div class="swiper-button-next custom-nav"></div>
       <div class="swiper-button-prev custom-nav"></div>
     </div>
+
     <div>
-      <p class="text-[white] text-[20px] sm:text-[18px] md:text-[20px] leading-[36px]  sm:leading-[28px] md:leading-[30px] text-center mt-24 px-4">
+      <p class="text-[white] text-[20px] sm:text-[18px] md:text-[20px] leading-[36px]  sm:leading-[28px] md:leading-[30px] text-center mt-24 ">
         We create engaging, professional, and impactful posts that resonate with the FlexToday audience. Our goal is to capture the user’s attention, whether they are scrolling through their feed or searching for their next career move. Here are some of our social media posts, made for targeted paid advertisements, job offer announcements, Google Ads and usual content designed to uphold our polished and professional online presence.
       </p>
     </div>
-    <style>
-    .image-box {
-      width: 600px;
-      height: 400px;
-      margin: 50px auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
-    }
-    .image-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-    }
-    .image-box img.active {
-      display: block;
-    }
-  </style>
-</head>
-<body>
 
-  <div class="image-box">
-    <img src="img1.png" class="active" alt="Image 1">
-    <img src="img2.png" alt="Image 2">
-    <img src="img3.png" alt="Image 3">
-    <img src="img4.png" alt="Image 4">
-    <img src="img5.png" alt="Image 5">
-    <img src="img6.png" alt="Image 6">
+    <!-- Image Slider -->
+    <div class="image-box">
+      <img src="img1.png" class="active" alt="Image 1">
+      <img src="img2.png" alt="Image 2">
+      <img src="img3.png" alt="Image 3">
+      <img src="img4.png" alt="Image 4">
+      <img src="img5.png" alt="Image 5">
+      <img src="img6.png" alt="Image 6">
+    </div>
   </div>
-
-  <script>
-    const images = document.querySelectorAll(".image-box img");
-    let current = 0;
-
-    setInterval(() => {
-      images[current].classList.remove("active");
-      current = (current + 1) % images.length;
-      images[current].classList.add("active");
-    }, 3000); // 3 second baad change hoga
-  </script>
-  </div>
-
 </div>
 </section>
+
+<!-- ✅ Extra CSS for responsiveness -->
+<style>
+.image-box {
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.image-box img.active {
+  display: block;
+}
+
+/* ✅ Tablet */
+@media (max-width: 1024px) {
+  .swiper.mySwiper {
+    max-width: 90% !important;
+  }
+  .image-box {
+    width: 90% !important;
+    height: auto !important;
+  }
+}
+
+/* ✅ Medium screens */
+@media (max-width: 768px) {
+  .swiper.mySwiper {
+    max-width: 100% !important;
+  }
+  .image-box {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .image-box img {
+    height: auto !important;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 480px) {
+  .bg-black.flex {
+    flex-direction: column !important;
+  }
+  .image-box {
+    width: 95% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+  }
+  .swiper.mySwiper {
+    width: 95% !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  p {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+}
+</style>
+
+<!-- ✅ JS for image slider -->
+<script>
+const images = document.querySelectorAll(".image-box img");
+let current = 0;
+
+setInterval(() => {
+  images[current].classList.remove("active");
+  current = (current + 1) % images.length;
+  images[current].classList.add("active");
+}, 3000); // 3 sec baad change
+</script>
 
 
 
@@ -1656,18 +1826,20 @@ To maintain our presence and effectiveness in these fast-paced social media envi
   <style>
     .boddy {
       background: #00ff99; /* green background */
+      padding: 20px;
     }
     .video-row {
       display: flex;
-      justify-content: center;
-      gap: 30px; /* gap between videos */
-      padding: 50px 50px;
+      justify-content: space-evenly;
+      flex-wrap: wrap; /* ✅ wrap enable so overflow nahi hoga */
+      gap: 20px;       /* ✅ gap between videos */
     }
     .video-box {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 220px;
       overflow: hidden;
       background: #000;
+      border-radius: 10px; /* thoda smooth look */
     }
     .video-box video {
       width: 100%;
@@ -1675,34 +1847,37 @@ To maintain our presence and effectiveness in these fast-paced social media envi
       object-fit: cover;
     }
 
-    /* ✅ responsive sizes */
+    /* ✅ Laptop size */
     @media (max-width: 1024px) {
       .video-box {
-        width: 200px;
+        width: 180px;
         height: 200px;
       }
     }
 
+    /* ✅ Tablet size */
     @media (max-width: 768px) {
       .video-box {
         width: 160px;
-        height: 160px;
+        height: 180px;
       }
     }
 
-    /* ✅ small screen per neeche neeche (column) */
+    /* ✅ Mobile size (neeche neeche) */
     @media (max-width: 480px) {
       .video-row {
         flex-direction: column;
         align-items: center;
       }
       .video-box {
-        width: 200px;
+        width: 90%;   /* screen ke hisaab se */
+        max-width: 260px;
         height: 200px;
       }
     }
   </style>
 </section>
+
 
 
 <script>
@@ -1719,8 +1894,10 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 <!-- end off section -->
 <section class="w-full py-16 bg-white text-center">
   <!-- Text -->
-   <div class="w-full text-center font-[700] flex justify-center items-center">
-   <p class="text-[47px] leading-[61px] max-w-4xl text-[#333]">
+   <div class="w-full text-center font-[600] flex justify-center items-center px-4 sm:px-6 md:px-10">
+   <p class="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[47px] 
+             leading-[34px] sm:leading-[44px] md:leading-[54px] lg:leading-[61px] 
+             max-w-4xl text-[#333]">
     We hope you enjoyed reviewing our portfolio. If you need to see something more specific to your
     fields, please don’t hesitate to ask.
   </p>
@@ -1728,26 +1905,32 @@ To maintain our presence and effectiveness in these fast-paced social media envi
   
 
   <!-- Thank you heading -->
-  <h2 class="inline-block mt-10 bg-[#00FF9C] text-black font-[700] 
-             text-[28px] sm:text-xl md:text-[43px] py-6 px-6 
+  <h2 class="inline-block mt-8 sm:mt-10 bg-[#00FF9C] text-black font-[800] 
+             text-[20px] sm:text-[28px] md:text-[36px] lg:text-[43px] py-4  px-4 sm:px-6 
              rounded-md text-center">
     Thank you for your time!
   </h2>
 
   <!-- Contact Button -->
-  <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
+  <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10 px-4">
         <button
-          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent px-4 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group overflow-hidden">
+          class="relative flex items-center justify-center rounded-lg border-[5px] border-black hover:border-transparent 
+                 px-4 sm:px-6 md:px-8 py-2 sm:py-3 font-worksans text-black transition-all duration-500 
+                 group overflow-hidden max-w-full">
 
           <!-- Normal text -->
           <span
-            class="transition-all text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+            class="transition-all text-[14px] sm:text-[18px] md:text-[22px] lg:text-[31px] 
+                   duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
             Contact us
           </span>
 
           <!-- Hover text -->
           <span
-            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[24px] lg:text-[26px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[26px] 
+                   transition-all duration-500 group-hover:opacity-100 
+                   group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] 
+                   bg-white rounded-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 border-[5px] border-black whitespace-nowrap">
             Fill out the brief
           </span>
         </button>
@@ -1756,7 +1939,76 @@ To maintain our presence and effectiveness in these fast-paced social media envi
 
 
 
+<footer class="bg-[#00ff99] text-black pt-20 pb-8 px-6 md:px-12 lg:px-20">
+ <div class="max-w-full flex flex-col sm:flex-row flex-wrap justify-evenly gap-8">
 
+    <!-- Logo + Social -->
+    <div class="flex flex-col items-center sm:items-start">
+     <div class="bg-black p-4 rounded-lg mb-4">
+        <img class="w-[223px] sm:w-[148px]" src="./assets/img/kwadrat-na-strone-01.png" alt="">
+     </div>
+      <div class="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+        <a href="#" class="text-black hover:text-gray-700">
+          <i class="fa-brands fa-facebook text-[28px]"></i>
+        </a>
+        <a href="#" class="text-black hover:text-gray-700">
+          <i class="fa-brands fa-square-instagram text-[28px]"></i>
+        </a>
+        <span class="text-lg">Follow us!</span>
+      </div>
+    </div>
+
+   <!-- Timings -->
+   <div class="text-center sm:text-left text-[14px]">
+     <h3 class="font-bold text-[26px]">We are open!</h3>
+     <!-- For large screen -->
+     <div class="hidden sm:block">
+       <div class="flex gap-16 justify-center sm:justify-start mt-6">
+         <p class="font-bold">Monday -</p>
+         <p>08:00 -</p>
+       </div>
+       <div class="flex gap-[90px] justify-center sm:justify-start">
+         <p class="font-bold">Friday</p>
+         <p>16:00</p>
+       </div>
+     </div>
+     <!-- For small screen -->
+     <div class="block sm:hidden">
+       <div class="flex gap-4 justify-center sm:justify-start mt-6">
+         <p class="font-bold">Monday - Friday </p>
+         <p>08:00 - 16:00</p>
+       </div>
+     </div>
+   </div>
+
+   <!-- Contact -->
+   <div class="text-center sm:text-left text-[14px]">
+     <p class="font-bold flex justify-center sm:justify-start items-center gap-2">
+       <i class="fa-regular fa-envelope-open"></i> E-mail us here:
+     </p>
+     <p class="break-all">hi@luckymedia.marketing</p>
+
+     <p class="font-bold flex justify-center sm:justify-start items-center gap-2 mt-4">
+       <i class="fa-brands fa-whatsapp"></i> WhatsApp/call here:
+     </p>
+     <p>+48 533 630 356</p>
+   </div>
+
+   <!-- Links -->
+   <div class="flex flex-col gap-8 text-center sm:text-left">
+     <a href="#" class="font-bold">Site map</a>
+     <a href="#" class="font-bold">Privacy policy</a>
+     <a href="#" class="font-bold">Cookies policy</a>
+   </div>
+
+</div>
+
+
+  <!-- Bottom Text -->
+  <div class="text-center text-sm mt-8 px-4">
+    All rights reserved: Lucky Media www.luckymedia.marketing ©
+  </div>
+</footer>
 
 
 
