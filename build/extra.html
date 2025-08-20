@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+      <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    .swiper {
+      width: 80%;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 350px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    /* Arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #00ff90;
+    }
+  </style>
+</head>
+<body>
+    <!-- Slider main container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+      <div class="swiper-slide"><img src="./assets/img/557-300x350.jpg" width="100%" /></div>
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true, // Infinite loop
+      speed: 800, // Smooth transition speed (ms)
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 2500, // Next slide after 2.5s
+        disableOnInteraction: false, // User interact kare tab bhi chale
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+</body>
+</html>
