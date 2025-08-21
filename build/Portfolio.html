@@ -21,8 +21,8 @@
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <title>lucky media</title>
-  <style>
-  /* Custom nav buttons */
+  <!-- <style>
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 40px;
@@ -33,7 +33,7 @@
     color: #00ff90;
   }
 
-</style>
+</style> -->
   <style>
     
   .swiper {
@@ -46,7 +46,7 @@
       background-size: cover;
       width: 300px;
       height: 350px;
-      border-radius: 15px;
+      /* border-radius: 15px; */
       overflow: hidden;
     }
 
@@ -61,6 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -70px;
 }
 
 /* arrow icon size control */
@@ -95,8 +96,8 @@
 
 
     <ul class="flex  gap-5 lg:gap-6 text-sm md:text-base text-center lg:text-left">
-      <li><a href="./index.html" class="text-[#00FF9C] hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
-      <li><a href="./Portfolio.html" class="text-[14px] text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+      <li><a href="./index.html" class="text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
+      <li><a href="./Portfolio.html" class="text-[14px] text-[#00FF9C]  max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
         <a href="javascript:void(0)" onclick="openContactPopup()" 
            class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
@@ -683,13 +684,20 @@
       <div class="swiper-wrapper">
 
         <!-- ================= Swiper Slides ================= -->
-        <div class="swiper-slide"><img src="img1.jpg" /></div>
-        <div class="swiper-slide"><img src="img2.jpg" /></div>
-        <div class="swiper-slide"><img src="img3.jpg" /></div>
-        <div class="swiper-slide"><img src="img4.jpg" /></div>
-        <div class="swiper-slide"><img src="img5.jpg" /></div>
-        <div class="swiper-slide"><img src="img6.jpg" /></div>
-        <div class="swiper-slide"><img src="img7.jpg" /></div>
+        <div class="swiper-slide"><img src="./assets/img/stickers-01.png" /></div>
+        <!-- <div class="swiper-slide"><img src="./assets/img/F3.png" /></div> -->
+        <div class="swiper-slide"><img src="./assets/img/A4-Flyer-Poster-Mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Roll-up-banner-mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Square-Card-and-Envelope-Mockup-1-01-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Top-view-on-ring-binder-mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/flextoday-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/stickers-01.png" /></div>
+        <!-- <div class="swiper-slide"><img src="./assets/img/F3.png" /></div> -->
+        <div class="swiper-slide"><img src="./assets/img/A4-Flyer-Poster-Mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Roll-up-banner-mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Square-Card-and-Envelope-Mockup-1-01-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/Top-view-on-ring-binder-mockup-01.png" /></div>
+        <div class="swiper-slide"><img src="./assets/img/flextoday-01.png" /></div>
         <!-- ================= End Swiper Slides ================= -->
 
       </div>
@@ -806,26 +814,30 @@
 <section class="mt-16 px-4 md:px-12 lg:px-20">
 
    <!-- Sub Title -->
-      <h2 class=" 
+     
+  <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    
+    <!-- Left Side (Laptop Image / Mockup) -->
+    <div class="lg:w-1/2">
+       <h2 class=" 
         text-[20px] sm:text-[28px] md:text-[36px] lg:text-[45px] 
-        font-[800]  sm:mt-16 md:mt-20 lg:mt-28   gap-4 text-center lg:text-left ">
+        font-[800]  gap-4 text-center  ">
         See the simulation 
         <span class="text-[#00FF9C] font-[200]">
           <i class="fa-solid fa-arrow-down"></i>
         </span> 
       </h2>
-  <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-    
-    <!-- Left Side (Laptop Image / Mockup) -->
-    <div class="lg:w-1/2 flex justify-center">
-       <video 
+      <div class="w-full">
+  <video 
     autoplay 
     muted 
     loop 
     playsinline
-    class="w-full max-w-[800px] "
+    class="w-full  "
     src="./assets/img/Artwork-1.webm">
   </video>
+      </div>
+     
     </div>
 
     <!-- Right Side (Text Content) -->
@@ -885,8 +897,8 @@
 
     <!-- right side (video) -->
     <div class="lg:w-1/2 lg:px-[44px] xl:px-0 flex justify-evenly order-2 lg:order-3">
-      <div class="pt-[22px] xl:w-[85%] xl:pr-[10px]">
-        <video controls
+      <div class="pt-[22px]">
+        <video controls class="w-full"
           src="./assets/img/Final-animacja-dzwiek.mp4"></video>
       </div>
     </div>
@@ -1192,9 +1204,7 @@
  To maintain our presence and effectiveness in these fast-paced social media environments, we stay consistently active by utilizing advanced tools like IMM for media monitoring.
             </p>
          
-      
-
-        <!-- 🔹 Sub Heading -->
+       <!-- 🔹 Sub Heading -->
         <h2 class="text-center lg:text-center 
           text-[22px] sm:text-[32px] md:text-[40px] lg:text-[51px] 
           font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
@@ -1203,9 +1213,14 @@
             <i class="fa-solid fa-arrow-down"></i>
           </span> 
         </h2>
+
+       
       </div>
       
     </div>
+
+
+    
 
     <!-- ================= Right Side Video Box ================= -->
     <div class="flex justify-center md:justify-start  md:mt-44 w-full md:w-1/2"> 
@@ -1227,7 +1242,130 @@
   </div> 
 </section>
 
+<section>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 bg-gray-100">
+  
+  <!-- Card 1 -->
+  <div class="bg-white rounded-xl shadow-md border-[6px] border-green-400 overflow-hidden">
+    <!-- Video thumbnail -->
+    <div class="relative">
+      <img src="https://picsum.photos/600/300" alt="Video Thumbnail" class="w-full h-48 object-cover">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <button class="bg-white rounded-full p-4 shadow-md">
+          ▶
+        </button>
+      </div>
+    </div>
 
+    <!-- Profile + Share -->
+    <div class="flex items-center justify-between px-4 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold">Grzegorz Braun</span>
+      </div>
+      <button class="text-gray-500 hover:text-gray-700">⤴</button>
+    </div>
+
+    <!-- Text -->
+    <div class="px-4 pb-4 text-sm text-gray-700 space-y-2">
+      <p>🇵🇱 Na kogo zagłosują Opolanie?  
+      To pytanie padło podczas opolskiej edycji <b>“Bosak&Mentzen NA ŻYWO”</b> 👑</p>
+      <p class="text-gray-500">Materiał wyborczy sfinansowany przez KW Konfederacja Wolność i Niepodległość.</p>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center justify-between px-4 py-2 border-t text-gray-600 text-sm">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">👍 <span>91</span></span>
+        <span class="flex items-center space-x-1">💬 <span>16</span></span>
+        <span class="flex items-center space-x-1">↗ <span>9</span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Card 2-->
+  <div class="bg-white rounded-xl shadow-md border-[6px] border-green-400 overflow-hidden">
+    <!-- Video thumbnail -->
+    <div class="relative">
+      <img src="https://picsum.photos/600/300" alt="Video Thumbnail" class="w-full h-48 object-cover">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <button class="bg-white rounded-full p-4 shadow-md">
+          ▶
+        </button>
+      </div>
+    </div>
+
+    <!-- Profile + Share -->
+    <div class="flex items-center justify-between px-4 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold">Grzegorz Braun</span>
+      </div>
+      <button class="text-gray-500 hover:text-gray-700">⤴</button>
+    </div>
+
+    <!-- Text -->
+    <div class="px-4 pb-4 text-sm text-gray-700 space-y-2">
+      <p>🇵🇱 Na kogo zagłosują Opolanie?  
+      To pytanie padło podczas opolskiej edycji <b>“Bosak&Mentzen NA ŻYWO”</b> 👑</p>
+      <p class="text-gray-500">Materiał wyborczy sfinansowany przez KW Konfederacja Wolność i Niepodległość.</p>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center justify-between px-4 py-2 border-t text-gray-600 text-sm">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">👍 <span>91</span></span>
+        <span class="flex items-center space-x-1">💬 <span>16</span></span>
+        <span class="flex items-center space-x-1">↗ <span>9</span></span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Card 3 -->
+  <div class="bg-white rounded-xl shadow-md border-[6px] border-green-400 overflow-hidden">
+    <!-- Video thumbnail -->
+    <div class="relative">
+      <img src="https://picsum.photos/600/300" alt="Video Thumbnail" class="w-full h-48 object-cover">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <button class="bg-white rounded-full p-4 shadow-md">
+          ▶
+        </button>
+      </div>
+    </div>
+
+    <!-- Profile + Share -->
+    <div class="flex items-center justify-between px-4 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold">Grzegorz Braun</span>
+      </div>
+      <button class="text-gray-500 hover:text-gray-700">⤴</button>
+    </div>
+
+    <!-- Text -->
+    <div class="px-4 pb-4 text-sm text-gray-700 space-y-2">
+      <p>🇵🇱 Na kogo zagłosują Opolanie?  
+      To pytanie padło podczas opolskiej edycji <b>“Bosak&Mentzen NA ŻYWO”</b> 👑</p>
+      <p class="text-gray-500">Materiał wyborczy sfinansowany przez KW Konfederacja Wolność i Niepodległość.</p>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex items-center justify-between px-4 py-2 border-t text-gray-600 text-sm">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center space-x-1">👍 <span>91</span></span>
+        <span class="flex items-center space-x-1">💬 <span>16</span></span>
+        <span class="flex items-center space-x-1">↗ <span>9</span></span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</section>
 
     <section class="mt-[90px] mb-24">
         <div class="lg:flex">
@@ -1354,8 +1492,16 @@
                     relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
           
             
-        <div class="lg:top-[-90px] top-[-30px] absolute">
-          <img src="./assets/img/ulotka2-01-980x766.png" alt="">
+        <div class="lg:top-[-90px] top-[-30px] absolute -rotate-12">
+          <video 
+        class="w-full h-full object-cover rounded-lg "
+        autoplay 
+        muted 
+        loop 
+        playsinline>
+        
+        <source src="./assets/img/menu-unscreen.webm" type="video/mp4">
+      </video>
         </div>
 
         </div>
@@ -1442,7 +1588,7 @@
 
 <section class="w-full flex flex-col md:flex-row mt-16">
   <!-- Left side -->
-  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-6 sm:p-8 md:p-10">
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-6 py-10 lg:py-0 sm:p-8 md:p-10">
     <img src="./assets/img/black1.png" alt="" class="max-w-[250px] sm:max-w-[300px] md:max-w-full ">
   </div>
 
@@ -1584,14 +1730,14 @@
 
 <!-- 🔹 Section: Social Media -->
 <section>
-  <div class="bg-black flex flex-col lg:flex-row  py-12 ">
+  <div class="bg-black flex flex-col lg:flex-row  py-12 mt-20">
 
     <!-- 🔸 Left Content -->
     <div class="w-full lg:w-[30%]">
       
       <!-- 🔹 Heading -->
       <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[25px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+        <h2 class="inline-block text-[25px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] text-black bg-[#00ff99] px-4 py-2 rounded-lg ">
           Social media
         </h2>
       </div>
@@ -1630,7 +1776,7 @@
       <div class="swiper-slide"><img src="./assets/img/4-salider (3).png" width="100%" /></div>
       <div class="swiper-slide"><img src="./assets/img/4-salider (4).png" width="100%" /></div>
       <div class="swiper-slide"><img src="./assets/img/4-salider (5).png" width="100%" /></div>
-      <div class="swiper-slide"><img src="./assets/img/4-salider (6).png" width="100%" /></div>
+      <!-- <div class="swiper-slide"><img src="./assets/img/4-salider (6).png" width="100%" /></div> -->
       <div class="swiper-slide"><img src="./assets/img/4-salider (7).png" width="100%" /></div>
       
     </div>
@@ -1649,6 +1795,10 @@
 <div class="w-full max-w-4xl mx-auto">
   <!-- Slider main container -->
   <div class="swiper mySwiper rounded-xl overflow-hidden">
+    <!-- Additional required wrapper -->
+    <div class="w-full max-w-4xl mx-auto">
+  <!-- Slider main container -->
+  <div class="swiper mySwiper2 rounded-xl overflow-hidden">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -1671,6 +1821,9 @@
         <img src="./assets/img/salider1 (6).png" class="w-full h-[400px] object-cover" />
       </div>
     </div>
+  </div>
+</div>
+
   
    
   </div>
@@ -1890,19 +2043,17 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-  var swiper = new Swiper(".mySwiper", {
+// Slider 2
+  var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
+    speed: 600,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper2-next",
+      prevEl: ".swiper2-prev",
     },
   });
 </script>
