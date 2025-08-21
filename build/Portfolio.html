@@ -99,7 +99,7 @@
       <li><a href="./index.html" class="text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
       <li><a href="./Portfolio.html" class="text-[14px] text-[#00FF9C]  max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
-        <a href="javascript:void(0)" onclick="openContactPopup()" 
+         <a href="javascript:void(0)" onclick="openContactPopup()" 
            class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
           Contact
         </a>
@@ -243,32 +243,33 @@
 
   <!-- 🔸 Image Grid -->
   <div class="flex flex-col items-center gap-6 sm:gap-8 mt-10 sm:mt-16 md:mt-20 lg:mt-28" id="imageContainer">
-    <div class="w-full max-w-6xl space-y-6 px-10">
+  <div class="w-full max-w-6xl space-y-6 px-10">
 
-      <!-- First Row -->
-      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-        <!-- Large image -->
-        <img src="./assets/img/Screenshot 2025-08-13 153825.png" alt=""
-             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+    <!-- First Row -->
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+      <!-- Large image -->
+      <img src="./assets/img/Screenshot 2025-08-13 153825.png" alt=""
+           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
 
-        <!-- Small image -->
-        <img src="./assets/img/2022-03-31_19h56_38.png" alt=""
-             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
-      </div>    
+      <!-- Small image -->
+      <img src="./assets/img/2022-03-31_19h56_38.png" alt=""
+           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
+    </div>    
 
-      <!-- Second Row -->
-      <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-        <!-- Small image -->
-        <img src="./assets/img/Screenshot-2024-08-20-201306.png" alt=""
-             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
+    <!-- Second Row -->
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+      <!-- Small image -->
+      <img src="./assets/img/Screenshot-2024-08-20-201306.png" alt=""
+           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
 
-        <!-- Large image -->
-        <img src="./assets/img/2022-03-31_18h06_03.png" alt=""
-             class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C]">
-      </div>    
+      <!-- Large image -->
+      <img src="./assets/img/2022-03-31_18h06_03.png" alt=""
+           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
+    </div>    
 
-    </div>
   </div>
+</div>
+
 </section>
 
 
@@ -1223,7 +1224,7 @@
     
 
     <!-- ================= Right Side Video Box ================= -->
-    <div class="flex justify-center md:justify-start  md:mt-44 w-full md:w-1/2"> 
+    <div class="flex justify-center md:justify-start  md:mt-44 w-full md:w-1/2 mb-20"> 
       <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
@@ -1747,17 +1748,25 @@
         <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
                     p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px] ">
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[415px] ">
           
           <!-- 🔹 Rotated Phone Frame -->
-        
-              <!-- 🔹 Video inside phone -->
-              <video 
-    loop 
-    autoplay
-    class="w-full max-w-[800px] rounded-xl shadow-lg -mt-20"
-    src="./assets/img/Object_6.webm">
-  </video>
+        <div>
+      
+          <div class="relative -rotate-12  lg:-right-20 -right-2">
+<!-- Image 1 (Down animation) -->
+  <img src="./assets/img/7.png "
+       class="lg:w-[200px] w-[100px] h-[200px] lg:h-[450px] object-cover animate-down" />
+          </div>
+  
+    <div class=" absolute -rotate-12 lg:-top-28  lg:-right-40  right-10 -top-8">
+<!-- Image 2 (Up animation) -->
+  <img src="./assets/img/gta-0111.png"
+       class="lg:w-[450px] w-[200px] h-[200px] lg:h-[450px] object-cover animate-up" />
+    </div>
+  
+
+</div>
 
             </div>
         
@@ -1964,6 +1973,134 @@
 
 
 
+
+
+<!-- Contact Popup -->
+<div id="contactPopup" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+  <!-- Overlay -->
+ <div id="popupOverlay" class="absolute inset-0 bg-[#00ff99]/20 backdrop-blur-lg opacity-0 transition-opacity duration-300"></div>
+
+  
+  <!-- Popup Content -->
+ <div id="popupContent" 
+     class="relative bg-white/60 backdrop-blur-lg border border-white/20 rounded-lg shadow-lg 
+            w-[95%] lg:w-[80%] xl:w-[70%] max-h-[90vh] overflow-y-auto 
+            transform scale-90 opacity-0 transition-all duration-300">
+    
+    <!-- Close Button -->
+    <button onclick="closeContactPopup()" class="absolute top-4 right-4 text-3xl font-bold text-gray-500 hover:text-black z-10">&times;</button>
+
+    <!-- Contact Section -->
+   
+<section class="">
+  <div class="lg:border-4 border border-black flex flex-col xl:flex-row w-full rounded-2xl sm:p-10 lg:p-12 gap-10">
+    
+    <!-- Left Text -->
+    <div class="w-full xl:w-2/5 p-6 text-center lg:text-left">
+      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[54px] font-extrabold leading-tight pt-6">
+        It might be your <br class="lg:hidden block"> <span class="text-[#00ff99]">lucky draw!</span> <br class="lg:hidden block"> Contact us today.
+      </h1>
+
+      <!-- Cards Section -->
+      <div class="h-80 text-white flex flex-col items-center justify-center p-6 select-none">
+        <div id="stage" class="relative  w-full max-w-6xl spread">
+          
+          <!-- Card 1 -->
+          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
+            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
+            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
+              <path d="M50 86 L18 54 C7 43 7 26 18 16 c9-8 24-7 32 4 8-11 23-12 32-4 11 10 11 27 0 38z"/>
+            </svg>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
+            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
+            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
+              <path d="M50 18a18 18 0 1 1 0 36h-2l2 0a18 18 0 1 1-15 27h0A18 18 0 1 1 48 54h4c0 9-2 16-6 22h8c-4-6-6-13-6-22h4a18 18 0 1 1 0-36z"/>
+            </svg>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
+            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
+            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
+              <path d="M50 8 86 50 50 92 14 50 50 8z"/>
+            </svg>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
+            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
+            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
+            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
+              <path d="M50 10 C30 30,20 45,20 58 c0 9,7 18,16 18 7 0 11-5 14-10 3 5 7 10 14 10 9 0 16-9 16-18 0-13-10-28-30-48z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="md:text-lg text-xs  md:leading-8 leading-6 text-[#171717] ">
+        Your business seems to be stuck at some level? Maybe you are about to finalize your dream ideas and kick off with a new venture? Let us know what’s on your mind, and we’ll see how we can assist you.
+      </h3>
+    </div>
+
+    <!-- Form -->
+    <div class="w-full xl:w-3/5">
+      <form class="space-y-5 bg-[#e8e8e8] border border-black/10 rounded-2xl p-4 sm:p-5 md:p-16 shadow-sm sm:border-[1px] md:border-[5px]">
+        <p class="text-[14px] mb-6 text-gray-500">Book a video meeting <span class="text-black">here.</span></p>
+        <div>
+          <label for="name" class="block font-semibold mb-2">Your name</label>
+          <input id="name" type="text" class="w-full rounded-lg border px-4 py-3" />
+        </div>
+        <div>
+          <label for="email" class="block font-semibold mb-2">Your email</label>
+          <input id="email" type="email" class="w-full rounded-lg border px-4 py-3" />
+        </div>
+        <div>
+          <label for="subject" class="block font-semibold mb-2">Subject</label>
+          <input id="subject" type="text" class="w-full rounded-lg border px-4 py-3" />
+        </div>
+        <div>
+          <label for="message" class="block font-semibold mb-2">Your message (optional)</label>
+          <textarea id="message" rows="6" class="w-full rounded-lg border px-4 py-3"></textarea>
+        </div>
+        <div>
+          <p class="font-bold">Permission to store your information</p>
+        </div>
+        <div>
+          <label class="flex items-start gap-3">I agree to the processing of my personal data in accordance with the Privacy Policy</label>
+        </div>
+        <div>
+          <label class="flex items-start gap-3 font-bold">
+            <input type="checkbox" class="mt-1" /> To be contacted regarding my inquiry.
+          </label>
+        </div>
+        <div>
+          <label class="flex items-start gap-3 font-bold">
+            <input type="checkbox" class="mt-1" /> To receive marketing and promotional information.
+          </label>
+        </div>
+        <div>
+          <button class="w-full mt-6 border-[5px] border-black bg-black text-white hover:text-[#00ff99] rounded-lg transition duration-500 hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-[20px] md:text-[28px] lg:text-[35px] py-3 sm:py-4 md:py-0">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+
+
+
+
+
+
 <footer class="bg-[#00ff99] text-black pt-20 pb-8 px-6 md:px-12 lg:px-20">
  <div class="max-w-full flex flex-col sm:flex-row flex-wrap justify-evenly gap-8">
 
@@ -2037,8 +2174,31 @@
 
 
 
- 
+  popup
+<script>
+  function openContactPopup() {
+    document.getElementById("contactPopup").classList.remove("hidden");
+    setTimeout(() => {
+      document.getElementById("popupOverlay").classList.add("opacity-100");
+      document.getElementById("popupContent").classList.add("scale-100", "opacity-100");
+    }, 10);
+  }
 
+  function closeContactPopup() {
+    document.getElementById("popupOverlay").classList.remove("opacity-100");
+    document.getElementById("popupContent").classList.remove("scale-100", "opacity-100");
+
+    setTimeout(() => {
+      document.getElementById("contactPopup").classList.add("hidden");
+    }, 300);
+  }
+</script>
+  
+
+ <!-- cards animation -->
+
+ 
+ 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
