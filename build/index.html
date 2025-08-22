@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
+    <!-- Lottie library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+ 
+
+
   <title>lucky media</title>
 </head>
 <body class="">
@@ -74,8 +80,26 @@
     to fully support your business?
   </h1>
 </div>
+<div class="w-full flex justify-center items-center">
+<div class="w-[584px] ">
+    <!-- MAIN Container -->
+  <div id="lottie-animation">
 
+  </div>
 
+  <!-- Lottie Animation Script -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/Animation-1716206787868.json' // 👈 JSON file ka link (forward slash use karein)
+    });
+  </script>
+</div>
+
+</div>
 
     <!-- Subheading -->
 
@@ -89,57 +113,6 @@
 </div>
 
 
-
-<div class=" bg-white flex items-center justify-center ">
-    <div class="relative w-[520px] max-w-full aspect-[3/1] flex items-center justify-center">
-
-  <!-- Sparkles (hidden initially) -->
-  <div class="sparkles hidden">
-    <div class="absolute -top-2 left-24 w-3 h-3 rotate-45 bg-emerald-300 rounded-[2px]"></div>
-    <div class="absolute top-3 right-24 w-2.5 h-2.5 rotate-45 bg-emerald-300 rounded-[2px]"></div>
-    <div class="absolute bottom-2 left-[46%] w-2 h-2 rotate-45 bg-emerald-300 rounded-[2px]"></div>
-  </div>
-
-  <!-- SVG container -->
-  <div class="absolute inset-0 flex items-center justify-center gap-6">
-
-    <!-- LEFT cube -->
-    <svg class="left-cube drop-shadow-xl opacity-0"
-         width="160" height="160" viewBox="0 0 160 160" fill="none"
-         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect x="10" y="16" width="120" height="120" rx="20" fill="#34d399"/>
-      <path d="M130 30 L150 46 L150 126 L130 140 Z" fill="#10b981"/>
-      <path d="M10 16 L30 4 L150 46 L130 58 Z" fill="#6ee7b7"/>
-      <path d="M73 64c-5-10-20-8-20 5 0 12 20 22 20 22s20-10 20-22c0-13-15-15-20-5z"
-            fill="white" opacity="0.95"/>
-      <rect x="26" y="76" width="38" height="28" rx="6" fill="white" opacity="0.95"/>
-      <path d="M50 104 L46 96 L64 96 Z" fill="white" opacity="0.95"/>
-      <g transform="translate(86,98) scale(0.6)">
-        <circle cx="0" cy="-6" r="6" fill="white"/>
-        <circle cx="6" cy="0" r="6" fill="white"/>
-        <circle cx="0" cy="6" r="6" fill="white"/>
-        <circle cx="-6" cy="0" r="6" fill="white"/>
-        <path d="M0 6 L0 18" stroke="white" stroke-width="3" stroke-linecap="round"/>
-      </g>
-    </svg>
-
-    <!-- RIGHT cube -->
-    <svg class="right-cube drop-shadow-xl opacity-0"
-         width="180" height="160" viewBox="0 0 180 160" fill="none"
-         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect x="46" y="40" width="96" height="96" rx="14" fill="#34d399"/>
-      <rect x="142" y="52" width="28" height="72" rx="10" fill="#10b981"/>
-      <rect x="64" y="16" width="60" height="28" rx="10" fill="#6ee7b7"/>
-      <circle cx="74" cy="68" r="6" fill="white"/>
-      <circle cx="120" cy="116" r="6" fill="white" />
-      <circle cx="120" cy="68" r="6" fill="white" opacity="0.65"/>
-      <circle cx="74" cy="116" r="6" fill="white" opacity="0.65"/>
-      <circle cx="97" cy="92" r="6" fill="white" opacity="0.85"/>
-    </svg>
-
-  </div>
-</div>
-</div>
 
     <!-- Button -->
     <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
@@ -391,101 +364,27 @@
   <div class="flex flex-col md:flex-row justify-between w-full"> 
     
     <!-- Left side -->
-    <div class="w-full md:w-1/2 text-center md:text-left">
-      <div class="min-h-screen bg-white text-neutral-900 antialiased">
-  <main class="mx-auto max-w-5xl px-6 py-24">
-    <div class="grid lg:grid-cols-2 gap-10 items-center">
-   
+    <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-80 bg-white text-neutral-900 antialiased">
 
-      <!-- Animated Illustration Wrapper (scroll-in) -->
-      <div class="reveal-left">
-        <!-- Illustration as inline SVG so we can animate parts -->
-        <svg viewBox="0 0 360 300" class="w-full max-w-md mx-auto" aria-labelledby="title desc" role="img">
-          <title id="title">Lady with animated icons</title>
-          <desc id="desc">Gear rotates, bulb pulses, chart spins, dotted arcs move</desc>
-          <defs>
-            <!-- Soft glow for bulb -->
-            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-              <feMerge>
-                <feMergeNode in="coloredBlur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
+    
+        <!-- MAIN Container -->
+  <div id="lottie-animation-2">
 
-          <!-- Lady (simplified flat illustration) -->
-          <!-- Seat -->
-          <path d="M75 255 C110 240 250 240 285 255 C255 268 105 268 75 255Z" fill="#e6f7f1"/>
-          <!-- Legs -->
-          <path d="M155 230 C135 230 125 250 120 260 L150 260 C160 255 165 235 155 230Z" fill="#111"/>
-          <path d="M210 230 C230 230 240 250 245 260 L215 260 C205 255 200 235 210 230Z" fill="#111"/>
-          <!-- Torso -->
-          <path d="M138 156 C135 184 150 205 180 205 C210 205 225 184 222 156 C220 140 205 128 180 128 C155 128 140 140 138 156Z" fill="#00d084"/>
-          <!-- Arms -->
-          <path d="M128 165 C115 168 108 180 108 192 C108 205 116 210 124 206 C132 202 136 193 138 186" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
-          <path d="M232 165 C245 168 252 180 252 192 C252 205 244 210 236 206 C228 202 224 193 222 186" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
-          <!-- Neck -->
-          <rect x="173" y="138" width="14" height="10" rx="3" fill="#ffd7c2"/>
-          <!-- Head -->
-          <circle cx="180" cy="125" r="18" fill="#ffd7c2" stroke="#111" stroke-width="2"/>
-          <!-- Hair -->
-          <path d="M164 116 C170 98 196 95 202 116 C204 130 193 132 188 133 C175 135 165 132 164 116Z" fill="#111"/>
-          <!-- Face details -->
-          <circle cx="174" cy="124" r="2" fill="#111"/>
-          <circle cx="186" cy="124" r="2" fill="#111"/>
-          <path d="M174 132 Q180 136 186 132" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </div>
 
-          <!-- ======= ICONS & MOTION ======= -->
-          <!-- Left pie chart -->
-          <g transform="translate(85,110)">
-            <circle cx="0" cy="0" r="22" fill="none" stroke="#111" stroke-width="2"/>
-            <g class="rotating-slow">
-              <circle cx="0" cy="0" r="20" fill="none" stroke="#00d084" stroke-width="6" stroke-dasharray="80 80" stroke-linecap="round"/>
-            </g>
-          </g>
-
-          <!-- Top gear -->
-          <g transform="translate(180,56)">
-            <g class="rotating">
-              <!-- gear body -->
-              <circle r="16" fill="#606060"/>
-              <!-- teeth -->
-              <g fill="#606060">
-                <rect x="-2" y="-26" width="4" height="10" rx="1"/>
-                <rect x="-2" y="16" width="4" height="10" rx="1"/>
-                <rect x="16" y="-2" width="10" height="4" rx="1"/>
-                <rect x="-26" y="-2" width="10" height="4" rx="1"/>
-                <rect x="11" y="11" width="9" height="4" rx="1" transform="rotate(45)"/>
-                <rect x="-20" y="-20" width="9" height="4" rx="1" transform="rotate(45)"/>
-                <rect x="-20" y="16" width="9" height="4" rx="1" transform="rotate(-45)"/>
-                <rect x="11" y="-15" width="9" height="4" rx="1" transform="rotate(-45)"/>
-              </g>
-              <circle r="6" fill="#fff"/>
-            </g>
-          </g>
-
-          <!-- Right bulb -->
-          <g transform="translate(275,110)">
-            <g class="bulb">
-              <g filter="url(#glow)" class="flicker">
-                <circle cx="0" cy="0" r="18" fill="#00d084" opacity=".6"/>
-              </g>
-              <!-- bulb glass -->
-              <path d="M0 -18 C10 -18 16 -9 12 -1 C10 3 6 6 6 10 L-6 10 C-6 6 -10 3 -12 -1 C-16 -9 -10 -18 0 -18Z" fill="#00d084" stroke="#111" stroke-width="2"/>
-              <!-- base -->
-              <rect x="-7" y="10" width="14" height="6" rx="2" fill="#111"/>
-              <rect x="-6" y="16" width="12" height="4" rx="1" fill="#777"/>
-            </g>
-          </g>
-
-          <!-- Dotted arcs (moving) -->
-          <path d="M108 104 C150 70 210 70 252 104" fill="none" stroke="#111" stroke-width="3" class="dash"/>
-
-        </svg>
-      </div>
-    </div>
-  </main>
+  <!-- Lottie Animation Script -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-animation-2'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/Animation-1716207706875.json' // 👈 JSON file ka link (forward slash use karein)
+    });
+  </script>
+  
+ 
 </div>
 
 
@@ -651,54 +550,36 @@
   <div class="lg:border-4 border border-black flex flex-col xl:flex-row w-full rounded-2xl sm:p-10 lg:p-12 gap-10">
     
     <!-- Left Text -->
-    <div class="w-full xl:w-1/2 p-6 text-center lg:text-left">
-      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[59px] font-[800] leading-tight pt-6">
+    <div class="w-full xl:w-1/2 p-6 text-center lg:text-left ">
+      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[59px] font-[800] leading-tight pt-6 mb-32">
         It might be your <br class="lg:hidden block"> <span class="text-[#00ff99]">lucky draw!</span> <br class="lg:hidden block"> Contact us today.
       </h1>
 
-      <!-- Cards Section -->
-      <div class="h-80 text-white flex flex-col items-center justify-center p-6 select-none">
-        <div id="stage" class="relative  w-full max-w-6xl spread">
-          
-          <!-- Card 1 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 86 L18 54 C7 43 7 26 18 16 c9-8 24-7 32 4 8-11 23-12 32-4 11 10 11 27 0 38z"/>
-            </svg>
-          </div>
+     
+      
+    
+        <!-- MAIN Container -->
+  <div id="lottie-animation-3">
 
-          <!-- Card 2 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 18a18 18 0 1 1 0 36h-2l2 0a18 18 0 1 1-15 27h0A18 18 0 1 1 48 54h4c0 9-2 16-6 22h8c-4-6-6-13-6-22h4a18 18 0 1 1 0-36z"/>
-            </svg>
-          </div>
+  </div>
 
-          <!-- Card 3 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 8 86 50 50 92 14 50 50 8z"/>
-            </svg>
-          </div>
+  <!-- Lottie Animation Script -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-animation-3'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/karty-najnowsze.json' // 👈 JSON file ka link (forward slash use karein)
+    });
+  </script>
+  
+ 
 
-          <!-- Card 4 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 10 C30 30,20 45,20 58 c0 9,7 18,16 18 7 0 11-5 14-10 3 5 7 10 14 10 9 0 16-9 16-18 0-13-10-28-30-48z"/>
-            </svg>
-          </div>
-        </div>
-      </div>
 
-      <h3 class="text-[16px] sm:text-[18px] md:text-[22px] lg:text-[27px] leading-[28px] sm:leading-[36px] md:leading-[44px] lg:leading-[48px] font-[400] mt-4 text-[#171717] pt-20">
+    
+
+      <h3 class="text-[16px] sm:text-[18px] md:text-[22px] lg:text-[27px] leading-[28px] sm:leading-[36px] md:leading-[44px] lg:leading-[48px] font-[400] mt-4 text-[#171717]">
         Your business seems to be stuck at some level? Maybe you are about to finalize your dream ideas and kick off with a new venture? Let us know what’s on your mind, and we’ll see how we can assist you.
       </h3>
     </div>
@@ -777,51 +658,26 @@
     
     <!-- Left Text -->
     <div class="w-full xl:w-2/5 p-6 text-center lg:text-left">
-      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[54px] font-extrabold leading-tight pt-6">
+      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[54px] font-extrabold leading-tight pt-6 mb-24">
         It might be your <br class="lg:hidden block"> <span class="text-[#00ff99]">lucky draw!</span> <br class="lg:hidden block"> Contact us today.
       </h1>
 
       <!-- Cards Section -->
-      <div class="h-80 text-white flex flex-col items-center justify-center p-6 select-none">
-        <div id="stage" class="relative  w-full max-w-6xl spread">
-          
-          <!-- Card 1 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 86 L18 54 C7 43 7 26 18 16 c9-8 24-7 32 4 8-11 23-12 32-4 11 10 11 27 0 38z"/>
-            </svg>
-          </div>
+         <!-- MAIN Container -->
+  <div id="lottie-animation-4">
 
-          <!-- Card 2 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 18a18 18 0 1 1 0 36h-2l2 0a18 18 0 1 1-15 27h0A18 18 0 1 1 48 54h4c0 9-2 16-6 22h8c-4-6-6-13-6-22h4a18 18 0 1 1 0-36z"/>
-            </svg>
-          </div>
+  </div>
 
-          <!-- Card 3 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 8 86 50 50 92 14 50 50 8z"/>
-            </svg>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="card absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 
-            w-[100px] h-[150px] bg-black rounded-3xl border border-white/10 grid place-items-center 
-            shadow-[0_10px_25px_rgba(0,0,0,0.45)] transition-transform duration-[750ms] ease-[cubic-bezier(.2,.8,.2,1)]">
-            <svg viewBox="0 0 100 100" class="w-[56%] h-auto fill-[#00ffa3]">
-              <path d="M50 10 C30 30,20 45,20 58 c0 9,7 18,16 18 7 0 11-5 14-10 3 5 7 10 14 10 9 0 16-9 16-18 0-13-10-28-30-48z"/>
-            </svg>
-          </div>
-        </div>
-      </div>
+  <!-- Lottie Animation Script -->
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-animation-4'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/karty-najnowsze.json' // 👈 JSON file ka link (forward slash use karein)
+    });
+  </script>
 
       <h3 class="md:text-lg text-xs  md:leading-8 leading-6 text-[#171717] ">
         Your business seems to be stuck at some level? Maybe you are about to finalize your dream ideas and kick off with a new venture? Let us know what’s on your mind, and we’ll see how we can assist you.
