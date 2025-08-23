@@ -4,72 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preloader with Delay</title>
-  <style>
-    /* Preloader full screen */
-    #preloader {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      z-index: 9999;
-      transition: opacity 1s ease, visibility 1s ease; /* Smooth fade */
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    /* Logo animation (green circle shape) */
-    .loader {
-      width: 60px;
-      height: 60px;
-      border: 5px solid #00ff99;
-      border-top: 5px solid transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    /* Hide preloader with fade */
-    #preloader.hidden {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    /* Main website */
-    #content {
-      display: none;
-      text-align: center;
-      color: white;
-      padding: 50px;
-    }
-  </style>
 </head>
 <body>
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader"></div>
-    <p style="color:white;">Loading LuckyMedia</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto p-6">
+  <!-- Card 1 (Short) -->
+  <div class="max-w-sm w-full bg-white rounded-xl shadow-md border-4 border-green-400 overflow-hidden">
+    <!-- Top bar -->
+    <div class="flex justify-between items-center p-3">
+      <div class="flex items-center gap-2">
+        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold text-sm">User One</span>
+      </div>
+      <!-- Share Icon -->
+      <button class="text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11A2.99 2.99 0 0 0 18 7c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 
+          1.34-3 3c0 .24.04.47.09.7L8.91 9.81A3 3 0 1 0 7 
+          15c.77 0 1.46-.3 1.99-.78l7.11 4.15c-.05.21-.08.43-.08.65A2.75 
+          2.75 0 1 0 18 16.08z"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Image -->
+    <img src="https://picsum.photos/400/220" class="w-full h-[180px] object-cover" alt="post image">
+    <!-- Content -->
+    <div class="p-3 text-sm text-gray-800">
+      <p>Short card with an image.</p>
+    </div>
+    <!-- Footer -->
+    <div class="flex gap-6 items-center px-4 py-2 text-gray-600 text-sm border-t">
+      <div class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 
+        15.36 2 12.28 2 8.5 2 5.42 
+        4.42 3 7.5 3c1.74 0 3.41.81 
+        4.5 2.09C13.09 3.81 14.76 3 
+        16.5 3 19.58 3 22 5.42 22 
+        8.5c0 3.78-3.4 6.86-8.55 
+        11.54L12 21.35z"/></svg>
+        <span>120</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M21 6h-2v9H5v2c0 .55.45 1 
+        1 1h11l4 4V7c0-.55-.45-1-1-1zM17 
+        12V3c0-.55-.45-1-1-1H3c-.55 
+        0-1 .45-1 1v14l4-4h10c.55 
+        0 1-.45 1-1z"/></svg>
+        <span>30</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 
+        12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.53.48 
+        1.22.78 1.99.78 1.66 0 3-1.34 
+        3-3s-1.34-3-3-3-3 1.34-3 
+        3c0 .24.04.47.09.7L8.91 
+        9.81a3 3 0 1 0 0 4.38l7.11 
+        4.15c-.05.21-.08.43-.08.65A2.75 
+        2.75 0 1 0 18 16.08z"/></svg>
+        <span>12</span>
+      </div>
+    </div>
   </div>
 
-  <!-- Website content -->
-  <div id="content">
-    <h1 style="color:#00ff99;">Welcome to LuckyMedia</h1>
-    <p>Ab yaha website ka asli content show hoga...</p>
+  <!-- Card 2 (Medium - Video) -->
+  <div class="max-w-sm w-full bg-white rounded-xl shadow-md border-4 border-green-400 overflow-hidden">
+    <div class="flex justify-between items-center p-3">
+      <div class="flex items-center gap-2">
+        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold text-sm">User Two</span>
+      </div>
+      <button class="text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96..."/></svg>
+      </button>
+    </div>
+    <video class="w-full h-[240px] object-cover" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <div class="p-3 text-sm text-gray-800">
+      <p>Medium card with video content.</p>
+    </div>
+    <!-- Footer same as above -->
   </div>
+
+  <!-- Card 3 (Tall) -->
+  <div class="max-w-sm w-full bg-white rounded-xl shadow-md border-4 border-green-400 overflow-hidden">
+    <div class="flex justify-between items-center p-3">
+      <div class="flex items-center gap-2">
+        <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full" alt="profile">
+        <span class="font-semibold text-sm">User Three</span>
+      </div>
+      <button class="text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18..."/></svg>
+      </button>
+    </div>
+    <img src="https://picsum.photos/400/500" class="w-full h-[320px] object-cover" alt="post image">
+    <div class="p-3 text-sm text-gray-800">
+      <p>Tall card with big image.</p>
+    </div>
+    <!-- Footer same as above -->
+  </div>
+</div>
+
 
   <script>
-    window.addEventListener("load", function () {
-      // Preloader ko 2s baad hide karo
-      setTimeout(() => {
-        document.getElementById("preloader").classList.add("hidden");
-        document.getElementById("content").style.display = "block";
-      }, 2000); // 2000ms = 2 seconds
+    // Custom play overlay logic
+    const video = document.getElementById('postVideo');
+    const overlay = document.getElementById('playOverlay');
+
+    // click overlay to play
+    overlay.addEventListener('click', () => {
+      // Autoplay policies: allow muted first frame if needed
+      video.muted = false;
+      video.play().then(() => {
+        overlay.classList.add('hidden');
+      }).catch(() => {
+        // if autoplay blocked, keep controls visible and hide overlay anyway
+        overlay.classList.add('hidden');
+      });
+    });
+
+    // show overlay again when paused (but not while scrubbing)
+    video.addEventListener('pause', () => {
+      // if video ended, handled below; if paused manually, show overlay
+      if (!video.ended) overlay.classList.remove('hidden');
+    });
+
+    video.addEventListener('ended', () => {
+      overlay.classList.remove('hidden');
     });
   </script>
 </body>
