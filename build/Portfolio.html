@@ -79,36 +79,23 @@
 
  <body class="">
 
- <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black transition-opacity duration-700">
-    <!-- Apna logo/image yaha -->
-    <img src="./assets/img/Vector.png" alt="Logo" class="w-16 h-16 animate-pulse mb-4">
-    <p class="text-white">Loading LuckyMedia</p>
-  </div>
-
-  <!-- 🔹 Website Content -->
-  <div id="content" class="hidden">
-   
-  </div>
 
 
 
 
 
 
-<header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 bg-black md:bg-white items-center">
+
+<header class="w-full px-8 py-8 flex flex-col lg:flex-row justify-between gap-10 2xl:gap-16 bg-black md:bg-white items-center">
 
 
 <!-- Logo -->
 <div class="flex items-center gap-2 bg-black 
             w-full lg:w-1/3 
-            px-4 lg:px-[60px] py-[15px] 
+            px-4 lg:px-[60px] py-[15px] 2xl:px-4 2xl:py-1
             rounded-[10px] justify-center">
-  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px]" src="./assets/img/logo-svg.png" alt="Logo">
+  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px] 2xl:w-48" src="./assets/img/logo-svg.png" alt="Logo">
 </div>
-
-
-
-
   <!-- Navigation Links -->
   <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
               w-full lg:w-1/3 px-[10px] sm:px-[30px] md:px-[30px] lg:px-[10px] 
@@ -117,17 +104,16 @@
 
 
     <ul class="flex  gap-5 lg:gap-6 text-sm md:text-base text-center lg:text-left">
-      <li><a href="./index.html" class="text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
-      <li><a href="./Portfolio.html" class="text-[14px] text-[#00FF9C]  max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+      <li><a href="./index.html" class=" text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
+      <li><a href="./Portfolio.html" class="text-[14px] text-green-400  hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
-         <a href="javascript:void(0)" onclick="openContactPopup()" 
+        <a href="javascript:void(0)" onclick="openContactPopup()" 
            class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
           Contact
         </a>
       </li>
     </ul>
   </nav>
-
   <!-- CTA Button -->
   <a href="tel:+123456789" 
    class="bg-[#00FF9C] w-full lg:w-1/3 
@@ -157,10 +143,10 @@
 
 
     <!-- 🔸 Subheading -->
-   <div class="px-4 sm:px-10 md:px-20 lg:px-[130px] pt-10 text-center">
-  <h2 class=" rounded-md p-2 
+   <div class="  pt-10 text-center">
+  <h2 class=" rounded-md p-4 inline-block 
       text-[14px] sm:text-[24px] md:text-[32px] lg:text-[48px] 
-      font-[700] 
+      font-bold 
       leading-[20px] sm:leading-[35px] md:leading-[45px] lg:leading-[65px] 
       bg-[#00FF9C]">
     We are fortunate to have wonderful clients!
@@ -169,26 +155,22 @@
 
 
     <!-- 🔸 Call-to-Action Button -->
-    <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-10">
-      <button class="relative flex items-center justify-center rounded-2xl border-[3px] border-black hover:border-transparent px-3 sm:px-6 py-2 font-worksans text-black transition-all duration-500 group ">
+     <!-- Button -->
+    <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-12">
+     <button class="relative flex items-center justify-center rounded-[16px] border-[5px] border-black hover:border-transparent  px-2 py-4 font-worksans text-black transition-all duration-500 group ">
 
-        <!-- Normal text -->
-        <span class="transition-all 
-        text-[12px] sm:text-[18px] md:text-[24px] lg:text-[31px] 
-        duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
-          Get your marketing package today
-        </span>
+  <!-- Normal text -->
+  <h5 class="transition-all text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-medium p-1">
+    Get a service quote within 24 hours!
+  </h5>
 
-        <!-- Hover text -->
-        <span class="absolute opacity-0 font-semibold 
-        text-[12px] sm:text-[18px] md:text-[24px] lg:text-[31px] 
-        transition-all duration-500 group-hover:opacity-100 
-        group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg 
-        px-3 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
-          Fill out the brief
-        </span>
+  <!-- Hover text -->
+  <h5 class="absolute opacity-0 font-medium text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap ">
+    Fill out the brief
+  </h5>
 
-      </button>
+</button>
+
     </div>
   </div>
 </section>
@@ -264,28 +246,28 @@
 
   <!-- 🔸 Image Grid -->
   <div class="flex flex-col items-center gap-6 sm:gap-8 mt-10 sm:mt-16 md:mt-20 lg:mt-28" id="imageContainer">
-  <div class="w-full max-w-6xl space-y-6 px-10">
+  <div class="w-full flex  space-y-6 px-10 gap-10">
 
     <!-- First Row -->
-    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 w-1/2">
       <!-- Large image -->
       <img src="./assets/img/Screenshot 2025-08-13 153825.png" alt=""
-           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
+           class=" h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
 
       <!-- Small image -->
       <img src="./assets/img/2022-03-31_19h56_38.png" alt=""
-           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
+           class=" h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
     </div>    
 
     <!-- Second Row -->
-    <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-6 w-1/2">
       <!-- Small image -->
       <img src="./assets/img/Screenshot-2024-08-20-201306.png" alt=""
-           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
+           class=" h-[80px] sm:h-[100px] object-contain rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-up">
 
       <!-- Large image -->
       <img src="./assets/img/2022-03-31_18h06_03.png" alt=""
-           class="w-full sm:w-auto max-w-full sm:max-w-[500px] h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
+           class=" h-auto rounded-lg border-[4px] sm:border-[6px] md:border-[8px] border-[#00FF9C] animate-down">
     </div>    
 
   </div>
@@ -298,29 +280,36 @@
 <!-- 🔹 Section: Permanent Cooperation -->
 <section class="w-full flex flex-col md:flex-row mt-10 sm:mt-16 md:mt-20 lg:mt-28">
   
-  <!-- 🔸 Left Side: Logo/Image -->
-  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-4 sm:p-6 md:p-8 lg:p-10">
-    <img src="./assets/img/logo_blue_Obszar-roboczy-1-1.png" alt="" class="max-w-full h-auto">
+ 
+
+
+   <!-- 🔸 Left Side: Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 
+              p-4 sm:p-8 md:p-10 lg:p-14">
+    <img src="./assets/img/logo_blue_Obszar-roboczy-1-1.png" alt="" 
+         class="max-w-full h-auto object-contain">
   </div>
 
   <!-- 🔸 Right Side: Text Content -->
-  <div class="bg-black/90 text-white w-full md:w-1/2 px-4 sm:px-6 md:px-10 py-8 sm:py-12 md:py-16 lg:py-24 flex flex-col justify-center items-center">
+  <div class="bg-black/90 text-white w-full md:w-1/2 
+              p-6 sm:p-10 md:p-12 lg:p-16 
+              flex flex-col justify-center items-center text-center">
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
         text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
         font-[800] 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
-        text-black bg-[#00FF9C] py-5 lg:py-3 mt-8 ">
+        text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
       Permanent cooperation
     </h2>
 
     <!-- Paragraph -->
-    <p class="text-[15px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
-    text-center 
-    leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[41px] 
-    px-6 mt-12 mb-8">
-      We are glad to have the chance to collaborate for the past few years with FlexToday, one of the finest recruitment agencies. 
+    <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
+        px-8 sm:px-4 md:px-6 lg:px-10 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
+    We are glad to have the chance to collaborate for the past few years with FlexToday, one of the finest recruitment agencies. 
       Their meticulous and thorough approach to business growth is truly impressive.<br>
       No detail is overlooked at FlexToday. 
       We are grateful for the valuable insights we gain from them while providing <span class="text-[#00FF9C]">marketing services.</span> 
@@ -633,16 +622,16 @@
           class="relative flex items-center justify-center rounded-2xl border-[3px] border-black hover:border-transparent px-4 sm:px-6 py-3 font-worksans text-black transition-all duration-500 group ">
 
           <!-- Normal text -->
-          <span
+          <h3
             class="transition-all text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
             Let's talk about it!
-          </span>
+      </h3>
 
           <!-- Hover text -->
-          <span
+          <h3
             class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
             Book the meeting
-          </span>
+    </h3>
         </button>
       </div>
     </div>
@@ -726,31 +715,32 @@
 <!-- ================ SECTION : Quick Brand Booster ================ -->
 <section class="w-full flex flex-col md:flex-row mt-0 ">
 
-  <!-- ========== Left Side (Image Area) ========== -->
-  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 p-6 sm:p-8 md:p-10">
-    <img src="./assets/img/fitdieta.png" alt="FitDieta Branding" 
-         class="max-w-[250px] sm:max-w-[300px] md:max-w-full">
+   <!-- 🔸 Left Side: Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 
+              p-4 sm:p-8 md:p-10 lg:p-14">
+    <img src="./assets/img/fitdieta.png" alt="" 
+         class="max-w-full h-auto object-contain">
   </div>
-  <!-- ========== End Left Side ========== -->
 
-  <!-- ========== Right Side (Content Area) ========== -->
+  <!-- 🔸 Right Side: Text Content -->
   <div class="bg-black/90 text-white w-full md:w-1/2 
-              px-4 sm:px-8 md:px-10 
-              py-10 sm:py-16 md:py-24 
-              flex flex-col justify-center items-center pt-12 pb-20 ">
-
-    <!-- Heading -->
-    <h2 class="bg-[#00FF9C] text-black font-[800] 
-               text-[20px] sm:text-[24px] md:text-[25px] 
-               py-2 px-3 sm:px-4 rounded-md mb-4 
-               w-[250px] sm:w-[300px] md:w-[300px] text-center">
-      Quick brand booster
+              p-6 sm:p-10 md:p-12 lg:p-16 
+              flex flex-col justify-center items-center text-center">
+    
+    <!-- Subheading -->
+    <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
+        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
+        font-[800] 
+        leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
+        text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
+          Quick brand booster
     </h2>
 
-    <!-- Description -->
-    <p class="text-[14px] sm:text-[18px] md:text-[23px] 
-              text-center leading-[28px] sm:leading-[36px] lg:leading-[41px] 
-              px-4 sm:px-8 md:px-16 mt-6">
+    <!-- Paragraph -->
+    <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
+        px-8 sm:px-4 md:px-6 lg:px-10 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
       FitDieta has been a trusted provider of diet catering services for many years. 
       Our client needed a quick boost in engagement and online presence before selling 
       their “ready-made” business to a new owner. While their Google Ads and Meta Ads 
@@ -758,9 +748,9 @@
       that captured attention and enhanced the overall online experience, along with a 
       user-friendly website, where customers could place orders.
     </p>
-
   </div>
-  <!-- ========== End Right Side ========== -->
+
+
 
 </section>
 
@@ -946,29 +936,39 @@
 
     <section class="mt-[90px] mb-24">
         <div class="lg:flex">
-            <!-- left side  -->
-            <div class="bg-[#00ff9c] lg:w-1/2 flex flex-col justify-center  items-center py-20 lg:py-0">
-                <img class="w-1/2" src="https://luckymedia.marketing/wp-content/uploads/2024/07/selflab.png"
-                    alt="">
-            </div>
-            <!-- right side  -->
-            <div class="bg-[#171717]  lg:w-1/2 lg:py-[88px] pt-16 pb-16">
-                <div class="flex justify-center">
-                    <div
-                        class=" px-4   py-4 lg:text-[25px] md:py-3 text-[20px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[24px] lg:leading-[41px] leading-[27px]">
-                        Socail media look
-                    </div>
-                </div>
-                <div class="text-center text-[15px] lg:text-[23px] lg:leading-[41px] px-9 mt-7 md:px-[70px]">
-                    <p class="text-white text-[15px] lg:text-[23px]">A company specializing in medical and veterinary equipment, we’ve collaborated
+          
+               <!-- 🔸 Left Side: Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 
+              p-4 sm:p-8 md:p-10 lg:p-14">
+    <img src="./assets/img/selflab.png" alt="" 
+         class="max-w-full h-auto object-contain">
+  </div>
+
+  <!-- 🔸 Right Side: Text Content -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 
+              p-6 sm:p-10 md:p-12 lg:p-16 
+              flex flex-col justify-center items-center text-center">
+    
+    <!-- Subheading -->
+    <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
+        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
+        font-[800] 
+        leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
+        text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
+          Socail media look
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
+        px-8 sm:px-4 md:px-6 lg:px-10 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
+     A company specializing in medical and veterinary equipment, we’ve collaborated
                         on multiple brands with them. For their latest venture—an online shop selling tests for
                         animals—we were thrilled to support their online sales efforts with our custom videos and
                         graphics. We really embraced the animal vibe, making this project both fun and rewarding!
-
-                    </p>
-                </div>
-
-            </div>
+    </p>
+  </div>
         </div>
     </section>
 
@@ -977,21 +977,21 @@
         <div class="lg:flex">
             <!-- left side  -->
             <div class="grid lg:w-1/2 grid-cols-2 lg:bg-white bg-[#00ff9c] lg:pt-0 pt-[66px] px-[22px] md:grid-cols-2">
-                <div class=" mr-1 md:mr-3"><img src="https://luckymedia.marketing/wp-content/uploads/2024/08/2-4.png"
+                <div class=" mr-1 md:mr-3"><img src="./assets/img/2-4-980x980.png"
                         alt="">
                 </div>
 
                 <div class="mt-0 ml-1 md:ml-3 md:mt-0 "><img
-                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/9-3.png" alt="">
+                        src="./assets/img/9-3-980x980.png" alt="">
                 </div>
 
                 <div class="mt-3  mr-1 md:mr-3 "><img
-                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/6-7.png" alt="">
+                        src="./assets/img/6-7-980x980.png" alt="">
                 </div>
 
 
                 <div class="mt-3  lg:mt- ml-1 md:ml-3"><img
-                        src="https://luckymedia.marketing/wp-content/uploads/2024/08/3-4.png" alt="">
+                        src="./assets/img/3-4-980x980.png" alt="">
                 </div>
 
             </div>
@@ -1032,8 +1032,9 @@
         </div>
         <!-- image  -->
         <div class="flex justify-center pt-[22px] px-5 py-3 lg:px-[66px] md:pt-[66px]">
-            <img src="https://luckymedia.marketing/wp-content/uploads/2024/08/poprawny-banner-01.png" alt="">
+            <img src="./assets/img/poprawny-banner-01.png" alt="">
         </div>
+
     </section>
 
 
@@ -1044,7 +1045,7 @@
             <!-- left side  -->
             <div class="bg-[#00ff9c] lg:w-1/2 flex justify-center items-center px-8 py-12 md:px-[px] md:py-[55px] ">
                 <img class="lg:w-[290px] h-[70px]"
-                    src="https://luckymedia.marketing/wp-content/uploads/2024/08/konfederacja.png" alt="">
+                    src="./assets/img/konfederacjaaa.png" alt="">
             </div>
             <!-- right side  -->
             <div class="bg-[#171717]  lg:w-1/2 lg:py-[88px] py-[44px] pt-16 pb-16">
@@ -1145,7 +1146,7 @@
       <img src="./assets/img/8-12-scaled.jpg" class="w-full h-64 object-cover " />
       <!-- Overlay -->
       <div class="absolute inset-0 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <span class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</span>
+        <h3 class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</h3>
       </div>
     </div>
 
@@ -1153,7 +1154,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/2-scaled.jpg" class="w-full h-64 object-cover" />
       <div class="absolute inset-0 bg-white/80  flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <span class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</span>
+        <h3 class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</h3>
       </div>
     </div>
 
@@ -1161,7 +1162,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/3-scaled.jpg" class="w-full h-64 object-cover " />
       <div class="absolute inset-0 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <span class="text-white bg-[#00FF9C] px-2 rounded-[100px] text-4xl font-[300]">+</span>
+        <h3 class="text-white bg-[#00FF9C] px-2 rounded-[100px] text-4xl font-[300]">+</h3>
       </div>
     </div>
 
@@ -1169,7 +1170,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/doplakatu-2-scaled.jpg" class="w-full h-64 object-cover " />
       <div class="absolute inset-0 bg-white/80  flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <span class="text-white bg-[#00FF9C] rounded-[100px] px-2 text-4xl font-[300]">+</span>
+        <h3 class="text-white bg-[#00FF9C] rounded-[100px] px-2 text-4xl font-[300]">+</h3>
       </div>
     </div>
 
@@ -1252,131 +1253,131 @@
     <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=1" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">Grzegorz Braun</span>
+        <h5 class="font-semibold text-gray-700">Grzegorz Braun</h5>
       </div>
       <img src="https://picsum.photos/400/250" class="w-full h-full object-cover" />
      <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-  <span>❤️ 120</span>
-  <span>💬 15</span>
-  <span>↗️ Share</span>
+  <h5>❤️ 120</h5>
+  <h5>💬 15</h5>
+  <h5>↗️ Share</h5>
 </div>
 
 <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-  <span><i class="fa-regular fa-heart"></i> 120</span>
-  <span><i class="fa-regular fa-comment"></i> 15</span>
-  <span><i class="fa-solid fa-share"></i> Share</span>
+  <h5><i class="fa-regular fa-heart"></i> 120</h5>
+  <h5><i class="fa-regular fa-comment"></i> 15</h5>
+  <h5><i class="fa-solid fa-share"></i> Share</h5>
 </div>
     </div>
 
     <!-- Card 2 (double height) -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-2">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-2">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=2" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Two</span>
+        <h5 class="font-semibold text-gray-700">User Two</h5>
       </div>
       <img src="https://picsum.photos/400/500" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 250</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 32</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 250</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 32</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=3" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Three</span>
+        <h5 class="font-semibold text-gray-700">User Three</h5>
       </div>
       <img src="https://picsum.photos/400/220" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 80</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 10</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 80</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 10</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 4 (double height) -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-2">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-2">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=4" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">Włodzimierz Skalik</span>
+        <h5 class="font-semibold text-gray-700">Włodzimierz Skalik</h5>
       </div>
       <img src="https://picsum.photos/400/500" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 310</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 41</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 310</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 41</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 5 -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=5" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Five</span>
+        <h5 class="font-semibold text-gray-700">User Five</h5>
       </div>
       <img src="https://picsum.photos/400/250" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 150</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 20</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 150</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 20</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 6 -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=6" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Six</span>
+        <h5 class="font-semibold text-gray-700">User Six</h5>
       </div>
       <img src="https://picsum.photos/400/250" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 95</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 12</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 95</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 12</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 7 (double height) -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-2">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-2">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=7" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">Włodzimierz Skalik</span>
+        <h5 class="font-semibold text-gray-700">Włodzimierz Skalik</h5>
       </div>
       <img src="https://picsum.photos/400/500" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 410</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 53</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 410</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 53</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 8 -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=8" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Eight</span>
+        <h5 class="font-semibold text-gray-700">User Eight</h5>
       </div>
       <img src="https://picsum.photos/400/230" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 120</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 18</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 120</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 18</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
     <!-- Card 9 -->
-    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-span-1">
+    <div class="bg-white rounded-xl shadow-md border-[6px] border-[#00FF9C] overflow-hidden row-h5-1">
       <div class="flex items-center gap-3 p-3">
         <img src="https://i.pravatar.cc/50?img=9" class="w-10 h-10 rounded-full border border-gray-300" />
-        <span class="font-semibold text-gray-700">User Nine</span>
+        <h5 class="font-semibold text-gray-700">User Nine</h5>
       </div>
       <img src="https://picsum.photos/400/250" class="w-full h-full object-cover" />
       <div class="flex justify-between items-center px-4 py-2 text-gray-600 text-sm">
-        <span><i class="fa-solid fa-heart text-red-500"></i> 200</span>
-        <span><i class="fa-solid fa-comment text-blue-500"></i> 25</span>
-        <span><i class="fa-solid fa-share text-green-500"></i></span>
+        <h5><i class="fa-solid fa-heart text-red-500"></i> 200</h5>
+        <h5><i class="fa-solid fa-comment text-blue-500"></i> 25</h5>
+        <h5><i class="fa-solid fa-share text-green-500"></i></h5>
       </div>
     </div>
 
@@ -1389,25 +1390,36 @@
 <!-- ================= Branding & Advertising Section ================= -->
     <section class="mt-[90px] mb-24">
         <div class="lg:flex">
-            <!-- left side  -->
-            <div class="bg-[#00ff9c] lg:w-1/2 flex flex-col justify-center  items-center py-20 lg:py-0">
-                <img class="w-1/2" src="./assets/img/blackwhite-480x471.png" 
-                    alt="">
-            </div>
-            <!-- right side  -->
-            <div class="bg-[#171717]  lg:w-1/2 lg:py-36 pt-16 pb-16">
-                <div class="flex justify-center">
-                    <div
-                        class=" px-4   py-4 lg:text-[25px] md:py-3 text-[20px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[24px] lg:leading-[41px] leading-[27px]">
-                       Branding & Advertising
-                    </div>
-                </div>
-                <div class="text-center text-[15px] lg:text-[23px] lg:leading-[41px] px-9 mt-7 md:px-[70px]">
-                    <p class="text-white text-[15px] lg:text-[23px]">  Samsara Butique&Restaurant took us on a real adventure to India! We had so much fun playing with colours while creating their visuals, prints and advertisements. If you ever look for the best indian food, you know where to find it.
-                    </p>
-                </div>
 
-            </div>
+                           <!-- 🔸 Left Side: Image -->
+  <div class="bg-[#00FF9C] flex justify-center items-center w-full md:w-1/2 
+              p-4 sm:p-8 md:p-10 lg:p-14">
+    <img src="./assets/img/blackwhite-480x471.png" alt="" 
+         class="max-w-full h-auto object-contain">
+  </div>
+
+  <!-- 🔸 Right Side: Text Content -->
+  <div class="bg-black/90 text-white w-full md:w-1/2 
+              p-6 sm:p-10 md:p-12 lg:p-16 
+              flex flex-col justify-center items-center text-center">
+    
+    <!-- Subheading -->
+    <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
+        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
+        font-[800] 
+        leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
+        text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
+            Branding & Advertising
+    </h2>
+
+    <!-- Paragraph -->
+    <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
+        px-8 sm:px-4 md:px-6 lg:px-10 
+        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
+     Samsara Butique&Restaurant took us on a real adventure to India! We had so much fun playing with colours while creating their visuals, prints and advertisements. If you ever look for the best indian food, you know where to find it.
+    </p>
+  </div>
         </div>
     </section>
 
@@ -1969,10 +1981,10 @@
 <!-- end off section -->
 <section class="w-full py-16 bg-white text-center">
   <!-- Text -->
-   <div class="w-full text-center font-[600] flex justify-center items-center px-4 sm:px-6 md:px-10">
+   <div class="w-full text-center  flex justify-center items-center px-4 sm:px-6 md:px-10">
    <p class="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[47px] 
              leading-[34px] sm:leading-[44px] md:leading-[54px] lg:leading-[61px] 
-             max-w-4xl text-[#333]">
+             max-w-4xl text-[#333] font-semibold">
     We hope you enjoyed reviewing our portfolio. If you need to see something more specific to your
     fields, please don’t hesitate to ask.
   </p>
@@ -1994,20 +2006,20 @@
                  group  max-w-full">
 
           <!-- Normal text -->
-          <span
+          <h3
             class="transition-all text-[14px] sm:text-[18px] md:text-[22px] lg:text-[31px] 
                    duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
             Contact us
-          </span>
+  </h3>
 
           <!-- Hover text -->
-          <span
+          <h3
             class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[26px] 
                    transition-all duration-500 group-hover:opacity-100 
                    group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] 
                    bg-white rounded-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 border-[5px] border-black whitespace-nowrap">
             Fill out the brief
-          </span>
+</h3>
         </button>
       </div>
 </section>
@@ -2117,13 +2129,13 @@
 
 <!-- footer-section -->
 
-<footer class="bg-[#00ff99] text-black pt-20 pb-8 px-6 md:px-12 lg:px-20">
- <div class="max-w-full flex flex-col sm:flex-row flex-wrap justify-evenly gap-8">
+<footer class="bg-[#00FF9C] text-black pt-20 pb-8 px-6 md:px-12 lg:px-20 mt-36">
+ <div class="w-full flex flex-col sm:flex-row flex-wrap justify-evenly gap-8">
 
     <!-- Logo + Social -->
     <div class="flex flex-col items-center sm:items-start">
-     <div class="bg-black p-4 rounded-lg mb-4">
-        <img class="w-[223px] sm:w-[148px]" src="./assets/img/kwadrat-na-strone-01.png" alt="">
+     <div class="   mb-4">
+        <img class=" w-full sm:w-[198px] rounded-lg" src="./assets/img/kwadrat-na-strone-01.png" alt="">
      </div>
       <div class="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
         <a href="#" class="text-black hover:text-gray-700">
@@ -2132,7 +2144,7 @@
         <a href="#" class="text-black hover:text-gray-700">
           <i class="fa-brands fa-square-instagram text-[28px]"></i>
         </a>
-        <span class="text-lg">Follow us!</span>
+        <h5 class="text-lg">Follow us!</h5>
       </div>
     </div>
 
@@ -2151,7 +2163,7 @@
        </div>
      </div>
      <!-- For small screen -->
-     <div class="block sm:hidden">
+     <div class="block sm:hidden mb-6">
        <div class="flex gap-4 justify-center sm:justify-start mt-6">
          <p class="font-bold">Monday - Friday </p>
          <p>08:00 - 16:00</p>
@@ -2161,15 +2173,20 @@
 
    <!-- Contact -->
    <div class="text-center sm:text-left text-[14px]">
-     <p class="font-bold flex justify-center sm:justify-start items-center gap-2">
+    <div class="mb-3">
+ <p class="font-bold flex justify-center sm:justify-start items-center gap-2 ">
        <i class="fa-regular fa-envelope-open"></i> E-mail us here:
      </p>
      <p class="break-all">hi@luckymedia.marketing</p>
-
-     <p class="font-bold flex justify-center sm:justify-start items-center gap-2 mt-4">
+    </div>
+    
+        <div class="mb-3">
+          <p class="font-bold flex justify-center sm:justify-start items-center gap-2 mt-4 ">
        <i class="fa-brands fa-whatsapp"></i> WhatsApp/call here:
      </p>
      <p>+48 533 630 356</p>
+        </div>
+     
    </div>
 
    <!-- Links -->
