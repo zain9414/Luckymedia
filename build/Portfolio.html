@@ -82,7 +82,7 @@
 
 
    <!-- 🔹 Preloader -->
-  <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black transition-opacity duration-1000">
+  <!-- <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black transition-opacity duration-1000">
    
     <img src="./assets/img/Vector.png" alt="Loading Logo" class="w-16 h-16 animate-pulse mb-4">
     <p class="text-white">Loading LuckyMedia</p>
@@ -92,7 +92,7 @@
   <div id="content" class="hidden">
    
    
-  </div>
+  </div> -->
 
 
 
@@ -106,7 +106,7 @@
             w-full lg:w-1/3 
             px-4 lg:px-[60px] py-[15px] 2xl:px-4 2xl:py-1
             rounded-[10px] justify-center">
-  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px] 2xl:w-48" src="./assets/img/logo-svg.png" alt="Logo">
+  <img class="w-[200px] sm:w-[220px] md:w-[250px] lg:w-[120px] 2xl:w-44" src="./assets/img/logo-svg.png" alt="Logo">
 </div>
   <!-- Navigation Links -->
   <nav class="border-[1px] border-[#00FF9C] outline outline-2 outline-black  
@@ -117,7 +117,7 @@
 
     <ul class="flex  gap-5 lg:gap-6 text-sm md:text-base text-center lg:text-left">
       <li><a href="./index.html" class=" text-white hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300 text-[14px]">Home page</a></li>
-      <li><a href="./Portfolio.html" class="text-[14px] text-green-400  hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
+      <li><a href="./Portfolio.html" class="text-[14px] text-green-400 hover:drop-shadow-[0_0_8px_#00ffcc] transition duration-300">Portfolio</a></li>
       <li>
         <a href="javascript:void(0)" onclick="openContactPopup()" 
            class="text-white lg:text-white max-[425px]:text-white hover:drop-shadow-[0_0_8px_#00ffcc] text-[14px] transition duration-300">
@@ -144,7 +144,7 @@
 <section>
   <div>
     <!-- 🔸 Main Heading -->
-  <div class="px-4 sm:px-10 md:px-20 lg:px-40 pt-10 sm:pt-20 lg:pt-24">
+  <div class="px-4 sm:px-10 md:px-20 lg:px-40 pt-10 sm:pt-20 lg:pt-28">
   <h1 class="text-center font-bold 
       text-5xl sm:text-3xl md:text-4xl lg:text-6xl 
       leading-tight sm:leading-normal md:leading-snug lg:leading-tight">
@@ -155,35 +155,36 @@
 
 
     <!-- 🔸 Subheading -->
-   <div class="  pt-10 text-center">
-  <h2 class=" rounded-md p-4 inline-block 
-      text-[14px] sm:text-[24px] md:text-[32px] lg:text-[48px] 
+ <div class="pt-10 text-center">
+  <h2 class="rounded-md p-4 inline-block 
+      text-sm sm:text-2xl md:text-3xl lg:text-5xl 
       font-bold 
-      leading-[20px] sm:leading-[35px] md:leading-[45px] lg:leading-[65px] 
+      leading-5 sm:leading-9 md:leading-[45px] lg:leading-[65px] 
       bg-[#00FF9C]">
     We are fortunate to have wonderful clients!
   </h2>
 </div>
 
 
+
     <!-- 🔸 Call-to-Action Button -->
      <!-- Button -->
-    <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-12">
-     <button class="relative flex items-center justify-center rounded-[16px] border-[5px] border-black hover:border-transparent  px-2 py-4 font-worksans text-black transition-all duration-500 group ">
+ <div class="text-center justify-center flex pt-6 sm:pt-8 lg:pt-16">
+  <button class="relative flex items-center justify-center rounded-[16px] border-[5px] border-black hover:border-transparent px-2 py-4 font-worksans text-black transition-all duration-500 group">
 
-  <!-- Normal text -->
-  <h5 class="transition-all text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-medium p-1">
-    Get a service quote within 24 hours!
-  </h5>
+    <!-- Normal text -->
+    <h5 class="transition-all text-sm sm:text-xl md:text-2xl lg:text-3xl duration-500 group-hover:opacity-0 whitespace-nowrap font-medium p-1">
+      Get a service quote within 24 hours!
+    </h5>
 
-  <!-- Hover text -->
-  <h5 class="absolute opacity-0 font-medium text-[14px] sm:text-[20px] md:text-[26px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap ">
-    Fill out the brief
-  </h5>
+    <!-- Hover text -->
+    <h5 class="absolute opacity-0 font-medium text-sm sm:text-xl md:text-2xl lg:text-3xl transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+      Fill out the brief
+    </h5>
 
-</button>
+  </button>
+</div>
 
-    </div>
   </div>
 </section>
 
@@ -207,8 +208,8 @@
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
-        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
-        font-[800] 
+        text-lg sm:text-xl md:text-2xl lg:text-2xl 
+        font-extrabold 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
         text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
       Online advertising & marketing
@@ -217,7 +218,7 @@
     <!-- Paragraph -->
     <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
         px-8 sm:px-4 md:px-6 lg:px-8 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        text-sm sm:text-lg md:text-xl lg:text-2xl 
         leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
       Whether it’s driving traffic, generating leads, or 
       <span class="text-[#00FF9C]">closing sales,</span>  
@@ -237,8 +238,8 @@
   <div>
     <!-- 🔸 Heading -->
     <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
-  <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
-  text-[25px] sm:text-3xl md:text-[40px] lg:text-[50px] 
+  <h2 class="text-center bg-[#00FF9C] text-black font-extrabold 
+  text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
   px-3 py-6 rounded-lg mb-4 w-auto sm:w-[350px] md:w-[400px] lg:w-[450px]">
     Our experience
   </h2>
@@ -247,7 +248,7 @@
 
     <!-- 🔸 Description -->
    <p class="text-center 
-   text-[14px] sm:text-[18px] md:text-[20px] lg:text-[24px]
+   text-sm sm:text-lg md:text-xl lg:text-2xl
    px-8 sm:px-10 md:px-20 lg:px-[120px] 
    leading-[28px] sm:leading-[32px] md:leading-[36px] lg:leading-[43px] 
    mt-6 mb-20 sm:mt-8 md:mt-10">
@@ -309,8 +310,8 @@
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
-        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
-        font-[800] 
+        text-lg sm:text-xl md:text-2xl lg:text-2xl 
+        font-extrabold 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
         text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
       Permanent cooperation
@@ -319,7 +320,7 @@
     <!-- Paragraph -->
     <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
         px-8 sm:px-4 md:px-6 lg:px-10 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        text-sm sm:text-lg md:text-xl lg:text-2xl 
         leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
     We are glad to have the chance to collaborate for the past few years with FlexToday, one of the finest recruitment agencies. 
       Their meticulous and thorough approach to business growth is truly impressive.<br>
@@ -336,8 +337,8 @@
   <div>
     <!-- 🔸 Heading -->
     <div class="text-center w-full items-center justify-center flex mt-10 sm:mt-16 md:mt-20 lg:mt-28">
-      <h2 class="text-center bg-[#00FF9C] text-black font-[800] 
-      text-[20px] sm:text-[28px] md:text-[38px] lg:text-[50px] 
+      <h2 class="text-center bg-[#00FF9C] text-black font-extrabold 
+      text-xl sm:text-2xl md:text-4xl lg:text-5xl 
       py-2 px-4 rounded-lg mb-4 
       w-auto sm:w-[400px] md:w-[550px] lg:w-[750px]">
         Brand consistency is a key!
@@ -346,7 +347,7 @@
 
     <!-- 🔸 Description -->
   <p class="text-center 
-   text-[15px] sm:text-[20px] md:text-[24px] lg:text-[24px] 
+   text-sm sm:text-xl md:text-2xl  lg:text-2xl 
    px-4 sm:px-10 md:px-20 lg:px-[350px] 
    leading-[26px] sm:leading-[32px] md:leading-[38px] lg:leading-[45px] 
    mt-6 sm:mt-8 md:mt-10 text-[#171717]">
@@ -374,8 +375,8 @@
       <!-- 🔹 Heading -->
       <div class="flex justify-center lg:justify-center">
         <h2 class="inline-block 
-          text-[25px] sm:text-[28px] md:text-[36px] lg:text-[50px] 
-          font-[800] text-black bg-[#00FF99] 
+          text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+          font-extrabold text-black bg-[#00FF99] 
           px-3 sm:px-5 py-2 sm:py-3 
           rounded-lg text-center">
           Pictorial mark
@@ -392,7 +393,7 @@
       
      <!-- 🔹 Description -->
 <p class="text-[#171717] leading-[36px] 
-   text-[14px] sm:text-[18px] lg:text-[20px] 
+   text-sm sm:text-lg lg:text-xl 
    text-center lg:text-center 
    px-8 sm:px-8 md:px-12 lg:px-16">
    It’s a simplified logo that identify the company. We decided for “X” before Elon Musk did it. The letter “X” is a powerful symbol. It is universally recognized for marking choices in voting or decision-making. On maps, “X” signifies key locations or hidden treasures, evoking discovery and adventure. By incorporating “X,” we create a meaningful and memorable visual identity, guiding our customers to their goals. Also, we connected it with arrows that signify action.
@@ -402,8 +403,8 @@
   <!-- 🔹 Sub Heading -->
    <div>
  <h2 class="text-center 
-        text-[20px] sm:text-3xl md:text-[40px] lg:text-[53px] 
-        font-[800] mt-10 sm:mt-16 md:mt-20 lg:mt-28 mb-32">
+        text-xl sm:text-3xl md:text-4xl lg:text-[53px] 
+        font-extrabold mt-10 sm:mt-16 md:mt-20 lg:mt-28 mb-32">
         Watch it happen! &nbsp;  <i class="fa-solid fa-arrow-right text-[#00FF9C] "></i></h2>
    </div>
     
@@ -419,17 +420,17 @@
   
   <!-- 🔹 Video Container -->
   <div class="bg-[#00FF9C] 
-    rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
+    rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px]
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
-    relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto">
+    p-4 sm:p-6 w-[90%] sm:w-full  2xl:w-full
+    relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] 2xl:h-[500px] ml-auto">
 
     
     <!-- 🔹 Inner Video Box -->
     <div class="
-      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 2xl:w-[80%]
       right-3 sm:right-0 md:right-0 lg:left-1/2 lg:-translate-x-1/2 
-      h-[180px] sm:h-[280px] md:h-[360px] lg:h-[450px] 
+      h-[180px] sm:h-[280px] md:h-[360px] lg:h-[450px] 2xl:h-[600px]
       top-[-40px] sm:top-[-90px] md:top-[-120px] lg:top-[-170px] 
       rounded-lg shadow-lg">
 
@@ -457,14 +458,14 @@
 
 <!-- 🔹 Section: Social Media -->
 <section>
-  <div class="bg-black flex flex-col lg:flex-row  py-12 mt-16">
+  <div class="bg-black flex flex-col lg:flex-row  py-12 mt-16 2xl:py-40">
 
     <!-- 🔸 Left Content -->
     <div class="w-full lg:w-[30%]">
       
       <!-- 🔹 Heading -->
-      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[25px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+      <div class="flex justify-center  pl-0 lg:pl-8">
+        <h2 class="inline-block text-2xl sm:text-4xl md:text-[44px] lg:text-5xl font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
           Social media
         </h2>
       </div>
@@ -473,8 +474,8 @@
       <div class="flex justify-center lg:justify-start mt-16 sm:mt-20 md:mt-28 lg:mt-32">
         <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
-                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
+                    p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 2xl:w-full 
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px] 2xl:h-[300px]">
           
           <!-- 🔹 Rotated Phone Frame -->
         
@@ -520,7 +521,7 @@
     
       <!-- 🔹 Description -->
       <div class="text-center flex justify-center">
-        <p class="text-[white] text-[15px] sm:text-[18px] md:text-[20px] leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center  w-[80%]">
+        <p class="text-[white] text-sm sm:text-lg md:text-xl leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center  w-[80%]">
           We create engaging, professional, and impactful posts that resonate with the FlexToday audience. Our goal is to capture the user’s attention, whether they are scrolling through their feed or searching for their next career move. Here are some of our social media posts, made for targeted paid advertisements, job offer announcements, Google Ads and usual content designed to uphold our polished and professional online presence.
         </p>
       </div>
@@ -606,7 +607,7 @@
       <!-- Section Title -->
       <div class="flex justify-center ">
         <h2
-          class="inline-block text-[25px] sm:text-[36px] md:text-[42px] lg:text-[50px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+          class="inline-block text-2xl sm:text-4xl md:text-[42px] lg:text-5xl font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
           Paid ads
         </h2>
       </div>
@@ -615,7 +616,7 @@
       <div>
 
         <p class="text-[#171717] leading-[28px] sm:leading-[32px] lg:leading-[36px] 
-                  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+                  text-sm sm:text-sm md:text-lg lg:text-xl 
                   text-center mt-10  px-8 sm:px-8 md:px-10">
            Paid advertising is a highly effective method for reaching and engaging with diverse professional groups
           through strategically targeted digital campaigns.
@@ -623,7 +624,7 @@
           and attracted high-quality followers.
         </p>
         <p class="text-[#171717] leading-[28px] sm:leading-[32px] lg:leading-[36px] 
-                  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+                  text-sm sm:text-sm md:text-lg lg:text-xl 
                   text-center mt-2 px-8 sm:px-8 md:px-10">
          
           To achieve this, we meticulously crafted ads designed to resonate with our target audiences. By leveraging
@@ -642,13 +643,13 @@
 
           <!-- Normal text -->
           <h3
-            class="transition-all text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
+            class="transition-all text-sm sm:text-lg md:text-2xl lg:text-3xl duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
             Let's talk about it!
       </h3>
 
           <!-- Hover text -->
           <h3
-            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[24px] lg:text-[31px] transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
+            class="absolute opacity-0 font-semibold text-sm sm:text-lg md:text-2xl lg:text-3xl transition-all duration-500 group-hover:opacity-100 group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] bg-white rounded-lg px-4 sm:px-6 py-2 border-[5px] border-black whitespace-nowrap">
             Book the meeting
     </h3>
         </button>
@@ -659,8 +660,9 @@
     <div class="flex justify-center md:justify-start mt-16 md:mt-44 w-full md:w-1/2"> 
  <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
-    rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
+    rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 2xl:h-[500px]
+    2xl:w-full 
+    p-4 sm:p-6 w-[90%] sm:w-full 
     relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto">
 
 
@@ -689,7 +691,7 @@
 
     <!-- ================= Branding Text Content ================= -->
     <p
-      class="text-center text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] px-4 sm:px-10 md:px-16 lg:px-20 py-8 sm:py-12 md:py-16 lg:py-20 text-white leading-[43px] sm:leading-[34px] md:leading-[42px] lg:leading-[50px]">
+      class="text-center text-sm sm:text-lg md:text-xl lg:text-2xl px-4 sm:px-10 md:px-16 lg:px-20 py-8 sm:py-12 md:py-16 lg:py-20 text-white leading-[43px] sm:leading-[34px] md:leading-[42px] lg:leading-[50px]">
       Branding excellence at every touchpoint. At FlexToday, branding isn’t just a priority; it’s a passion.
       From the office space to the meticulous details in documents and folders, every aspect of the company’s
       presentation is crafted in a unified style. Even WhatsApp communication reflects the commitment to a cohesive
@@ -748,8 +750,8 @@
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
-        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
-        font-[800] 
+        text-lg sm:text-xl md:text-2xl lg:text-2xl 
+        font-extrabold 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
         text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
           Quick brand booster
@@ -758,7 +760,7 @@
     <!-- Paragraph -->
     <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
         px-8 sm:px-4 md:px-6 lg:px-10 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        text-sm sm:text-lg md:text-xl lg:text-2xl 
         leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
       FitDieta has been a trusted provider of diet catering services for many years. 
       Our client needed a quick boost in engagement and online presence before selling 
@@ -787,8 +789,8 @@
       <!-- Title -->
       <div class="flex justify-center ">
         <h2 class="inline-block 
-          text-[20px] sm:text-[35px] md:text-[45px] lg:text-[50px] 
-          font-[800] text-black bg-[#00ff99] 
+          text-xl sm:text-4xl md:text-[45px] lg:text-5xl 
+          font-extrabold text-black bg-[#00ff99] 
           px-4 py-4 rounded-lg mb-10">
           New website
         </h2>
@@ -797,7 +799,7 @@
       <!-- Paragraph -->
       <div>
         <p class="text-[#171717] leading-[28px] sm:leading-[32px] lg:leading-[36px] 
-          text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+          text-sm sm:text-sm md:text-lg lg:text-xl 
           text-center  max-w-[700px] mx-auto px-8 lg:px-0">
           A clean, bright design that leads customers directly to ordering their diet plan. 
           We focused on clear, concise information, making it easy for users to find key details 
@@ -832,8 +834,8 @@
     <!-- Left Side (Laptop Image / Mockup) -->
     <div class="lg:w-1/2">
        <h2 class=" 
-        text-[20px] sm:text-[28px] md:text-[36px] lg:text-[45px] 
-        font-[800]  gap-4 text-center  ">
+        text-xl sm:text-3xl md:text-4xl lg:text-[45px] 
+        font-extrabold  gap-4 text-center  ">
         See the simulation 
         <span class="text-[#00FF9C] font-[200]">
           <i class="fa-solid fa-arrow-down"></i>
@@ -854,7 +856,7 @@
 
     <!-- Right Side (Text Content) -->
     <div class="lg:w-1/2 text-center ">
-      <p class="text-[#1b1b1b] text-[14px] sm:text-[16px] lg:text-[18px] xl:text-[20px] leading-[36px] lg:px-10 px-9">
+      <p class="text-[#1b1b1b] text-sm sm:text-sm lg:text-lg xl:text-xl leading-[36px] lg:px-10 px-9">
         Our website creation process begins with a detailed brief to understand your vision, goals, 
         and target audience. We then move into discussions, where we collaborate closely with you to refine 
         ideas and ensure alignment. With a clear direction, we create a project plan that outlines the design 
@@ -877,12 +879,12 @@
   <div class="flex flex-col lg:flex-row">
     
     <!-- left side (text) -->
-    <div class="lg:w-1/2 flex flex-col px-[53px] md:px-[77px] xl:px-[130px] text-center pt-6 xl:text-[20px] text-[14px] leading-[28px] lg:leading-[36px]">
+    <div class="lg:w-1/2 flex flex-col px-[53px] md:px-[77px] xl:px-[130px] text-center pt-6 xl:text-xl text-sm leading-[28sm:leading-[36px]">
       
       <!-- Heading -->
       <div class="flex justify-center mb-4">
         <div
-          class=" w-[66%] xl:w-[350px] md:w-[260px]  md:text-[29px] p-5 text-[22px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[39px] mb-10">
+          class=" w-[66%] xl:w-[350px] md:w-[260px]  md:text-[29px] p-5 text-[22px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-4xl mb-10">
           logo animation
         </div>
       </div>
@@ -970,8 +972,8 @@
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
-        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
-        font-[800] 
+        text-lg sm:text-xl md:text-2xl lg:text-2xl 
+        font-extrabold 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
         text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
           Socail media look
@@ -980,7 +982,7 @@
     <!-- Paragraph -->
     <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
         px-8 sm:px-4 md:px-6 lg:px-10 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        text-sm sm:text-sm md:text-xl lg:text-2xl 
         leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
      A company specializing in medical and veterinary equipment, we’ve collaborated
                         on multiple brands with them. For their latest venture—an online shop selling tests for
@@ -993,7 +995,7 @@
 
     <!-- zrob batanoi secton  -->
     <section class="">
-        <div class="lg:flex">
+        <div class="lg:flex gap-10">
             <!-- left side  -->
             <div class="grid lg:w-1/2 grid-cols-2 lg:bg-white bg-[#00ff9c] lg:pt-0 pt-[66px] px-[22px] md:grid-cols-2">
                 <div class=" mr-1 md:mr-3"><img src="./assets/img/2-4-980x980.png"
@@ -1023,13 +1025,13 @@
   <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
+    p-4 sm:p-6 w-[90%] sm:w-full 2xl:w-full 2xl:h-[500px] 
     relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto">
 
     
     <!-- 🔹 Inner Video Box -->
     <div class="
-      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 2xl:h-[650px] 2xl:w-[80%] 
       right-3 sm:right-0 md:right-0 lg:left-1/2 lg:-translate-x-1/2 
       h-[180px] sm:h-[280px] md:h-[360px] lg:h-[450px] 
       
@@ -1070,12 +1072,12 @@
             <div class="bg-[#171717]  lg:w-1/2 lg:py-[88px] py-[44px] pt-16 pb-16">
                 <div class="flex justify-center">
                     <div
-                        class=" px-4   py-4 lg:text-[25px] md:py-3 text-[20px] font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-[24px] lg:leading-[41px] leading-[27px]">
+                        class=" px-4   py-4 lg:text-2xl md:py-3 text-xl font-extrabold flex justify-center rounded-xl bg-[#00ff9c] xl:text-2xl lg:leading-[41px] leading-[27px]">
                        Public relations
                     </div>
                 </div>
-                <div class="text-center text-[15px] lg:text-[23px] lg:leading-[41px] leading-9 px-9 mt-7 md:px-[70px]">
-                    <p class="text-white text-[15px] lg:text-[23px]">We were thrilled to be part of a parliamentary campaign for one of the leading parties in the Polish government. Our online advertising efforts helped promote a party member who secured a seat in Parliament with impressive vote numbers. Our collaboration continues to this day, as we create and distribute content across all social media platforms, consistently achieving outstanding audience engagement.
+                <div class="text-center text-white text-sm lg:text-2xl  lg:leading-[41px] leading-9 px-9 mt-7 md:px-[70px]">
+                    <p>We were thrilled to be part of a parliamentary campaign for one of the leading parties in the Polish government. Our online advertising efforts helped promote a party member who secured a seat in Parliament with impressive vote numbers. Our collaboration continues to this day, as we create and distribute content across all social media platforms, consistently achieving outstanding audience engagement.
 
                     </p>
                 </div>
@@ -1089,14 +1091,14 @@
 
 <!-- 🔹 Section: Social Media -->
 <section>
-  <div class="bg-black flex flex-col lg:flex-row  py-16 lg:mt-24 mt-16">
+  <div class="bg-black flex flex-col lg:flex-row  py-16 lg:mt-24 mt-16 2xl:pt-40">
 
     <!-- 🔸 Left Content -->
     <div class="w-full lg:w-[30%]">
       
       <!-- 🔹 Heading -->
-      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[25px] font-[800] text-black bg-[#00ff99] px-4  py-[14px] rounded-lg ">
+      <div class="flex justify-center  pl-0 lg:pl-8">
+        <h2 class="inline-block text-3xl sm:text-4xl md:text-[44px] lg:text-2xl font-extrabold text-black bg-[#00ff99] px-4  py-[14px] rounded-lg ">
           Political campaign
         </h2>
       </div>
@@ -1106,7 +1108,7 @@
         <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
                     p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px] 2xl:w-full 2xl:h-[300px]">
           
             
         <div class="lg:top-[-90px] top-[-30px] absolute">
@@ -1144,7 +1146,7 @@
 
       <!-- 🔹 Description -->
       <div class="text-center flex justify-center">
-         <p class="text-[white] text-[15px] sm:text-[18px] md:text-[20px] leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center   w-[80%]">
+         <p class="text-[white] text-sm sm:text-lg md:text-xl leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center   w-[80%]">
           Photo shoots, graphics and written content - Conducting a political campaign is uniquely challenging, where every word and image must be carefully crafted, knowing that even the smallest misstep can be used against you. In politics, precision is key—every message must be clear, strategic, and aligned with the party’s values. We must understand the issues and the audience, ensuring that every piece of content strengthens the campaign’s position while avoiding potential pitfalls.
         </p>
       </div>
@@ -1165,7 +1167,7 @@
       <img src="./assets/img/8-12-scaled.jpg" class="w-full h-64 object-cover " />
       <!-- Overlay -->
       <div class="absolute inset-0 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <h3 class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</h3>
+        <h3 class="text-white text-4xl px-2 font-thin bg-[#00FF9C] rounded-[100px]">+</h3>
       </div>
     </div>
 
@@ -1173,7 +1175,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/2-scaled.jpg" class="w-full h-64 object-cover" />
       <div class="absolute inset-0 bg-white/80  flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <h3 class="text-white text-4xl px-2 font-[300] bg-[#00FF9C] rounded-[100px]">+</h3>
+        <h3 class="text-white text-4xl px-2 font-light bg-[#00FF9C] rounded-[100px]">+</h3>
       </div>
     </div>
 
@@ -1181,7 +1183,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/3-scaled.jpg" class="w-full h-64 object-cover " />
       <div class="absolute inset-0 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <h3 class="text-white bg-[#00FF9C] px-2 rounded-[100px] text-4xl font-[300]">+</h3>
+        <h3 class="text-white bg-[#00FF9C] px-2 rounded-[100px] text-4xl font-thin">+</h3>
       </div>
     </div>
 
@@ -1189,7 +1191,7 @@
     <div class="relative group overflow-hidden ">
       <img src="./assets/img/doplakatu-2-scaled.jpg" class="w-full h-64 object-cover " />
       <div class="absolute inset-0 bg-white/80  flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-        <h3 class="text-white bg-[#00FF9C] rounded-[100px] px-2 text-4xl font-[300]">+</h3>
+        <h3 class="text-white bg-[#00FF9C] rounded-[100px] px-2 text-4xl font-thin">+</h3>
       </div>
     </div>
 
@@ -1209,27 +1211,27 @@
       <!-- Section Title -->
       <div class="flex justify-center md:justify-center">
         <h2
-          class="inline-block text-[25px] sm:text-[36px] md:text-[42px] lg:text-[25px] font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
+          class="inline-block text-2xl sm:text-4xl md:text-[42px] lg:text-2xl font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg">
          Content managment
         </h2>
       </div>
 
       <!-- Paragraph Content -->
       <div>
-        <p class="text-[#171717] leading-[36px] text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        <p class="text-[#171717] leading-[36px] text-sm sm:text-sm md:text-xl lg:text-xl 
            text-center md:text-center mt-12 px-8 sm:px-6 md:px-10">
           We manage and distribute content across multiple platforms, including Facebook, Instagram, Twitter, and TikTok, each with its own unique audience and engagement style. Recognizing the distinct characteristics of these platforms, we tailor our posts to resonate with the specific user base of each, ensuring maximum impact and relevance. Our content reaches a broad audience, being shared on profiles that boast over 700,000 followers.  </p>
-            <p  class="text-[#171717] leading-[36px] text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+            <p  class="text-[#171717] leading-[36px] text-sm sm:text-sm md:text-xl lg:text-xl 
            text-center md:text-center mt-12 px-8 sm:px-6 md:px-10">
  To maintain our presence and effectiveness in these fast-paced social media environments, we stay consistently active by utilizing advanced tools like IMM for media monitoring.
             </p>
          
        <!-- 🔹 Sub Heading -->
         <h2 class="text-center lg:text-center 
-          text-[22px] sm:text-3xl md:text-[40px] lg:text-[51px] 
+          text-xl sm:text-3xl md:text-[40px] lg:text-5xl 
           font-bold mt-10 sm:mt-16 md:mt-20 lg:mt-28">
          See the posts
-          <span class="text-[#00FF9C] font-[300]">
+          <span class="text-[#00FF9C] font-thin">
             <i class="fa-solid fa-arrow-down"></i>
           </span> 
         </h2>
@@ -1247,13 +1249,13 @@
       <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
+    p-4 sm:p-6 w-[90%] sm:w-full 2xl:w-full 2xl:h-[500px]
     relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto"> 
                   
-        <div class="absolute -top-0 sm:-top-24 md:-top-32 lg:-top-40 right-1 sm:right-4 md:right-6 flex justify-center w-full"> 
+        <div class="absolute -top-0 sm:-top-24 md:-top-32 lg:-top-40 2xl:-top-48 right-1 sm:right-4 md:right-6 flex justify-center w-full"> 
           <img src="./assets/img/konfa-01.png" 
                alt="" 
-               class="w-[300px] sm:w-[160px] md:w-[200px] lg:w-auto mx-auto"> 
+               class="w-[300px] sm:w-[160px] md:w-[200px] 2xl:w-[80%] lg:w-auto "> 
         </div> 
 
       </div> 
@@ -1424,8 +1426,8 @@
     
     <!-- Subheading -->
     <h2 class="inline-block rounded-md px-2 lg:px-3 sm:px-4 
-        text-[18px] sm:text-[20px] md:text-[26px] lg:text-[25px] 
-        font-[800] 
+        text-lg sm:text-xl md:text-2xl lg:text-2xl 
+        font-extrabold 
         leading-[20px] sm:leading-[30px] md:leading-[40px] lg:leading-[48px] 
         text-black bg-[#00FF9C] py-5 lg:py-3 mt-16">
             Branding & Advertising
@@ -1434,7 +1436,7 @@
     <!-- Paragraph -->
     <p class="mt-10 sm:mt-8 md:mt-10 lg:mt-12 
         px-8 sm:px-4 md:px-6 lg:px-10 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[23px] 
+        text-sm sm:text-sm md:text-xl lg:text-2xl 
         leading-[24px] sm:leading-[30px] md:leading-[36px] lg:leading-[41px] mb-10">
      Samsara Butique&Restaurant took us on a real adventure to India! We had so much fun playing with colours while creating their visuals, prints and advertisements. If you ever look for the best indian food, you know where to find it.
     </p>
@@ -1489,17 +1491,18 @@
   <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
+    p-4 sm:p-6 w-[90%] sm:w-full 2xl:h-[500px] 2xl:w-full
     relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto top-20">
 
     
     <!-- 🔹 Inner Video Box -->
     <div class="
-      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
+      absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 2xl:w-[80%] 
+      2xl:h-[500px]
       right-3 sm:right-0 md:right-0 lg:left-1/2 lg:-translate-x-1/2 
       h-[180px] sm:h-[280px] md:h-[360px] lg:h-[450px] 
       
-      rounded-lg shadow-lg -top-20">
+      rounded-lg shadow-lg 2xl:-top-32 -top-20">
 
       <video 
         class="w-full h-full object-cover rounded-lg"
@@ -1523,14 +1526,14 @@
 
 <!-- custom-design-section -->
 <section>
-  <div class="bg-black flex flex-col lg:flex-row gap-[0px]  py-20 mt-32">
+  <div class="bg-black flex flex-col lg:flex-row gap-[0px]  py-20 2xl:py-40 mt-32">
 
     <!-- 🔸 Left Content -->
     <div class="w-full lg:w-1/3">
       
       <!-- 🔹 Heading -->
-      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[28px] sm:text-[36px] md:text-[44px] lg:text-[25px] font-[800] text-black bg-[#00ff99] px-4  py-[14px] rounded-lg ">
+      <div class="flex justify-center pl-0 lg:pl-8">
+        <h2 class="inline-block text-3xl sm:text-4xl md:text-[44px] lg:text-2xl font-extrabold text-black bg-[#00ff99] px-4  py-[14px] rounded-lg ">
           Custom design
         </h2>
       </div>
@@ -1540,12 +1543,12 @@
           <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
                     p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px]">
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[215px] 2xl:w-full 2xl:h-[300px]">
           
             
         <div class="lg:top-[-90px] top-[-30px] absolute -rotate-12">
           <video 
-        class="w-full h-full object-cover rounded-lg "
+        class="w-full object-cover rounded-lg "
         autoplay 
         muted 
         loop 
@@ -1668,12 +1671,12 @@
 
   <!-- Right side -->
   <div class="bg-black/90 text-white w-full md:w-1/2 px-4 sm:px-8 md:px-10 py-16 sm:py-16 md:py-24 flex flex-col justify-center items-center">
-    <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] lg:text-[25px] py-4 px-3 sm:px-4 rounded-md mb-4 w-[280px] sm:w-[300px] md:w-[380px] text-center">
+    <h2 class="bg-[#00FF9C] text-black font-bold text-xl sm:text-2xl lg:text-2xl py-4 px-3 sm:px-4 rounded-md mb-4 w-[280px] sm:w-[300px] md:w-[380px] text-center">
       Permament cooperation
 
     </h2>
 
-    <p class="text-[16px] sm:text-[18px] lg:text-[23px] text-center leading-[28px] sm:leading-[36px] lg:leading-[41px] px-8 sm:px-8 md:px-16">
+    <p class="text-sm sm:text-lg lg:text-2xl text-center leading-[28px] sm:leading-[36px] lg:leading-[41px] px-8 sm:px-8 md:px-16">
       We led the complete process of refining the company’s image and workflow. Our expertise covered graphic design, website development, marketing automation, SEO activities and lead generation. We enhanced social media engagement through buzz marketing, meta ads and google ads. We also focused on optimizing their recruitment processes by utilizing a robust database of candidates and implementing effective mailing&SMS campaigns.
     </p>
   </div>
@@ -1690,8 +1693,8 @@
     <div class="lg:w-1/2 w-full text-center lg:text-left p-4 sm:p-6 md:p-[30px]">
       <div class="flex justify-center lg:justify-center">
         <h2 class="inline-block 
-          text-[25px] sm:text-[28px] md:text-[36px] lg:text-[25px] 
-          font-[800] text-black bg-[#00FF99] 
+          text-2xl sm:text-3xl md:text-4xl lg:text-2xl 
+          font-extrabold text-black bg-[#00FF99] 
           px-3 sm:px-5 py-2 sm:py-3 
           rounded-lg text-center mb-6">
          Defining the audience
@@ -1701,7 +1704,7 @@
      
       
       <p class="text-[#171717] leading-[36px] 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        text-sm sm:text-sm md:text-xl lg:text-xl 
         text-center lg:text-center px-8 lg:px-0 mb-6">
         The company’s target audience consisted of young individuals eager to work abroad. To effectively engage this demographic, we designed the company’s appearance to resonate with their aspirations and interests. Our approach involved creating dynamic and visually striking content that captures attention and aligns with the vibrant, adventurous spirit of young potential workers.
       </p>
@@ -1719,7 +1722,7 @@
   <div class="bg-[#00FF9C] 
     rounded-tl-[40px] sm:rounded-tl-[50px] md:rounded-tl-[60px] 
     rounded-bl-[40px] sm:rounded-bl-[50px] md:rounded-bl-[60px] 
-    p-4 sm:p-6 w-[90%] sm:w-full max-w-[650px] 
+    p-4 sm:p-6 w-[90%] sm:w-full 2xl:w-full 2xl:h-[500px] 
     relative h-[200px] sm:h-[350px] md:h-[400px] lg:h-[400px] ml-auto">
 
     
@@ -1728,8 +1731,8 @@
       absolute w-[90%] sm:w-[85%] md:w-[80%] lg:w-[500px] 
       right-3 sm:right-0 md:right-0 lg:left-1/2 lg:-translate-x-1/2 
       h-[180px] sm:h-[280px] md:h-[360px] lg:h-[450px] 
-      -top-24
-      rounded-lg shadow-lg">
+      -top-24 2xl:-top-52
+      rounded-lg shadow-lg 2xl:w-[80%] 2xl:h-[630px]">
 
       <video 
         class="w-full h-full object-cover rounded-lg"
@@ -1758,13 +1761,13 @@
 
 
 <!-- website-form-section -->
-<section class="">
+<section class=" 2xl:mt-40 mt-20">
   <div class="flex flex-col md:flex-row w-full px-4 sm:px-6 md:px-10 gap-10 md:gap-28">
     
     <!-- Left Side -->
     <div class="w-full md:w-1/2">
       <div class="text-center items-center flex justify-center mb-10">
-        <h2 class="bg-[#00FF9C] text-black font-[700] text-[20px] sm:text-[24px] md:text-[28px] 
+        <h2 class="bg-[#00FF9C] text-black font-bold text-xl sm:text-2xl md:text-3xl 
                    py-2 px-3 sm:px-4 rounded-md mb-4 
                    w-full sm:w-[300px] md:w-[380px] text-center mt-9 lg:mt-0">
           Website & apply form
@@ -1779,7 +1782,7 @@
     <!-- Right Side -->
     <div class="w-full md:w-1/2 mt-10 md:mt-0">
       <p class="text-[#171717] leading-[36px] 
-        text-[14px] sm:text-[18px] md:text-[20px] lg:text-[20px] 
+        text-sm sm:text-sm md:text-xl lg:text-xl 
         text-center lg:text-left px-2 sm:px-4 md:px-0 mb-6">
         We designed a light and user-friendly website for a recruitment agency, emphasizing readability and a transparent hiring process. The site features a custom application form that integrates seamlessly with lead management tools, streamlining the recruitment workflow. This tailored solution not only enhances the user experience but also ensures efficient data handling, making it easier for the agency to manage and process applications with ease.
       </p>
@@ -1806,14 +1809,14 @@
 
 <!-- 🔹 Section: Social Media -->
 <section>
-  <div class="bg-black flex flex-col lg:flex-row  py-12 mt-20">
+  <div class="bg-black flex flex-col lg:flex-row  py-12 mt-20 2xl:py-40 ">
 
     <!-- 🔸 Left Content -->
     <div class="w-full lg:w-[30%]">
       
       <!-- 🔹 Heading -->
-      <div class="flex justify-center lg:justify-start pl-0 lg:pl-8">
-        <h2 class="inline-block text-[25px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] text-black bg-[#00ff99] px-4 py-2 rounded-lg ">
+      <div class="flex justify-center  pl-0 lg:pl-8">
+        <h2 class="inline-block text-2xl sm:text-4xl md:text-[44px] lg:text-5xl font-bold text-black bg-[#00ff99] px-4 py-2 rounded-lg ">
           Social media
         </h2>
       </div>
@@ -1823,12 +1826,12 @@
         <div class="bg-[#00FF9C] rounded-tr-[30px] sm:rounded-tr-[40px] md:rounded-tr-[50px] 
                     rounded-br-[30px] sm:rounded-br-[40px] md:rounded-br-[50px] 
                     p-4 sm:p-6 w-[85%] sm:w-[320px] md:w-[420px] lg:w-[415px] 
-                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[415px] ">
+                    relative h-[180px] sm:h-[220px] md:h-[260px] lg:h-[415px] 2xl:w-full 2xl:h-[300px]">
           
           <!-- 🔹 Rotated Phone Frame -->
         <div>
       
-          <div class="relative -rotate-12  lg:-right-20 -right-2">
+          <div class="relative -rotate-12  lg:-right-20 -right-2 2xl:-right-40">
 <!-- Image 1 (Down animation) -->
   <img src="./assets/img/7.png "
        class="lg:w-[200px] w-[100px] h-[200px] lg:h-[450px] object-cover animate-down" />
@@ -1872,7 +1875,7 @@
 
       <!-- 🔹 Description -->
       <div class="text-center flex justify-center">
-        <p class="text-[white] text-[15px] sm:text-[18px] md:text-[20px] leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center  px-4 w-[80%] pb-10">
+        <p class="text-[white] text-sm sm:text-lg md:text-xl leading-[36px] sm:leading-[28px] lg:leading-[36px] text-center  px-4 w-[80%] pb-10">
            Our vibrant social media posts are crafted to captivate and engage the right audience. With a focus on tailored content, we ensure each post resonates, driving engagement and results. One of our favourite campaigns not only hit the mark but also garnered congratulations for our marketing team directly from the audience, affirming our dedication to create content that truly connects.
         </p>
       </div>
@@ -2000,10 +2003,10 @@
 <!-- end off section -->
 <section class="w-full py-16 bg-white text-center">
   <!-- Text -->
-   <div class="w-full text-center  flex justify-center items-center px-4 sm:px-6 md:px-10">
-   <p class="text-[24px] sm:text-3xl md:text-[40px] lg:text-[47px] 
+   <div class="w-full text-center  flex justify-center items-center">
+   <p class="text-2xl sm:text-3xl md:text-[40px] lg:text-5xl 
              leading-[34px] sm:leading-[44px] md:leading-[54px] lg:leading-[61px] 
-             max-w-4xl text-[#333] font-semibold">
+             max-w-4xl text-[#333] font-semibold  px-4 sm:px-6 md:px-10">
     We hope you enjoyed reviewing our portfolio. If you need to see something more specific to your
     fields, please don’t hesitate to ask.
   </p>
@@ -2011,8 +2014,8 @@
   
 
   <!-- Thank you heading -->
-  <h2 class="inline-block mt-8 sm:mt-10 bg-[#00FF9C] text-black font-[800] 
-             text-[20px] sm:text-[28px] md:text-[36px] lg:text-[43px] py-4  px-4 sm:px-6 
+  <h2 class="inline-block mt-8 sm:mt-10 bg-[#00FF9C] text-black font-extrabold 
+             text-xl sm:text-3xl md:text-4xl lg:text-[43px] py-4  px-4 sm:px-6 
              rounded-md text-center">
     Thank you for your time!
   </h2>
@@ -2026,14 +2029,14 @@
 
           <!-- Normal text -->
           <h3
-            class="transition-all text-[14px] sm:text-[18px] md:text-[22px] lg:text-[31px] 
+            class="transition-all text-sm sm:text-sm md:text-xl lg:text-3xl
                    duration-500 group-hover:opacity-0 whitespace-nowrap font-semibold p-1">
             Contact us
   </h3>
 
           <!-- Hover text -->
           <h3
-            class="absolute opacity-0 font-semibold text-[14px] sm:text-[18px] md:text-[22px] lg:text-[26px] 
+            class="absolute opacity-0 font-semibold text-sm sm:text-sm md:text-xl lg:text-2xl 
                    transition-all duration-500 group-hover:opacity-100 
                    group-hover:shadow-[0_0_20px_4px_rgba(0,255,170,0.9)] 
                    bg-white rounded-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 border-[5px] border-black whitespace-nowrap">
@@ -2068,7 +2071,7 @@
     
     <!-- Left Text -->
     <div class="w-full xl:w-2/5 p-6 text-center lg:text-left">
-      <h1 class="text-[25px] sm:text-[40px] md:text-[50px] lg:text-[54px] font-extrabold leading-tight pt-6 mb-24">
+      <h1 class="text-2xl sm:text-[40px] md:text-5xl lg:text-[54px] font-extrabold leading-tight pt-6 mb-24">
         It might be your <br class="lg:hidden block"> <span class="text-[#00ff99]">lucky draw!</span> <br class="lg:hidden block"> Contact us today.
       </h1>
 
@@ -2097,7 +2100,7 @@
     <!-- Form -->
     <div class="w-full xl:w-3/5">
       <form class="space-y-5 bg-[#e8e8e8] border border-black/10 rounded-2xl p-4 sm:p-5 md:p-16 shadow-sm sm:border-[1px] md:border-[5px]">
-        <p class="text-[14px] mb-6 text-gray-500">Book a video meeting <span class="text-black">here.</span></p>
+        <p class="text-sm mb-6 text-grsm">Book a video meeting <span class="text-black">here.</span></p>
         <div>
           <label for="name" class="block font-semibold mb-2">Your name</label>
           <input id="name" type="text" class="w-full rounded-lg border px-4 py-3" />
@@ -2131,7 +2134,7 @@
           </label>
         </div>
         <div>
-          <button class="w-full mt-6 border-[5px] border-black bg-black text-white hover:text-[#00ff99] rounded-lg transition duration-500 hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-[20px] md:text-[28px] lg:text-[35px] py-3 sm:py-4 md:py-0">
+          <button class="w-full mt-6 border-[5px] border-black bg-black text-white hover:text-[#00ff99] rounded-lg transition duration-500 hover:border-black hover:shadow-[0_0_30px_8px_rgba(0,255,170,0.9)] text-[17px] sm:text-xl md:text-3xl lg:text-[35px] py-3 sm:py-4 md:py-0">
             Submit
           </button>
         </div>
@@ -2158,18 +2161,18 @@
      </div>
       <div class="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
         <a href="#" class="text-black hover:text-gray-700">
-          <i class="fa-brands fa-facebook text-[28px]"></i>
+          <i class="fa-brands fa-facebook text-3xl"></i>
         </a>
         <a href="#" class="text-black hover:text-gray-700">
-          <i class="fa-brands fa-square-instagram text-[28px]"></i>
+          <i class="fa-brands fa-square-instagram text-3xl"></i>
         </a>
         <h5 class="text-lg">Follow us!</h5>
       </div>
     </div>
 
    <!-- Timings -->
-   <div class="text-center sm:text-left text-[14px]">
-     <h3 class="font-bold text-[26px]">We are open!</h3>
+   <div class="text-center sm:text-left text-sm">
+     <h3 class=" sm-bold text-2xl">We are open!</h3>
      <!-- For large screen -->
      <div class="hidden sm:block">
        <div class="flex gap-16 justify-center sm:justify-start mt-6">
@@ -2191,8 +2194,8 @@
    </div>
 
    <!-- Contact -->
-   <div class="text-center sm:text-left text-[14px]">
-    <div class="mb-3">
+   <div class="text-center sm:text-left text-sm">
+    <div clasm-3">
  <p class="font-bold flex justify-center sm:justify-start items-center gap-2 ">
        <i class="fa-regular fa-envelope-open"></i> E-mail us here:
      </p>
